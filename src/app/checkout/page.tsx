@@ -53,7 +53,12 @@ export default function CheckoutPage() {
   const onSubmit = (values: z.infer<typeof checkoutSchema>) => {
     console.log("Order placed:", {
       user: user?.id,
-      items: cartItems,
+      items: cartItems.map(item => ({
+        productId: item.product.id,
+        variantId: item.variant?.id,
+        quantity: item.quantity,
+        price: item.variant ? item.variant.price : item.product.price,
+      })),
       total: cartTotal,
       shippingInfo: values,
     });
@@ -125,18 +130,23 @@ export default function CheckoutPage() {
               <Card className="sticky top-24">
                 <CardHeader><CardTitle className="font-headline text-2xl">Order Summary</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
-                  {cartItems.map(({ product, quantity }) => (
-                    <div key={product.id} className="flex items-center justify-between">
+                  {cartItems.map(({ product, quantity, variant }) => {
+                     const itemPrice = variant ? variant.price : product.price;
+                     const itemName = variant ? `${product.name} (${variant.weight})` : product.name;
+                     const itemId = variant ? variant.id : product.id;
+
+                    return (
+                    <div key={itemId} className="flex items-center justify-between">
                       <div className="flex items-center gap-3">
                         <Image src={product.imageUrl} alt={product.name} width={48} height={48} className="rounded-md" />
                         <div>
-                          <p className="font-medium text-sm">{product.name}</p>
+                          <p className="font-medium text-sm">{itemName}</p>
                           <p className="text-xs text-muted-foreground">Qty: {quantity}</p>
                         </div>
                       </div>
-                      <p className="text-sm">{formatPrice(product.price * quantity)}</p>
+                      <p className="text-sm">{formatPrice(itemPrice * quantity)}</p>
                     </div>
-                  ))}
+                  )})}
                   <Separator />
                   <div className="flex justify-between text-muted-foreground"><p>Subtotal</p><p>{formatPrice(cartTotal)}</p></div>
                   <div className="flex justify-between text-muted-foreground"><p>Shipping</p><p>Free</p></div>

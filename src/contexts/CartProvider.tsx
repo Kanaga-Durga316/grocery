@@ -1,13 +1,13 @@
 "use client";
 
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
-import type { CartItem, Product } from '@/lib/types';
+import type { CartItem, Product, ProductVariant } from '@/lib/types';
 
 interface CartContextType {
   cartItems: CartItem[];
-  addToCart: (product: Product, quantity: number) => void;
-  updateQuantity: (productId: string, quantity: number) => void;
-  removeFromCart: (productId: string) => void;
+  addToCart: (product: Product, quantity: number, variant?: ProductVariant) => void;
+  updateQuantity: (productId: string, quantity: number, variantId?: string) => void;
+  removeFromCart: (productId: string, variantId?: string) => void;
   clearCart: () => void;
   cartCount: number;
   cartTotal: number;
@@ -29,30 +29,46 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const addToCart = (product: Product, quantity: number) => {
+  const addToCart = (product: Product, quantity: number, variant?: ProductVariant) => {
     setCartItems(prevItems => {
-      const existingItem = prevItems.find(item => item.product.id === product.id);
+      const itemIdentifier = variant ? variant.id : product.id;
+      const existingItem = prevItems.find(item => {
+        const currentIdentifier = item.variant ? item.variant.id : item.product.id;
+        return currentIdentifier === itemIdentifier;
+      });
+
       if (existingItem) {
-        return prevItems.map(item =>
-          item.product.id === product.id
-            ? { ...item, quantity: item.quantity + quantity }
-            : item
-        );
+        return prevItems.map(item => {
+           const currentIdentifier = item.variant ? item.variant.id : item.product.id;
+           if (currentIdentifier === itemIdentifier) {
+              return { ...item, quantity: item.quantity + quantity }
+           }
+           return item;
+        });
       }
-      return [...prevItems, { product, quantity }];
+      return [...prevItems, { product, quantity, variant }];
     });
   };
 
-  const updateQuantity = (productId: string, quantity: number) => {
+  const updateQuantity = (productId: string, quantity: number, variantId?: string) => {
     setCartItems(prevItems =>
-      prevItems.map(item =>
-        item.product.id === productId ? { ...item, quantity } : item
-      ).filter(item => item.quantity > 0)
+      prevItems.map(item => {
+        const itemIdentifier = item.variant ? item.variant.id : item.product.id;
+        const targetIdentifier = variantId || productId;
+        if (itemIdentifier === targetIdentifier) {
+          return { ...item, quantity };
+        }
+        return item;
+      }).filter(item => item.quantity > 0)
     );
   };
 
-  const removeFromCart = (productId: string) => {
-    setCartItems(prevItems => prevItems.filter(item => item.product.id !== productId));
+  const removeFromCart = (productId: string, variantId?: string) => {
+    setCartItems(prevItems => prevItems.filter(item => {
+        const itemIdentifier = item.variant ? item.variant.id : item.product.id;
+        const targetIdentifier = variantId || productId;
+        return itemIdentifier !== targetIdentifier;
+    }));
   };
 
   const clearCart = () => {
@@ -60,7 +76,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const cartCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
-  const cartTotal = cartItems.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
+  const cartTotal = cartItems.reduce((acc, item) => {
+      const price = item.variant ? item.variant.price : item.product.price;
+      return acc + price * item.quantity;
+  }, 0);
 
   return (
     <CartContext.Provider

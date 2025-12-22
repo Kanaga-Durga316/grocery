@@ -47,8 +47,13 @@ export default function CartPage() {
                       </TableRow>
                     </TableHeader>
                     <TableBody>
-                      {cartItems.map(({ product, quantity }) => (
-                        <TableRow key={product.id}>
+                      {cartItems.map(({ product, quantity, variant }) => {
+                        const itemPrice = variant ? variant.price : product.price;
+                        const itemName = variant ? `${product.name} (${variant.weight})` : product.name;
+                        const itemId = variant ? variant.id : product.id;
+                        
+                        return (
+                        <TableRow key={itemId}>
                           <TableCell className="hidden md:table-cell">
                              <Image
                                 src={product.imageUrl}
@@ -58,26 +63,26 @@ export default function CartPage() {
                                 className="rounded-md object-cover"
                               />
                           </TableCell>
-                          <TableCell className="font-medium">{product.name}</TableCell>
+                          <TableCell className="font-medium">{itemName}</TableCell>
                           <TableCell>
                             <QuantitySelector 
                               quantity={quantity} 
-                              setQuantity={(newQuantity) => updateQuantity(product.id, newQuantity)}
+                              setQuantity={(newQuantity) => updateQuantity(product.id, newQuantity, variant?.id)}
                             />
                           </TableCell>
-                          <TableCell className="text-right">{formatPrice(product.price * quantity)}</TableCell>
+                          <TableCell className="text-right">{formatPrice(itemPrice * quantity)}</TableCell>
                           <TableCell className="text-right">
                              <Button
                                 variant="ghost"
                                 size="icon"
-                                onClick={() => removeFromCart(product.id)}
+                                onClick={() => removeFromCart(product.id, variant?.id)}
                               >
                                 <Trash2 className="h-5 w-5 text-muted-foreground" />
                                 <span className="sr-only">Remove item</span>
                               </Button>
                           </TableCell>
                         </TableRow>
-                      ))}
+                      )})}
                     </TableBody>
                   </Table>
                 </CardContent>

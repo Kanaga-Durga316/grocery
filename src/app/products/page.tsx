@@ -1,5 +1,6 @@
 
 
+
 "use client";
 
 import { useMemo, useState } from 'react';
@@ -17,6 +18,7 @@ export default function MenuPage() {
   const categories = useMemo(() => getCategories(), []);
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
   const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
+  const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
   
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
 
@@ -48,9 +50,14 @@ export default function MenuPage() {
         
         if (category.id === 'dairy-bakery') {
             if (dairyBrandFilter !== 'all') {
-                // This filter applies across all dairy sub-categories that have branded items (like milk)
-                productsToStructure = productsToStructure.map(p => (p.brand && p.brand === dairyBrandFilter) || !p.brand ? p : null).filter(Boolean) as Product[];
+                productsToStructure = productsToStructure.filter(p => p.brand === dairyBrandFilter);
             }
+        }
+
+        if (category.id === 'staples-pantry') {
+          if (pantryBenefitFilter !== 'all') {
+            productsToStructure = productsToStructure.filter(p => p.tags?.includes(pantryBenefitFilter));
+          }
         }
 
         const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
@@ -75,7 +82,7 @@ export default function MenuPage() {
       };
 
     }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
-  }, [allProducts, categories, produceFilter, dairyBrandFilter]);
+  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter]);
 
   return (
     <>
@@ -115,6 +122,16 @@ export default function MenuPage() {
                 {dairyBrands.map(brand => (
                     <Button key={brand} variant={dairyBrandFilter === brand ? 'secondary' : 'outline'} size="sm" onClick={() => setDairyBrandFilter(brand)}>{brand}</Button>
                 ))}
+              </div>
+            )}
+
+            {category.id === 'staples-pantry' && (
+              <div className="flex justify-center items-center gap-2 mb-8">
+                <Filter className="h-5 w-5 text-muted-foreground" />
+                <span className="text-sm font-medium text-muted-foreground">Filter by Benefit:</span>
+                <Button variant={pantryBenefitFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('all')}>All</Button>
+                <Button variant={pantryBenefitFilter === 'High Protein' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('High Protein')}>High Protein</Button>
+                <Button variant={pantryBenefitFilter === 'Low GI' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('Low GI')}>Low GI</Button>
               </div>
             )}
             

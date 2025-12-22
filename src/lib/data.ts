@@ -54,36 +54,59 @@ const products: Product[] = [
   // Cut & Sprouted
   { id: 'prod-70', name: 'Peeled Garlic', description: 'Conveniently peeled garlic cloves, ready to use (100g).', price: 40, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-peeled-garlic')!.imageUrl, imageHint: 'peeled garlic', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
   { id: 'prod-71', name: 'Chopped Sambhar Mix', description: 'A ready mix of chopped vegetables for sambhar (250g).', price: 60, stock: 90, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sambhar-mix')!.imageUrl, imageHint: 'chopped vegetables', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
-  { id: 'prod-72', name: 'Sprouted Moong Dal', description: 'Healthy and nutritious sprouted moong dal (200g).', price: 45, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sprouted-moong')!.imageUrl, imageHint: 'sprouted moong', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
+  { id: 'prod-72', name: 'Sprouted Moong Dal', description: 'Healthy and nutritious sprouted moong dal (200g).', price: 45, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sprouted-moong')!.imageUrl, imageHint: 'sprouted moong', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)', tags: ['High Protein'] },
   { id: 'prod-73', name: 'Grated Coconut', description: 'Freshly grated coconut for cooking and garnishing (1 cup).', price: 50, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-grated-coconut')!.imageUrl, imageHint: 'grated coconut', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
   { id: 'prod-74', name: 'Weekly Veggie Combo', description: 'A curated combo of Onion (1kg), Potato (1kg), and Tomato (1kg).', price: 99, stock: 50, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-veggie-combo')!.imageUrl, imageHint: 'vegetable combo', sellerId: 'seller-1', subCategory: 'Combos' },
 
   // Staples & Pantry - Seller 1
   // Rice & Rice Products
-  { id: 'prod-82', name: 'Ponni Rice', description: 'Popular South Indian Ponni rice, perfect for daily meals (5kg).', price: 350, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-bag')!.imageUrl, imageHint: 'rice bag', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
-  { id: 'prod-83', name: 'Basmati Rice', description: 'Long-grain aromatic Basmati rice, ideal for biryani and pulao (5kg).', price: 600, stock: 80, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-basmati-rice')!.imageUrl, imageHint: 'basmati rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
-  { id: 'prod-84', name: 'Idli & Dosa Rice', description: 'Special parboiled rice for making perfect soft idlis and crispy dosas (5kg).', price: 320, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-idli-rice')!.imageUrl, imageHint: 'rice grains', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
-  { id: 'prod-85', name: 'Poha (Aval)', description: 'Flattened rice, great for a quick and easy breakfast (1kg).', price: 80, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-poha')!.imageUrl, imageHint: 'flattened rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  { 
+    id: 'prod-ponni-rice', name: 'Ponni Rice', description: 'Popular South Indian Ponni rice, perfect for daily meals.', price: 0, stock: 0, 
+    categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-bag')!.imageUrl, imageHint: 'rice bag', sellerId: 'seller-1', subCategory: 'Rice & Rice Products',
+    tags: ['Low GI'],
+    variants: [
+      { id: 'prod-ponni-rice-1kg', weight: '1kg', price: 70, stock: 100 },
+      { id: 'prod-ponni-rice-5kg', weight: '5kg', price: 350, stock: 100 },
+      { id: 'prod-ponni-rice-10kg', weight: '10kg', price: 680, stock: 50 },
+    ]
+  },
+  { 
+    id: 'prod-basmati-rice', name: 'Basmati Rice', description: 'Long-grain aromatic Basmati rice, ideal for biryani and pulao.', price: 0, stock: 0, 
+    categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-basmati-rice')!.imageUrl, imageHint: 'basmati rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products',
+    variants: [
+      { id: 'prod-basmati-rice-1kg', weight: '1kg', price: 120, stock: 80 },
+      { id: 'prod-basmati-rice-5kg', weight: '5kg', price: 600, stock: 80 },
+    ]
+  },
+  { id: 'prod-idli-rice', name: 'Idli & Dosa Rice', description: 'Special parboiled rice for making perfect soft idlis and crispy dosas (5kg).', price: 320, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-idli-rice')!.imageUrl, imageHint: 'rice grains', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  { id: 'prod-poha', name: 'Poha (Aval)', description: 'Flattened rice, great for a quick and easy breakfast (1kg).', price: 80, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-poha')!.imageUrl, imageHint: 'flattened rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
   
   // Atta & Flours (Maavu)
-  { id: 'prod-41', name: 'Whole Wheat Atta', description: 'Premium quality whole wheat flour for soft rotis and chapatis (5kg).', price: 250, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-atta')!.imageUrl, imageHint: 'atta flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
-  { id: 'prod-86', name: 'Besan (Gram Flour)', description: 'Fine gram flour, essential for bhajis, pakoras, and sweets (1kg).', price: 110, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-besan')!.imageUrl, imageHint: 'gram flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
-  { id: 'prod-87', name: 'Rice Flour (Arisi Maavu)', description: 'Finely ground rice flour for murukku, seedai, and other snacks (1kg).', price: 70, stock: 130, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-flour')!.imageUrl, imageHint: 'rice flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
-  { id: 'prod-88', name: 'Ragi Flour (Finger Millet)', description: 'Nutritious ragi flour, perfect for making healthy dosas and porridge (1kg).', price: 90, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-ragi-flour')!.imageUrl, imageHint: 'ragi flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+  { 
+    id: 'prod-atta', name: 'Whole Wheat Atta', description: 'Premium quality whole wheat flour for soft rotis and chapatis.', price: 0, stock: 0,
+    categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-atta')!.imageUrl, imageHint: 'atta flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)',
+    variants: [
+      { id: 'prod-atta-1kg', weight: '1kg', price: 55, stock: 100 },
+      { id: 'prod-atta-5kg', weight: '5kg', price: 250, stock: 100 },
+    ]
+  },
+  { id: 'prod-besan', name: 'Besan (Gram Flour)', description: 'Fine gram flour, essential for bhajis, pakoras, and sweets (1kg).', price: 110, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-besan')!.imageUrl, imageHint: 'gram flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)', tags: ['High Protein'] },
+  { id: 'prod-rice-flour', name: 'Rice Flour (Arisi Maavu)', description: 'Finely ground rice flour for murukku, seedai, and other snacks (1kg).', price: 70, stock: 130, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-flour')!.imageUrl, imageHint: 'rice flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+  { id: 'prod-ragi-flour', name: 'Ragi Flour (Finger Millet)', description: 'Nutritious ragi flour, perfect for making healthy dosas and porridge (1kg).', price: 90, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-ragi-flour')!.imageUrl, imageHint: 'ragi flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)', tags: ['Low GI'] },
 
   // Dals & Pulses (Paruppu)
-  { id: 'prod-89', name: 'Toor Dal (Sambar Paruppu)', description: 'Split pigeon peas, the base for delicious sambar and dal dishes (1kg).', price: 160, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toor-dal')!.imageUrl, imageHint: 'toor dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
-  { id: 'prod-90', name: 'Urad Dal (Split)', description: 'Split and skinned black gram, essential for idli/dosa batter and tempering (1kg).', price: 180, stock: 180, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-urad-dal')!.imageUrl, imageHint: 'urad dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
-  { id: 'prod-91', name: 'Kabuli Chana (Chickpeas)', description: 'Large, white chickpeas for making chana masala and salads (1kg).', price: 150, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chickpeas')!.imageUrl, imageHint: 'chickpeas bowl', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
+  { id: 'prod-toor-dal', name: 'Toor Dal (Sambar Paruppu)', description: 'Split pigeon peas, the base for delicious sambar and dal dishes (1kg).', price: 160, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toor-dal')!.imageUrl, imageHint: 'toor dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)', tags: ['High Protein'] },
+  { id: 'prod-urad-dal', name: 'Urad Dal (Split)', description: 'Split and skinned black gram, essential for idli/dosa batter and tempering (1kg).', price: 180, stock: 180, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-urad-dal')!.imageUrl, imageHint: 'urad dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)', tags: ['High Protein'] },
+  { id: 'prod-chickpeas', name: 'Kabuli Chana (Chickpeas)', description: 'Large, white chickpeas for making chana masala and salads (1kg).', price: 150, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chickpeas')!.imageUrl, imageHint: 'chickpeas bowl', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)', tags: ['High Protein'] },
 
   // Salt, Sugar & Jaggery
-  { id: 'prod-92', name: 'Crystal Salt (Kallu Uppu)', description: 'Coarse sea salt crystals, preferred for traditional cooking (1kg).', price: 25, stock: 300, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-crystal-salt')!.imageUrl, imageHint: 'crystal salt', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
-  { id: 'prod-93', name: 'White Sugar', description: 'Refined white sugar for all your sweetening needs (1kg).', price: 50, stock: 400, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sugar')!.imageUrl, imageHint: 'sugar cubes', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
-  { id: 'prod-94', name: 'Jaggery (Vellam)', description: 'Traditional unrefined cane sugar, rich in minerals (500g block).', price: 70, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-jaggery')!.imageUrl, imageHint: 'jaggery block', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+  { id: 'prod-crystal-salt', name: 'Crystal Salt (Kallu Uppu)', description: 'Coarse sea salt crystals, preferred for traditional cooking (1kg).', price: 25, stock: 300, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-crystal-salt')!.imageUrl, imageHint: 'crystal salt', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+  { id: 'prod-sugar', name: 'White Sugar', description: 'Refined white sugar for all your sweetening needs (1kg).', price: 50, stock: 400, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sugar')!.imageUrl, imageHint: 'sugar cubes', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+  { id: 'prod-jaggery', name: 'Jaggery (Vellam)', description: 'Traditional unrefined cane sugar, rich in minerals (500g block).', price: 70, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-jaggery')!.imageUrl, imageHint: 'jaggery block', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery', tags: ['Low GI'] },
 
   // Healthy Millets
-  { id: 'prod-95', name: 'Kuthiraivali (Barnyard Millet)', description: 'A healthy and gluten-free millet, cooks fast (500g).', price: 80, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-barnyard-millet')!.imageUrl, imageHint: 'millet grains', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)' },
-  { id: 'prod-96', name: 'Thinai (Foxtail Millet)', description: 'A nutritious ancient grain, perfect for upma and payasam (500g).', price: 85, stock: 85, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-foxtail-millet')!.imageUrl, imageHint: 'foxtail millet', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)' },
+  { id: 'prod-barnyard-millet', name: 'Kuthiraivali (Barnyard Millet)', description: 'A healthy and gluten-free millet, cooks fast (500g).', price: 80, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-barnyard-millet')!.imageUrl, imageHint: 'millet grains', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)', tags: ['Low GI'] },
+  { id: 'prod-foxtail-millet', name: 'Thinai (Foxtail Millet)', description: 'A nutritious ancient grain, perfect for upma and payasam (500g).', price: 85, stock: 85, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-foxtail-millet')!.imageUrl, imageHint: 'foxtail millet', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)', tags: ['Low GI'] },
   
   // Existing from before, re-categorized
   { id: 'prod-43', name: 'Groundnut Oil', description: 'Cold-pressed groundnut oil, ideal for all types of cooking (1L).', price: 220, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oil')!.imageUrl, imageHint: 'cooking oil', sellerId: 'seller-1', subCategory: 'Oils & Ghee' },
@@ -92,11 +115,11 @@ const products: Product[] = [
 
 
   // Meat & Seafood - Seller 1
-  { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1', subCategory: 'Chicken & Poultry' },
-  { id: 'prod-47', name: 'Fresh Salmon Fillet', description: 'Rich and flavorful Atlantic salmon fillet, high in omega-3s (250g).', price: 500, stock: 40, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salmon')!.imageUrl, imageHint: 'salmon fillet', sellerId: 'seller-1', subCategory: 'Fish & Seafood' },
-  { id: 'prod-48', name: 'Mutton Curry Cut', description: 'Tender, bone-in mutton pieces perfect for rich curries (500g).', price: 400, stock: 50, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton')!.imageUrl, imageHint: 'mutton pieces', sellerId: 'seller-1', subCategory: 'Mutton & Red Meat' },
-  { id: 'prod-80', name: 'Country Eggs (Nattu Kozhi)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
-  { id: 'prod-8', name: 'Farm-Fresh White Eggs', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+  { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1', subCategory: 'Chicken & Poultry', tags: ['High Protein'] },
+  { id: 'prod-47', name: 'Fresh Salmon Fillet', description: 'Rich and flavorful Atlantic salmon fillet, high in omega-3s (250g).', price: 500, stock: 40, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salmon')!.imageUrl, imageHint: 'salmon fillet', sellerId: 'seller-1', subCategory: 'Fish & Seafood', tags: ['High Protein'] },
+  { id: 'prod-48', name: 'Mutton Curry Cut', description: 'Tender, bone-in mutton pieces perfect for rich curries (500g).', price: 400, stock: 50, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton')!.imageUrl, imageHint: 'mutton pieces', sellerId: 'seller-1', subCategory: 'Mutton & Red Meat', tags: ['High Protein'] },
+  { id: 'prod-80', name: 'Country Eggs (Nattu Kozhi)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs', tags: ['High Protein'] },
+  { id: 'prod-8', name: 'Farm-Fresh White Eggs', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs', tags: ['High Protein'] },
 
   // Dairy & Bakery
   // Milk & Fresh Products - Seller 1
@@ -107,12 +130,12 @@ const products: Product[] = [
   
   // Curd & Yogurt - Seller 1
   { id: 'prod-7', name: 'Plain Curd', description: 'Thick and creamy plain curd (thayir), essential for meals (400g).', price: 40, stock: 90, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-curd')!.imageUrl, imageHint: 'curd bowl', sellerId: 'seller-1', subCategory: 'Curd & Yogurt' },
-  { id: 'prod-77', name: 'Greek Yogurt', description: 'Plain Greek yogurt, high in protein (150g cup).', price: 80, stock: 70, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1', subCategory: 'Curd & Yogurt' },
+  { id: 'prod-77', name: 'Greek Yogurt', description: 'Plain Greek yogurt, high in protein (150g cup).', price: 80, stock: 70, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1', subCategory: 'Curd & Yogurt', tags: ['High Protein'] },
 
   // Butter, Cheese & More - Seller 1
   { id: 'prod-78', name: 'Salted Butter', description: 'Classic salted butter, perfect for toast and cooking (100g).', price: 55, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-butter')!.imageUrl, imageHint: 'butter block', sellerId: 'seller-1', subCategory: 'Butter, Cheese & More' },
   { id: 'prod-6', name: 'Cheddar Cheese Slices', description: 'A pack of 10 convenient cheddar cheese slices for sandwiches.', price: 150, stock: 60, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheese slices', sellerId: 'seller-1', subCategory: 'Butter, Cheese & More' },
-  { id: 'prod-79', name: 'Fresh Paneer', description: 'Soft and fresh paneer (cottage cheese), ideal for curries (200g).', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-paneer')!.imageUrl, imageHint: 'paneer cubes', sellerId: 'seller-1', subCategory: 'Butter, Cheese & More' },
+  { id: 'prod-79', name: 'Fresh Paneer', description: 'Soft and fresh paneer (cottage cheese), ideal for curries (200g).', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-paneer')!.imageUrl, imageHint: 'paneer cubes', sellerId: 'seller-1', subCategory: 'Butter, Cheese & More', tags: ['High Protein'] },
   
   // Fresh Bakery - Seller 2
   { id: 'prod-9', name: 'Sandwich Bread', description: 'A loaf of soft and fresh white sandwich bread.', price: 40, stock: 50, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sandwich bread', sellerId: 'seller-2', subCategory: 'Fresh Bakery', bestBefore: '3 days' },
@@ -121,8 +144,8 @@ const products: Product[] = [
   { id: 'prod-12', name: 'Tea Rusk', description: 'Crispy and crunchy tea rusk, perfect for dipping (200g).', price: 50, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rusk')!.imageUrl, imageHint: 'tea rusk', sellerId: 'seller-2', subCategory: 'Fresh Bakery', bestBefore: '30 days' },
   
   // Eggs (in Dairy & Bakery) - Seller 1
-  { id: 'prod-100', name: 'Farm-Fresh White Eggs (Dairy)', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
-  { id: 'prod-101', name: 'Country Eggs (Nattu Kozhi - Dairy)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+  { id: 'prod-100', name: 'Farm-Fresh White Eggs (Dairy)', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs', tags: ['High Protein'] },
+  { id: 'prod-101', name: 'Country Eggs (Nattu Kozhi - Dairy)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs', tags: ['High Protein'] },
 
 
   // Prepared Foods - Seller 1 & 2
@@ -230,7 +253,30 @@ export const getProducts = (categoryId?: string) => {
   return products.filter(p => p.categoryId === categoryId);
 };
 export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId);
-export const getProductById = (id: string) => products.find(p => p.id === id);
+export const getProductById = (id: string) => {
+  // First check if it's a base product ID
+  const baseProduct = products.find(p => p.id === id);
+  if (baseProduct) return baseProduct;
+
+  // If not, check if it's a variant ID
+  for (const prod of products) {
+    if (prod.variants) {
+      const variant = prod.variants.find(v => v.id === id);
+      if (variant) {
+        // Return the base product but with variant details merged for convenience
+        return {
+          ...prod,
+          id: variant.id, // The ID of the item card should be the variant's
+          name: `${prod.name} (${variant.weight})`,
+          price: variant.price,
+          stock: variant.stock,
+          variants: undefined, // Clear variants so we don't show a dropdown for a variant
+        };
+      }
+    }
+  }
+  return undefined;
+};
 export const getFeaturedProducts = () => products.slice(16, 20);
 export const getReviewsForProduct = (productId: string) => reviews.filter(r => r.productId === productId);
 export const getUserById = (id: string) => users.find(u => u.id === id);
