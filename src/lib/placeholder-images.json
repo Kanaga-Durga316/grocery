@@ -181,6 +181,72 @@
       "imageHint": "omapodi snack"
     },
     {
+      "id": "prod-kadalai-mittai",
+      "description": "Bars of traditional groundnut candy.",
+      "imageUrl": "https://images.unsplash.com/photo-1512426887555-2e0f545b6422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm91bmRudXQlMjBjYW5keXxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "groundnut candy"
+    },
+    {
+      "id": "prod-adhirasam",
+      "description": "A plate of sweet adhirasam.",
+      "imageUrl": "https://images.unsplash.com/photo-1590082855198-8424a15a31a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZGhpcmFzYW0lMjBzd2VldHxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "adhirasam sweet"
+    },
+    {
+      "id": "prod-halwa",
+      "description": "A bowl of rich Tirunelveli halwa.",
+      "imageUrl": "https://images.unsplash.com/photo-1579782531322-a9f592a7e7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aXJ1bmVsdmVsaSUyMGhhbHdhfGVufDB8fHx8MTc2NjU1MDQ2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tirunelveli halwa"
+    },
+    {
+      "id": "prod-palkova",
+      "description": "Freshly made palkova.",
+      "imageUrl": "https://images.unsplash.com/photo-1627914389932-95f03a677e4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWxrb3ZhJTIwbWlsa3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "palkova milk"
+    },
+    {
+      "id": "prod-susiyam",
+      "description": "Deep-fried susiyam sweets.",
+      "imageUrl": "https://images.unsplash.com/photo-1583337130417-746b14f7b24d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdXNpeWFtJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "susiyam sweet"
+    },
+    {
+      "id": "prod-jangiri",
+      "description": "Flower-shaped jangiri sweets.",
+      "imageUrl": "https://images.unsplash.com/photo-1610444331776-2e973e6a9f4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqYW5naXJpJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jangiri sweet"
+    },
+    {
+      "id": "prod-rava-ladoo",
+      "description": "A plate of rava ladoos.",
+      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyYXZhJTIwbGFkb298ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rava ladoo"
+    },
+    {
+      "id": "prod-boondi-ladoo",
+      "description": "Colorful boondi ladoos.",
+      "imageUrl": "https://images.unsplash.com/photo-1598501199343-42a1768c7841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib29uZGklMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "boondi ladoo"
+    },
+    {
+      "id": "prod-mysore-pak",
+      "description": "Slices of Mysore Pak.",
+      "imageUrl": "https://images.unsplash.com/photo-1623963443153-64b65e943c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxteXNvcmUlMjBwYWt8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mysore pak"
+    },
+    {
+      "id": "prod-coconut-burfi",
+      "description": "Cubes of coconut burfi.",
+      "imageUrl": "https://images.unsplash.com/photo-1616815340881-807a5f6e8b43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2NvbnV0JTIwYnVyZml8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coconut burfi"
+    },
+    {
+      "id": "prod-maa-ladoo",
+      "description": "Round maa ladoo sweets.",
+      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWElMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "maa ladoo"
+    },
+    {
       "id": "page-header-products",
       "description": "Overhead view of a variety of fresh produce on a market stall.",
       "imageUrl": "https://images.unsplash.com/photo-1705929192183-847aef14ba29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWNlJTIwbWFya2V0fGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",

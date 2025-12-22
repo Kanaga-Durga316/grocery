@@ -1,3 +1,4 @@
+
 import type { Product, Category, Review, User, Order } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -17,6 +18,7 @@ const categories: Category[] = [
   { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'Savory & Crispy Snacks from Tamil Nadu.' },
+  { id: 'sweet-snacks', name: 'Sweet Snacks', description: 'Traditional sweet delicacies from Tamil Nadu.' },
 ];
 
 const products: Product[] = [
@@ -60,6 +62,19 @@ const products: Product[] = [
   { id: 'prod-27', name: 'Parippu Vada', description: 'Spicy and crispy lentil fritters, a popular street food snack from Kerala (4 pcs).', price: 60, stock: 110, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-parippu-vada')!.imageUrl, imageHint: 'parippu vada', sellerId: 'seller-3' },
   { id: 'prod-28', name: 'Banana Chips', description: 'Thinly sliced, deep-fried bananas, a classic crunchy snack from Kerala (150g).', price: 70, stock: 150, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana-chips')!.imageUrl, imageHint: 'banana chips', sellerId: 'seller-3' },
   { id: 'prod-29', name: 'Omapodi', description: 'Fine, crispy strands of gram flour noodles seasoned with carom seeds (omam) (200g).', price: 65, stock: 95, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-omapodi')!.imageUrl, imageHint: 'omapodi snack', sellerId: 'seller-3' },
+
+  // Sweet Snacks - Seller 3
+  { id: 'prod-30', name: 'Kadalai Mittai', description: 'Traditional groundnut candy bars, a sweet and crunchy delight (200g).', price: 80, stock: 120, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-kadalai-mittai')!.imageUrl, imageHint: 'groundnut candy', sellerId: 'seller-3' },
+  { id: 'prod-31', name: 'Adhirasam', description: 'A traditional sweet pastry made from rice flour and jaggery (4 pcs).', price: 100, stock: 80, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-adhirasam')!.imageUrl, imageHint: 'adhirasam sweet', sellerId: 'seller-3' },
+  { id: 'prod-32', name: 'Tirunelveli Halwa', description: 'A famous, gooey, and rich wheat halwa from Tirunelveli (250g).', price: 150, stock: 60, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-halwa')!.imageUrl, imageHint: 'tirunelveli halwa', sellerId: 'seller-3' },
+  { id: 'prod-33', name: 'Palkova', description: 'A delicious sweet made by simmering milk until it thickens (200g).', price: 120, stock: 70, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-palkova')!.imageUrl, imageHint: 'palkova milk', sellerId: 'seller-3' },
+  { id: 'prod-34', name: 'Susiyam / Sooyan', description: 'Sweet lentil-filled balls, deep-fried to perfection (4 pcs).', price: 90, stock: 90, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-susiyam')!.imageUrl, imageHint: 'susiyam sweet', sellerId: 'seller-3' },
+  { id: 'prod-35', name: 'Jangiri', description: 'A flower-shaped sweet made from urad dal, soaked in sugar syrup (2 pcs).', price: 70, stock: 100, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-jangiri')!.imageUrl, imageHint: 'jangiri sweet', sellerId: 'seller-3' },
+  { id: 'prod-36', name: 'Rava Ladoo', description: 'Sweet balls made from roasted semolina (rava), sugar, and ghee (4 pcs).', price: 85, stock: 110, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rava-ladoo')!.imageUrl, imageHint: 'rava ladoo', sellerId: 'seller-3' },
+  { id: 'prod-37', name: 'Boondi Ladoo', description: 'Popular Indian sweet made from gram flour pearls (boondi) (4 pcs).', price: 90, stock: 130, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-boondi-ladoo')!.imageUrl, imageHint: 'boondi ladoo', sellerId: 'seller-3' },
+  { id: 'prod-38', name: 'Mysore Pak', description: 'A rich, buttery sweet made from gram flour, ghee, and sugar (200g).', price: 130, stock: 75, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mysore-pak')!.imageUrl, imageHint: 'mysore pak', sellerId: 'seller-3' },
+  { id: 'prod-39', name: 'Coconut Burfi', description: 'A classic sweet made with coconut, sugar, and milk (200g).', price: 110, stock: 95, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coconut-burfi')!.imageUrl, imageHint: 'coconut burfi', sellerId: 'seller-3' },
+  { id: 'prod-40', name: 'Maa Ladoo', description: 'A quick and easy sweet made from roasted gram dal flour (pottukadalai) (4 pcs).', price: 80, stock: 100, categoryId: 'sweet-snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-maa-ladoo')!.imageUrl, imageHint: 'maa ladoo', sellerId: 'seller-3' },
 ];
 
 
