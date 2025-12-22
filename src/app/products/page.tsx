@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import type { Category, Product } from '@/lib/types';
 import { MenuItem } from '@/components/MenuItem';
 
 export default function MenuPage() {
@@ -29,9 +28,9 @@ export default function MenuPage() {
       />
       <div className="container mx-auto px-4 py-12">
         {productsByCategory.map(category => (
-          <div key={category.id} className="mb-12">
+          <div key={category.id} id={category.id} className="mb-16 scroll-mt-20">
             <h2 className="font-headline text-4xl text-center text-primary mb-8">{category.name}</h2>
-            <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-10">
               {category.products.map(product => (
                 <MenuItem key={product.id} product={product} />
               ))}
