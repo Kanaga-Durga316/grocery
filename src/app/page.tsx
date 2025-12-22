@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles, Home as HomeIcon } from 'lucide-react';
+import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles, Home as HomeIcon, HeartPulse } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -22,6 +22,7 @@ const categoryIcons: { [key: string]: React.ElementType } = {
   'Meat & Seafood': Drumstick,
   'Beverages': GlassWater,
   'Household Essentials': HomeIcon,
+  'Personal Care & Wellness': HeartPulse,
 };
 
 export default function Home() {
@@ -101,7 +102,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
               Browse by Category
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
               {categories.map((category) => {
                 const Icon = categoryIcons[category.name] || Utensils;
                 return (

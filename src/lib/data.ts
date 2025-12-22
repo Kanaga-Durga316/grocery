@@ -12,6 +12,7 @@ const categories: Category[] = [
     { id: 'snacks', name: 'Snacks', description: 'Chips, sweets, and other snacks.' },
     { id: 'beverages', name: 'Beverages', description: 'Drinks and beverages.' },
     { id: 'household-essentials', name: 'Household Essentials', description: 'Cleaning supplies, pooja items, and more.' },
+    { id: 'personal-care-wellness', name: 'Personal Care & Wellness', description: 'Health and beauty products.' },
 ];
 
 const products: Product[] = [
@@ -1402,6 +1403,56 @@ const products: Product[] = [
         sellerId: 'seller-1',
         subCategory: 'Pest Control',
     },
+
+    // Personal Care & Wellness
+    {
+        id: 'prod-shampoo',
+        name: 'Clinic Plus Shampoo',
+        description: 'Strong & Long Health shampoo.',
+        price: 180,
+        stock: 100,
+        categoryId: 'personal-care-wellness',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-shampoo')!.imageUrl,
+        imageHint: 'shampoo bottle',
+        sellerId: 'seller-1',
+        subCategory: 'Hair Care',
+    },
+    {
+        id: 'prod-soap',
+        name: 'Dove Bathing Bar',
+        description: 'Cream beauty bathing bar with 1/4 moisturizing cream.',
+        price: 60,
+        stock: 200,
+        categoryId: 'personal-care-wellness',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-soap')!.imageUrl,
+        imageHint: 'soap bar',
+        sellerId: 'seller-1',
+        subCategory: 'Skin Care',
+    },
+    {
+        id: 'prod-toothpaste',
+        name: 'Colgate MaxFresh Toothpaste',
+        description: 'Red gel toothpaste with cooling crystals for fresh breath.',
+        price: 95,
+        stock: 150,
+        categoryId: 'personal-care-wellness',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toothpaste')!.imageUrl,
+        imageHint: 'toothpaste tube',
+        sellerId: 'seller-1',
+        subCategory: 'Oral Care',
+    },
+    {
+        id: 'prod-sanitizer',
+        name: 'Dettol Hand Sanitizer',
+        description: 'Kills 99.9% of germs without water.',
+        price: 50,
+        stock: 300,
+        categoryId: 'personal-care-wellness',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sanitizer')!.imageUrl,
+        imageHint: 'hand sanitizer',
+        sellerId: 'seller-1',
+        subCategory: 'Wellness',
+    },
 ];
 
 const users: User[] = [
@@ -1491,6 +1542,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 

@@ -783,7 +783,7 @@
     {
       "id": "prod-floor-cleaner",
       "description": "A bottle of floor cleaner liquid.",
-      "imageUrl": "https://images.unsplash.com/photo-1583947454893-272a8604313b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmbG9vciUyMGNsZWFuZXIlMjBib3R0bGV8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583947454893-272a8604313b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmbG9vciUyMGNsZWFuZXIlMjBib3R0bGV8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "floor cleaner bottle"
     },
     {
@@ -795,20 +795,44 @@
     {
       "id": "prod-dishwash-bar",
       "description": "A green dishwash bar.",
-      "imageUrl": "https://images.unsplash.com/photo-1627894017369-1383c3116a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkaXNod2FzaCUyMGJhcnxlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627894017369-1383c3116a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkaXNod2FzaCUyMGJhcnxlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "dishwash bar"
     },
     {
       "id": "prod-aluminum-foil",
       "description": "A roll of aluminum foil.",
-      "imageUrl": "https://images.unsplash.com/photo-1598971427892-2591637b8027?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbHVtaW51bSUyMGZvaWx8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598971427892-2591637b8027?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbHVtaW51bSUyMGZvaWx8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "aluminum foil"
     },
     {
       "id": "prod-garbage-bags",
       "description": "A roll of black garbage bags.",
-      "imageUrl": "https://images.unsplash.com/photo-1596706037637-2513a88e6a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxnYXJiYWdlJTIwYmFnc3xlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1596706037637-2513a88e6a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxnYXJiYWdlJTIwYmFnc3xlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "garbage bags"
+    },
+    {
+      "id": "prod-shampoo",
+      "description": "A bottle of shampoo against a clean background.",
+      "imageUrl": "https://images.unsplash.com/photo-1585779034823-7e9ac8faec70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwcm9kdWN0JTIwc2hhbXBvb3xlbnwwfHx8fDE3Njk0MjAxNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shampoo bottle"
+    },
+    {
+      "id": "prod-soap",
+      "description": "A clean bar of white soap.",
+      "imageUrl": "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYXIlMjBzb2FwfGVufDB8fHx8MTc2OTQyMDE2Nnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "soap bar"
+    },
+    {
+      "id": "prod-toothpaste",
+      "description": "A tube of toothpaste with a toothbrush.",
+      "imageUrl": "https://images.unsplash.com/photo-1559943564-b371b6d119fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0b290aHBhc3RlJTIwdHViZXxlbnwwfHx8fDE3Njk0MjAxNjZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "toothpaste tube"
+    },
+    {
+      "id": "prod-sanitizer",
+      "description": "A bottle of hand sanitizer gel.",
+      "imageUrl": "https://images.unsplash.com/photo-1584308528994-3c6c03a55b00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxoYW5kJTIwc2FuaXRpemVyfGVufDB8fHx8MTc2OTQyMDE2Nnww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "hand sanitizer"
     },
     {
       "id": "page-header-products",
