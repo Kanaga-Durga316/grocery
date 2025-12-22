@@ -1,3 +1,5 @@
+"use client";
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -51,7 +53,6 @@ function ProductReviews({ reviews }: { reviews: ReturnType<typeof getReviewsForP
 }
 
 function AddToCartSection({ product }: { product: NonNullable<ReturnType<typeof getProductById>> }) {
-  "use client";
   const [quantity, setQuantity] = useState(1);
   return (
     <div className="flex flex-col sm:flex-row sm:items-center gap-4">
