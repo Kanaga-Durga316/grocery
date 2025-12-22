@@ -14,8 +14,7 @@ const users: User[] = [
 
 const categories: Category[] = [
   { id: 'fresh-produce', name: 'Fresh Produce', description: 'The freshest fruits and vegetables, sourced locally and organically.' },
-  { id: 'dairy', name: 'Dairy', description: 'Fresh milk, cheese, and other dairy products.' },
-  { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
+  { id: 'dairy-bakery', name: 'Dairy & Bakery', description: 'Fresh milk, cheese, bread, and other dairy and bakery products.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
   { id: 'staples-pantry', name: 'Staples & Pantry', description: 'Essential cooking ingredients, spices, and pantry items.' },
@@ -28,16 +27,14 @@ const products: Product[] = [
   { id: 'prod-3', name: 'Fresh Broccoli', description: 'Fresh, green broccoli crowns, rich in vitamins (500g).', price: 65, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-broccoli')!.imageUrl, imageHint: 'fresh broccoli', sellerId: 'seller-1' },
   { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots (1kg).', price: 55, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots', sellerId: 'seller-1' },
 
-  // Dairy & Eggs - Seller 1
-  { id: 'prod-5', name: 'Organic Milk', description: '1L packet of fresh, whole organic milk.', price: 60, stock: 80, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
-  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating (200g).', price: 200, stock: 60, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese', sellerId: 'seller-1' },
-  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt (400g).', price: 150, stock: 90, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1' },
-  
-  // Bakery - Seller 2
-  { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 180, stock: 50, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread', sellerId: 'seller-2' },
-  { id: 'prod-10', name: 'Butter Croissants', description: 'Pack of 4 flaky, all-butter croissants.', price: 220, stock: 40, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-croissant')!.imageUrl, imageHint: 'butter croissants', sellerId: 'seller-2' },
-  { id: 'prod-11', name: 'Chocolate Cake', description: 'Rich, decadent chocolate fudge cake slice.', price: 120, stock: 30, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake', sellerId: 'seller-2' },
-  { id: 'prod-12', name: 'Blueberry Muffins', description: 'Pack of 4 soft muffins bursting with blueberries.', price: 200, stock: 45, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-muffin')!.imageUrl, imageHint: 'blueberry muffin', sellerId: 'seller-2' },
+  // Dairy & Bakery - Seller 1 & 2
+  { id: 'prod-5', name: 'Organic Milk', description: '1L packet of fresh, whole organic milk.', price: 60, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
+  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating (200g).', price: 200, stock: 60, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese', sellerId: 'seller-1' },
+  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt (400g).', price: 150, stock: 90, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1' },
+  { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 180, stock: 50, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread', sellerId: 'seller-2' },
+  { id: 'prod-10', name: 'Butter Croissants', description: 'Pack of 4 flaky, all-butter croissants.', price: 220, stock: 40, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-croissant')!.imageUrl, imageHint: 'butter croissants', sellerId: 'seller-2' },
+  { id: 'prod-11', name: 'Chocolate Cake', description: 'Rich, decadent chocolate fudge cake slice.', price: 120, stock: 30, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake', sellerId: 'seller-2' },
+  { id: 'prod-12', name: 'Blueberry Muffins', description: 'Pack of 4 soft muffins bursting with blueberries.', price: 200, stock: 45, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-muffin')!.imageUrl, imageHint: 'blueberry muffin', sellerId: 'seller-2' },
 
   // Prepared Foods - Seller 1 & 2
   { id: 'prod-13', name: 'Beef Lasagna', description: 'Family-size beef lasagna, ready to heat and eat.', price: 500, stock: 20, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lasagna')!.imageUrl, imageHint: 'beef lasagna', sellerId: 'seller-1' },
