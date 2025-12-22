@@ -406,6 +406,19 @@ const products: Product[] = [
         subCategory: 'Fresh Bakery',
         bestBefore: '3 days',
     },
+     {
+        id: 'prod-chapati',
+        name: 'Ready-made Chapati',
+        description: 'Soft, ready-to-heat whole wheat chapatis.',
+        price: 80,
+        stock: 100,
+        categoryId: 'dairy-bakery',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chapati')!.imageUrl,
+        imageHint: 'chapati stack',
+        sellerId: 'seller-2',
+        subCategory: 'Fresh Bakery',
+        bestBefore: '5 days',
+    },
     {
         id: 'prod-rusk',
         name: 'Tea Rusk',
@@ -832,6 +845,10 @@ const products: Product[] = [
         imageHint: 'paneer butter masala',
         sellerId: 'seller-3',
         subCategory: 'Instant Heat & Eat',
+        serves: '1-2 people',
+        cookingMethods: ['Microwave', 'Pan Fry'],
+        tags: ['No Preservatives'],
+        pairingIds: ['prod-chapati', 'prod-basmati-rice']
     },
     {
         id: 'prod-sambar-rice-rte',
@@ -844,6 +861,8 @@ const products: Product[] = [
         imageHint: 'sambar rice',
         sellerId: 'seller-3',
         subCategory: 'Instant Heat & Eat',
+        serves: '1 person',
+        cookingMethods: ['Microwave'],
     },
     {
         id: 'prod-veg-biryani-rte',
@@ -856,6 +875,8 @@ const products: Product[] = [
         imageHint: 'vegetable biryani',
         sellerId: 'seller-3',
         subCategory: 'Instant Heat & Eat',
+        serves: '1-2 people',
+        cookingMethods: ['Microwave'],
     },
     {
         id: 'prod-idli-dosa-batter',
@@ -868,6 +889,8 @@ const products: Product[] = [
         imageHint: 'dosa batter',
         sellerId: 'seller-3',
         subCategory: 'Batter & Mixes',
+        serves: 'Family Pack',
+        tags: ['No Preservatives'],
     },
     {
         id: 'prod-gulab-jamun-mix',
@@ -892,6 +915,21 @@ const products: Product[] = [
         imageHint: 'vegetable cutlet',
         sellerId: 'seller-2',
         subCategory: 'Frozen Snacks & Appetizers',
+        cookingMethods: ['Deep Fry', 'Air Fryer'],
+        serves: 'Approx. 10 pieces',
+    },
+     {
+        id: 'prod-fish-fingers-frozen',
+        name: 'Fish Fingers (Frozen)',
+        description: 'Crispy breaded fish fingers, a perfect snack.',
+        price: 220,
+        stock: 40,
+        categoryId: 'prepared-foods',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-fish-fingers')!.imageUrl,
+        imageHint: 'fish fingers',
+        sellerId: 'seller-2',
+        subCategory: 'Frozen Snacks & Appetizers',
+        cookingMethods: ['Deep Fry', 'Air Fryer'],
     },
     {
         id: 'prod-french-fries-frozen',
@@ -904,6 +942,7 @@ const products: Product[] = [
         imageHint: 'french fries',
         sellerId: 'seller-2',
         subCategory: 'Frozen Snacks & Appetizers',
+        cookingMethods: ['Deep Fry', 'Air Fryer'],
     },
     {
         id: 'prod-gobi-manchurian-rtc',
@@ -916,6 +955,8 @@ const products: Product[] = [
         imageHint: 'gobi manchurian',
         sellerId: 'seller-3',
         subCategory: 'Gourmet Ready-to-Cook',
+        cookingMethods: ['Pan Fry'],
+        serves: '2 people',
     },
     {
         id: 'prod-paneer-tikka-rtc',
@@ -928,6 +969,10 @@ const products: Product[] = [
         imageHint: 'paneer tikka',
         sellerId: 'seller-3',
         subCategory: 'Gourmet Ready-to-Cook',
+        cookingMethods: ['Grill', 'Pan Fry'],
+        serves: '2-3 people',
+        tags: ['High Protein'],
+        pairingIds: ['prod-mint-chutney']
     },
     {
         id: 'prod-mini-tiffin-deli',
@@ -940,6 +985,8 @@ const products: Product[] = [
         imageHint: 'tiffin combo',
         sellerId: 'seller-3',
         subCategory: 'Deli & Freshly Prepared',
+        serves: '1 person',
+        tags: ['No Preservatives']
     },
     {
         id: 'prod-curd-rice-deli',
@@ -950,6 +997,19 @@ const products: Product[] = [
         categoryId: 'prepared-foods',
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-curd-rice-deli')!.imageUrl,
         imageHint: 'curd rice',
+        sellerId: 'seller-3',
+        subCategory: 'Deli & Freshly Prepared',
+        serves: '1 person',
+    },
+    {
+        id: 'prod-mint-chutney',
+        name: 'Mint Chutney',
+        description: 'Fresh and tangy mint chutney, perfect with snacks.',
+        price: 40,
+        stock: 80,
+        categoryId: 'prepared-foods',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mint-chutney')!.imageUrl,
+        imageHint: 'mint chutney',
         sellerId: 'seller-3',
         subCategory: 'Deli & Freshly Prepared',
     },

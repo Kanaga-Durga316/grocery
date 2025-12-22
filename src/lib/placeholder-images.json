@@ -283,6 +283,12 @@
       "imageHint": "sandwich bread"
     },
     {
+      "id": "prod-chapati",
+      "description": "A stack of soft chapatis.",
+      "imageUrl": "https://images.unsplash.com/photo-1626081035532-a5ea699c2794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGFwYXRpJTIwc3RhY2t8ZW58MHx8fHwxNzY4NTAyMTcxfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chapati stack"
+    },
+    {
       "id": "prod-croissant",
       "description": "Flaky butter croissants.",
       "imageUrl": "https://images.unsplash.com/photo-1727230596548-c10c96841917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXIlMjBjcm9pc3NhbnRzfGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib.rb-4.1.0&q=80&w=1080",
@@ -359,6 +365,18 @@
       "description": "A plate of golden-brown vegetable cutlets.",
       "imageUrl": "https://images.unsplash.com/photo-1594220368145-c4ba5458a23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBjdXRsZXR8ZW58MHx8fHwxNzY2ODYzMDI0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "vegetable cutlet"
+    },
+    {
+      "id": "prod-fish-fingers",
+      "description": "A plate of crispy fish fingers.",
+      "imageUrl": "https://images.unsplash.com/photo-1625944026337-3a104085c8f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmaXNoJTIwZmluZ2Vyc3xlbnwwfHx8fDE3NjkwNzY4ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish fingers"
+    },
+    {
+      "id": "prod-mint-chutney",
+      "description": "A bowl of fresh mint chutney.",
+      "imageUrl": "https://images.unsplash.com/photo-1629547123985-6453504a761e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaW50JTIwY2h1dG5leXxlbnwwfHx8fDE3NjkwODIxNTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "mint chutney"
     },
     {
       "id": "prod-french-fries-frozen",

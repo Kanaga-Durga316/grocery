@@ -32,7 +32,10 @@ export interface Product {
   bestBefore?: string;
   variants?: ProductVariant[];
   cleaningOptions?: CleaningOption[];
-  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch')[];
+  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch' | 'No Preservatives' | 'Low Sodium')[];
+  cookingMethods?: ('Microwave' | 'Pan Fry' | 'Air Fryer' | 'Deep Fry' | 'Grill')[];
+  serves?: string;
+  pairingIds?: string[];
 }
 
 export interface Review {
