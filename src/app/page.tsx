@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, Carrot, CakeSlice, Wheat } from 'lucide-react';
+import { ArrowRight, Utensils, Carrot, CakeSlice, Wheat, Drumstick } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -14,6 +14,8 @@ const categoryIcons: { [key: string]: React.ElementType } = {
   'Dairy & Bakery': CakeSlice,
   'Prepared Foods': Utensils,
   'Staples & Pantry': Wheat,
+  'Snacks': Utensils,
+  'Meat & Seafood': Drumstick,
 };
 
 export default function Home() {

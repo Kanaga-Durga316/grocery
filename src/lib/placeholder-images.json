@@ -31,6 +31,24 @@
       "imageHint": "organic carrots"
     },
     {
+      "id": "prod-chicken",
+      "description": "Raw chicken breasts on a board.",
+      "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwYnJlYXN0fGVufDB8fHx8MTc2NjU1NjQ1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken breast"
+    },
+    {
+      "id": "prod-salmon",
+      "description": "A fresh salmon fillet.",
+      "imageUrl": "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYWxtb24lMjBmaWxsZXR8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "salmon fillet"
+    },
+    {
+      "id": "prod-mutton",
+      "description": "Raw mutton pieces ready for cooking.",
+      "imageUrl": "https://images.unsplash.com/photo-1675239512140-529e843f542e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXR0b24lMjBwaWVjZXN8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mutton pieces"
+    },
+    {
       "id": "prod-milk",
       "description": "A carton of fresh milk.",
       "imageUrl": "https://images.unsplash.com/photo-1734104739790-855195038d93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaWxrJTIwY2FydG9ufGVufDB8fHx8MTc2NjM1NzU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -51,8 +69,8 @@
     {
       "id": "prod-eggs",
       "description": "A carton of free-range eggs.",
-      "imageUrl": "https://images.unsplash.com/photo-1635165250545-277ed55a6349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWdncyUyMGNhcnRvbnxlbnwwfHx8fDE3NjYzMjU2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "eggs carton"
+      "imageUrl": "https://images.unsplash.com/photo-1635165250545-277ed55a6349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FydG9uJTIwZWdnc3xlbnwwfHx8fDE3NjYzMjU2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "carton eggs"
     },
     {
       "id": "prod-bread",
@@ -123,7 +141,7 @@
     {
       "id": "prod-pongal",
       "description": "A delicious bowl of Ven Pongal.",
-      "imageUrl": "https://i.ibb.co/vYv29g5/photo.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZW4lMjBwb25nYWx8ZW58MHx8fHwxNzY2NTQ4NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ven pongal"
     },
     {

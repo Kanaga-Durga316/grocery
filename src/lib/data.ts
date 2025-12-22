@@ -14,6 +14,7 @@ const users: User[] = [
 
 const categories: Category[] = [
   { id: 'fresh-produce', name: 'Fresh Produce', description: 'The freshest fruits and vegetables, sourced locally and organically.' },
+  { id: 'meat-seafood', name: 'Meat & Seafood', description: 'Fresh, high-quality meat and seafood products.' },
   { id: 'dairy-bakery', name: 'Dairy & Bakery', description: 'Fresh milk, cheese, bread, and other dairy and bakery products.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
@@ -26,6 +27,12 @@ const products: Product[] = [
   { id: 'prod-2', name: 'Ripe Bananas', description: 'A bunch of perfectly ripe organic bananas (Doz).', price: 50, stock: 200, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana')!.imageUrl, imageHint: 'ripe bananas', sellerId: 'seller-1' },
   { id: 'prod-3', name: 'Fresh Broccoli', description: 'Fresh, green broccoli crowns, rich in vitamins (500g).', price: 65, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-broccoli')!.imageUrl, imageHint: 'fresh broccoli', sellerId: 'seller-1' },
   { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots (1kg).', price: 55, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots', sellerId: 'seller-1' },
+
+  // Meat & Seafood - Seller 1
+  { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1' },
+  { id: 'prod-47', name: 'Fresh Salmon Fillet', description: 'Rich and flavorful Atlantic salmon fillet, high in omega-3s (250g).', price: 500, stock: 40, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salmon')!.imageUrl, imageHint: 'salmon fillet', sellerId: 'seller-1' },
+  { id: 'prod-48', name: 'Mutton Curry Cut', description: 'Tender, bone-in mutton pieces perfect for rich curries (500g).', price: 400, stock: 50, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton')!.imageUrl, imageHint: 'mutton pieces', sellerId: 'seller-1' },
+  { id: 'prod-8', name: 'Free-Range Eggs', description: 'A dozen fresh, free-range brown eggs.', price: 90, stock: 100, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1' },
 
   // Dairy & Bakery - Seller 1 & 2
   { id: 'prod-5', name: 'Organic Milk', description: '1L packet of fresh, whole organic milk.', price: 60, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
