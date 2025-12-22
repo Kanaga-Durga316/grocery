@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/hooks/use-cart";
 import { useAuth } from "@/hooks/use-auth";
 import {
-  Menu,
+  Menu as MenuIcon,
   Search,
   ShoppingCart,
   User as UserIcon,
@@ -29,11 +29,12 @@ import {
   LogIn,
   LogOut,
   LayoutDashboard,
+  BookMarked,
 } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/products", label: "Products", icon: ShoppingBasket },
+  { href: "/products", label: "Menu", icon: BookMarked },
 ];
 
 export function Header() {
@@ -153,7 +154,7 @@ export function Header() {
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-6 w-6" />
+                <MenuIcon className="h-6 w-6" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
