@@ -55,7 +55,7 @@ export default function MenuPage() {
               <div className="space-y-12">
                 {category.structuredProducts.map(subCat => (
                   <div key={subCat.name}>
-                    <h3 className="font-headline text-2xl text-foreground mb-6 border-b border-border pb-2">{subCat.name}</h3>
+                    <h3 className="font-headline text-2xl text-accent font-bold mb-6 border-b border-border pb-2">{subCat.name}</h3>
                     <div className="grid md:grid-cols-2 gap-x-8 gap-y-10">
                       {subCat.products.map(product => (
                         <MenuItem key={product.id} product={product} />
