@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, Carrot, CakeSlice, Wheat, Drumstick } from 'lucide-react';
+import { ArrowRight, Utensils, Carrot, CakeSlice, Wheat, Drumstick, GlassWater } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -16,6 +16,7 @@ const categoryIcons: { [key: string]: React.ElementType } = {
   'Staples & Pantry': Wheat,
   'Snacks': Utensils,
   'Meat & Seafood': Drumstick,
+  'Beverages': GlassWater,
 };
 
 export default function Home() {
@@ -59,7 +60,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
               Browse by Category
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8">
               {categories.map((category) => {
                 const Icon = categoryIcons[category.name] || Utensils;
                 return (

@@ -295,6 +295,42 @@
       "imageHint": "dry fruits"
     },
     {
+      "id": "prod-tea",
+      "description": "A box of black tea.",
+      "imageUrl": "https://images.unsplash.com/photo-1594901248332-99a12a8a8138?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWElMjBib3h8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tea box"
+    },
+    {
+      "id": "prod-coffee",
+      "description": "A jar of instant coffee.",
+      "imageUrl": "https://images.unsplash.com/photo-1589923412933-2a07c3315a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqYXIlMjBjb2ZmZWV8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coffee jar"
+    },
+    {
+      "id": "prod-coke",
+      "description": "A can of Coca-Cola.",
+      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2tlJTIwY2FufGVufDB8fHx8MTc2NjU4MTA1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coke can"
+    },
+    {
+      "id": "prod-juice",
+      "description": "A carton of orange juice.",
+      "imageUrl": "https://images.unsplash.com/photo-1618843444212-706a997a0c1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqdWljZSUyMGNhcnRvbnxlbnwwfHx8fDE3NjY1ODEwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "juice carton"
+    },
+    {
+      "id": "prod-bournvita",
+      "description": "A jar of Bournvita health drink.",
+      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3VybnZpdGElMjBqYXJ8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bournvita jar"
+    },
+    {
+      "id": "prod-redbull",
+      "description": "A can of Red Bull energy drink.",
+      "imageUrl": "https://images.unsplash.com/photo-1617052251325-72a3937100b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBidWxsfGVufDB8fHx8MTc2NjU4MTA1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red bull"
+    },
+    {
       "id": "page-header-products",
       "description": "Overhead view of a variety of fresh produce on a market stall.",
       "imageUrl": "https://images.unsplash.com/photo-1705929192183-847aef14ba29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWNlJTIwbWFya2V0fGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",

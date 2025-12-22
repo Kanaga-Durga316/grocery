@@ -19,6 +19,7 @@ const categories: Category[] = [
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
   { id: 'staples-pantry', name: 'Staples & Pantry', description: 'Essential cooking ingredients, spices, and pantry items.' },
+  { id: 'beverages', name: 'Beverages', description: 'Quench your thirst with our wide selection of drinks.' },
 ];
 
 const products: Product[] = [
@@ -83,6 +84,15 @@ const products: Product[] = [
   { id: 'prod-43', name: 'Groundnut Oil', description: 'Cold-pressed groundnut oil, ideal for all types of cooking (1L).', price: 220, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oil')!.imageUrl, imageHint: 'cooking oil', sellerId: 'seller-1' },
   { id: 'prod-44', name: 'Assorted Masalas', description: 'A combo pack of essential Indian spices including turmeric, chili, and coriander powder (100g each).', price: 180, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-spices')!.imageUrl, imageHint: 'indian spices', sellerId: 'seller-1' },
   { id: 'prod-45', name: 'Mixed Dry Fruits', description: 'A healthy mix of almonds, cashews, raisins, and walnuts (250g).', price: 350, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dry-fruits')!.imageUrl, imageHint: 'dry fruits', sellerId: 'seller-1' },
+
+  // Beverages - Seller 1, Seller 2
+  { id: 'prod-49', name: 'Tata Tea Gold', description: 'A perfect blend of Assam CTC and long leaves for a rich taste (500g).', price: 250, stock: 100, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-tea')!.imageUrl, imageHint: 'tea box', sellerId: 'seller-1' },
+  { id: 'prod-50', name: 'Bru Instant Coffee', description: 'Rich aromatic instant coffee for a quick start to your day (200g).', price: 300, stock: 80, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coffee')!.imageUrl, imageHint: 'coffee jar', sellerId: 'seller-1' },
+  { id: 'prod-51', name: 'Coca-Cola Can', description: 'The classic refreshing Coca-Cola soft drink (330ml Can).', price: 40, stock: 200, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke')!.imageUrl, imageHint: 'coke can', sellerId: 'seller-2' },
+  { id: 'prod-52', name: 'Tropicana Orange Juice', description: '100% pure pressed orange juice, not from concentrate (1L).', price: 140, stock: 120, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-juice')!.imageUrl, imageHint: 'juice carton', sellerId: 'seller-2' },
+  { id: 'prod-53', name: 'Bournvita Health Drink', description: 'Chocolate health drink that provides essential nutrients (500g Jar).', price: 230, stock: 90, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bournvita')!.imageUrl, imageHint: 'bournvita jar', sellerId: 'seller-1' },
+  { id: 'prod-54', name: 'Red Bull Energy Drink', description: 'The classic energy drink to give you wings (250ml Can).', price: 125, stock: 150, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-redbull')!.imageUrl, imageHint: 'red bull', sellerId: 'seller-2' },
+
 ];
 
 
