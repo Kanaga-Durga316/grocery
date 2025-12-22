@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Link from 'next/link';
@@ -11,7 +12,7 @@ import { useState, useMemo } from 'react';
 import { QuantitySelector } from './QuantitySelector';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Calendar, Repeat, ShoppingBag, TrendingUp, Snowflake, Users, CookingPot, Microwave, Flame, Zap, Link2 } from 'lucide-react';
+import { Calendar, Repeat, ShoppingBag, TrendingUp, Snowflake, Users, CookingPot, Microwave, Flame, Zap, Link2, Archive } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -74,6 +75,10 @@ export function MenuItem({ product }: MenuItemProps) {
     const hasStockUpBadge = useMemo(() => {
       return product.variants?.some(v => v.weight.includes('kg') && parseInt(v.weight, 10) >= 5);
     }, [product.variants]);
+    
+    const isBulkBuy = useMemo(() => {
+      return selectedVariant?.weight.includes('L') && parseInt(selectedVariant.weight, 10) >= 20;
+    }, [selectedVariant]);
 
     const pairingProducts = useMemo(() => {
         return (product.pairingIds || []).map(id => getProductById(id)).filter(Boolean) as Product[];
@@ -104,6 +109,12 @@ export function MenuItem({ product }: MenuItemProps) {
                           Stock Up
                         </Badge>
                       )}
+                      {isBulkBuy && (
+                         <Badge variant="secondary" className="ml-2 bg-orange-100 text-orange-800 border-orange-200">
+                           <Archive className="mr-1.5 h-4 w-4" />
+                           Bulk Buy
+                         </Badge>
+                      )}
                       {currentStock > 0 && currentStock <= 10 && (
                         <Badge variant="destructive" className="ml-2">
                           Only {currentStock} left
@@ -126,6 +137,12 @@ export function MenuItem({ product }: MenuItemProps) {
                          Chilled Delivery
                        </Badge>
                     )}
+                     {product.tags?.includes('Chilled Delivery') && product.categoryId !== 'meat-seafood' && (
+                       <Badge variant="outline" className="border-sky-300 text-sky-700 bg-sky-50">
+                         <Snowflake className="mr-1.5 h-3.5 w-3.5" />
+                         Chilled Delivery
+                       </Badge>
+                    )}
                     {product.serves && (
                         <div className="flex items-center gap-1.5">
                             <Users className="h-3.5 w-3.5" />
@@ -141,8 +158,8 @@ export function MenuItem({ product }: MenuItemProps) {
 
                 {product.tags && product.tags.length > 0 && (
                   <div className="flex flex-wrap items-center gap-2 mt-2">
-                    {product.tags.map(tag => (
-                      <Badge key={tag} variant="outline" className="text-xs">
+                    {product.tags.filter(tag => tag !== 'Chilled Delivery').map(tag => (
+                      <Badge key={tag} variant="outline" className={`text-xs ${tag === 'Diet/Zero' ? 'border-fuchsia-300 text-fuchsia-700 bg-fuchsia-50' : ''}`}>
                         {tag}
                       </Badge>
                     ))}

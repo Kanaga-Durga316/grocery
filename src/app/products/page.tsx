@@ -4,6 +4,7 @@
 
 
 
+
 "use client";
 
 import { useMemo, useState, useEffect } from 'react';
@@ -22,6 +23,7 @@ export default function MenuPage() {
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
   const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
   const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
+  const [beverageFilter, setBeverageFilter] = useState<'all' | 'diet-zero'>('all');
   const [isSunday, setIsSunday] = useState(false);
 
   useEffect(() => {
@@ -67,6 +69,12 @@ export default function MenuPage() {
         if (category.id === 'staples-pantry') {
           if (pantryBenefitFilter !== 'all') {
             productsToStructure = productsToStructure.filter(p => p.tags?.includes(pantryBenefitFilter));
+          }
+        }
+
+        if (category.id === 'beverages') {
+          if (beverageFilter === 'diet-zero') {
+            productsToStructure = productsToStructure.filter(p => p.tags?.includes('Diet/Zero'));
           }
         }
 
@@ -120,7 +128,7 @@ export default function MenuPage() {
       };
 
     }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
-  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter, isSunday]);
+  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter, beverageFilter, isSunday]);
 
   return (
     <>
@@ -170,6 +178,15 @@ export default function MenuPage() {
                 <Button variant={pantryBenefitFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('all')}>All</Button>
                 <Button variant={pantryBenefitFilter === 'High Protein' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('High Protein')}>High Protein</Button>
                 <Button variant={pantryBenefitFilter === 'Low GI' ? 'secondary' : 'outline'} size="sm" onClick={() => setPantryBenefitFilter('Low GI')}>Low GI</Button>
+              </div>
+            )}
+
+            {category.id === 'beverages' && (
+              <div className="flex justify-center items-center gap-2 mb-8">
+                <Filter className="h-5 w-5 text-muted-foreground" />
+                <span className="text-sm font-medium text-muted-foreground">Quick Filters:</span>
+                <Button variant={beverageFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setBeverageFilter('all')}>All</Button>
+                <Button variant={beverageFilter === 'diet-zero' ? 'secondary' : 'outline'} size="sm" onClick={() => setBeverageFilter('diet-zero')}>Diet/Zero Sugar</Button>
               </div>
             )}
             
