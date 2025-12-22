@@ -56,6 +56,8 @@ const products: Product[] = [
   { id: 'prod-71', name: 'Chopped Sambhar Mix', description: 'A ready mix of chopped vegetables for sambhar (250g).', price: 60, stock: 90, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sambhar-mix')!.imageUrl, imageHint: 'chopped vegetables', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
   { id: 'prod-72', name: 'Sprouted Moong Dal', description: 'Healthy and nutritious sprouted moong dal (200g).', price: 45, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sprouted-moong')!.imageUrl, imageHint: 'sprouted moong', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
   { id: 'prod-73', name: 'Grated Coconut', description: 'Freshly grated coconut for cooking and garnishing (1 cup).', price: 50, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-grated-coconut')!.imageUrl, imageHint: 'grated coconut', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
+  { id: 'prod-74', name: 'Weekly Veggie Combo', description: 'A curated combo of Onion (1kg), Potato (1kg), and Tomato (1kg).', price: 99, stock: 50, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-veggie-combo')!.imageUrl, imageHint: 'vegetable combo', sellerId: 'seller-1', subCategory: 'Combos' },
+
 
   // Meat & Seafood - Seller 1
   { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1' },
