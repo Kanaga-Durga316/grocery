@@ -1,4 +1,5 @@
 
+
 import type { Product, Category, User, Review, Order } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -693,7 +694,7 @@ const products: Product[] = [
         imageHint: 'chicken curry cut',
         sellerId: 'seller-1',
         subCategory: 'Chicken (Kozhi)',
-        tags: ['Halaal', 'Antibiotic-free'],
+        tags: ['Halaal', 'Antibiotic-free', 'Chilled Delivery'],
     },
     {
         id: 'prod-chicken-boneless',
@@ -706,7 +707,7 @@ const products: Product[] = [
         imageHint: 'boneless chicken',
         sellerId: 'seller-1',
         subCategory: 'Chicken (Kozhi)',
-        tags: ['Halaal'],
+        tags: ['Halaal', 'Chilled Delivery'],
     },
     {
         id: 'prod-country-chicken',
@@ -719,6 +720,7 @@ const products: Product[] = [
         imageHint: 'country chicken',
         sellerId: 'seller-1',
         subCategory: 'Chicken (Kozhi)',
+        tags: ['Chilled Delivery']
     },
     {
         id: 'prod-mutton-curry-cut',
@@ -731,7 +733,7 @@ const products: Product[] = [
         imageHint: 'mutton curry cut',
         sellerId: 'seller-1',
         subCategory: 'Mutton & Lamb (Aattu Iraichi)',
-        tags: ['Halaal'],
+        tags: ['Halaal', 'Chilled Delivery'],
     },
     {
         id: 'prod-mutton-keema',
@@ -744,6 +746,7 @@ const products: Product[] = [
         imageHint: 'mutton mince',
         sellerId: 'seller-1',
         subCategory: 'Mutton & Lamb (Aattu Iraichi)',
+        tags: ['Chilled Delivery']
     },
     {
         id: 'prod-seer-fish',
@@ -756,7 +759,7 @@ const products: Product[] = [
         imageHint: 'seer fish',
         sellerId: 'seller-1',
         subCategory: 'Fresh Seafood (Meen Vagaigal)',
-        tags: ['Fresh Catch'],
+        tags: ['Fresh Catch', 'Chilled Delivery'],
         cleaningOptions: [
             { id: 'seer-whole', type: 'Whole' },
             { id: 'seer-slices', type: 'Slices', priceModifier: 50 },
@@ -773,7 +776,7 @@ const products: Product[] = [
         imageHint: 'cleaned prawns',
         sellerId: 'seller-1',
         subCategory: 'Fresh Seafood (Meen Vagaigal)',
-        tags: ['Fresh Catch'],
+        tags: ['Fresh Catch', 'Chilled Delivery'],
         cleaningOptions: [
             { id: 'prawns-whole', type: 'Whole' },
             { id: 'prawns-cleaned', type: 'Cleaned & Gutted', priceModifier: 80 },
@@ -790,7 +793,7 @@ const products: Product[] = [
         imageHint: 'salmon fillet',
         sellerId: 'seller-1',
         subCategory: 'Fresh Seafood (Meen Vagaigal)',
-        tags: ['Fresh Catch'],
+        tags: ['Fresh Catch', 'Chilled Delivery'],
         cleaningOptions: [
             { id: 'salmon-whole', type: 'Whole' },
             { id: 'salmon-skin-off', type: 'Skin-off', priceModifier: 100 },
@@ -807,6 +810,7 @@ const products: Product[] = [
         imageHint: 'chicken sausages',
         sellerId: 'seller-2',
         subCategory: 'Cold Cuts & Ready-to-Cook',
+        tags: ['Chilled Delivery']
     },
     {
         id: 'prod-chicken-nuggets',
@@ -819,6 +823,7 @@ const products: Product[] = [
         imageHint: 'chicken nuggets',
         sellerId: 'seller-2',
         subCategory: 'Cold Cuts & Ready-to-Cook',
+        tags: ['Chilled Delivery']
     },
     {
         id: 'prod-quail-eggs',
@@ -831,6 +836,7 @@ const products: Product[] = [
         imageHint: 'quail eggs',
         sellerId: 'seller-1',
         subCategory: 'Eggs',
+        tags: ['Chilled Delivery']
     },
     
     // Prepared Foods
@@ -847,7 +853,7 @@ const products: Product[] = [
         subCategory: 'Instant Heat & Eat',
         serves: '1-2 people',
         cookingMethods: ['Microwave', 'Pan Fry'],
-        tags: ['No Preservatives'],
+        tags: ['No Preservatives', 'High Protein'],
         pairingIds: ['prod-chapati', 'prod-basmati-rice']
     },
     {
@@ -1017,15 +1023,15 @@ const products: Product[] = [
     // Snacks
     {
         id: 'prod-murukku',
-        name: 'Murukku',
-        description: 'Classic crunchy spiral snack made from rice flour.',
+        name: 'Butter Murukku',
+        description: 'Classic crunchy spiral snack made from rice flour and butter.',
         price: 80,
         stock: 100,
         categoryId: 'snacks',
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-murukku')!.imageUrl,
         imageHint: 'murukku snack',
         sellerId: 'seller-3',
-        subCategory: 'Savory Snacks',
+        subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
     },
     {
         id: 'prod-thattai',
@@ -1037,7 +1043,7 @@ const products: Product[] = [
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-thattai')!.imageUrl,
         imageHint: 'thattai snack',
         sellerId: 'seller-3',
-        subCategory: 'Savory Snacks',
+        subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
     },
     {
         id: 'prod-mixture',
@@ -1049,7 +1055,7 @@ const products: Product[] = [
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mixture')!.imageUrl,
         imageHint: 'mixture snack',
         sellerId: 'seller-3',
-        subCategory: 'Savory Snacks',
+        subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
     },
     {
         id: 'prod-ribbon-pakoda',
@@ -1061,19 +1067,67 @@ const products: Product[] = [
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-ribbon-pakoda')!.imageUrl,
         imageHint: 'ribbon pakoda',
         sellerId: 'seller-3',
-        subCategory: 'Savory Snacks',
+        subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
+    },
+    {
+        id: 'prod-banana-chips',
+        name: 'Nagercoil Banana Chips',
+        description: 'Spicy and salty banana chips from Nagercoil.',
+        price: 90,
+        stock: 120,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana-chips')!.imageUrl,
+        imageHint: 'banana chips',
+        sellerId: 'seller-3',
+        subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
+    },
+     {
+        id: 'prod-oreo',
+        name: 'Oreo Biscuits',
+        description: 'The classic chocolate sandwich cookie.',
+        price: 30,
+        stock: 200,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oreo')!.imageUrl,
+        imageHint: 'oreo biscuits',
+        sellerId: 'seller-2',
+        subCategory: 'Biscuits & Cookies',
+    },
+    {
+        id: 'prod-marie-biscuit',
+        name: 'Marie Gold Biscuits',
+        description: 'Light and crisp tea-time biscuits.',
+        price: 20,
+        stock: 300,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-marie-biscuit')!.imageUrl,
+        imageHint: 'marie biscuits',
+        sellerId: 'seller-2',
+        subCategory: 'Biscuits & Cookies',
+    },
+    {
+        id: 'prod-lays-chips',
+        name: 'Lay\'s Potato Chips (Classic)',
+        description: 'Classic salted potato chips.',
+        price: 20,
+        stock: 400,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lays-chips')!.imageUrl,
+        imageHint: 'lays chips',
+        sellerId: 'seller-2',
+        subCategory: 'Chips & Crisps (The Global Aisle)',
     },
     {
         id: 'prod-kadalai-mittai',
-        name: 'Kadalai Mittai (Groundnut Chikki)',
-        description: 'Traditional groundnut and jaggery candy.',
+        name: 'Kovilpatti Kadalai Mittai',
+        description: 'Traditional groundnut and jaggery candy from Kovilpatti.',
         price: 50,
         stock: 150,
         categoryId: 'snacks',
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-kadalai-mittai')!.imageUrl,
         imageHint: 'groundnut candy',
         sellerId: 'seller-3',
-        subCategory: 'Sweets',
+        subCategory: 'Indian Sweets (Mithai & Inippu)',
     },
     {
         id: 'prod-adhirasam',
@@ -1085,7 +1139,7 @@ const products: Product[] = [
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-adhirasam')!.imageUrl,
         imageHint: 'adhirasam sweet',
         sellerId: 'seller-3',
-        subCategory: 'Sweets',
+        subCategory: 'Indian Sweets (Mithai & Inippu)',
     },
     {
         id: 'prod-halwa',
@@ -1097,8 +1151,34 @@ const products: Product[] = [
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-halwa')!.imageUrl,
         imageHint: 'tirunelveli halwa',
         sellerId: 'seller-3',
-        subCategory: 'Sweets',
+        subCategory: 'Indian Sweets (Mithai & Inippu)',
     },
+    {
+        id: 'prod-roasted-makhana',
+        name: 'Roasted Makhana (Foxnuts)',
+        description: 'Lightly salted and roasted foxnuts, a healthy snack.',
+        price: 150,
+        stock: 80,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-roasted-makhana')!.imageUrl,
+        imageHint: 'roasted makhana',
+        sellerId: 'seller-3',
+        subCategory: 'Healthy & Roasted Snacks',
+    },
+    {
+        id: 'prod-dry-fruit-mix',
+        name: 'Dry Fruit & Nut Mix',
+        description: 'A healthy mix of almonds, cashews, raisins, and walnuts.',
+        price: 250,
+        stock: 100,
+        categoryId: 'snacks',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dry-fruits')!.imageUrl,
+        imageHint: 'dry fruit mix',
+        sellerId: 'seller-3',
+        subCategory: 'Healthy & Roasted Snacks',
+        tags: ['High Protein'],
+    },
+
 
     // Beverages
     {
@@ -1305,3 +1385,4 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+

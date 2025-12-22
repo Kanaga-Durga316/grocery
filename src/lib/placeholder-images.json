@@ -27,13 +27,13 @@
     {
       "id": "prod-potato",
       "description": "A pile of fresh potatoes.",
-      "imageUrl": "https://images.unsplash.com/photo-1590422220266-9c493907a272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHBvdGF0b2VzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590422220266-9c493907a272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHBvdGF0b2VzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh potatoes"
     },
     {
       "id": "prod-onion",
       "description": "A group of fresh onions.",
-      "imageUrl": "https://images.unsplash.com/photo-1628815585258-6204a1154c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9uaW9uc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628815585258-6204a1154c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9uaW9uc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh onions"
     },
     {
@@ -711,14 +711,38 @@
     {
       "id": "prod-water-can",
       "description": "A large 20L can of drinking water.",
-      "imageUrl": "https://images.unsplash.com/photo-1559861615-99d82e2195f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlciUyMGNhbnxlbnwwfHx8fDE3NjkyMzkxNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1559861615-99d82e2195f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlciUyMGNhbnxlbnwwfHx8fDE3NjkyMzkxNDJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "water can"
     },
     {
       "id": "prod-party-pack",
       "description": "A collection of party snacks and drinks.",
-      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYXJ0eSUyMHNuYWNrcyUyMGRyaW5rc3xlbnwwfHx8fDE3NjkyMzk0MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYXJ0eSUyMHNuYWNrcyUyMGRyaW5rc3xlbnwwfHx8fDE3NjkyMzk0MjJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "party snacks drinks"
+    },
+    {
+      "id": "prod-oreo",
+      "description": "A pack of Oreo biscuits.",
+      "imageUrl": "https://images.unsplash.com/photo-1621216892532-6b953d3e69f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvcmVvJTIwYmlzY3VpdHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oreo biscuits"
+    },
+    {
+      "id": "prod-marie-biscuit",
+      "description": "A stack of Marie Gold biscuits.",
+      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJpZSUyMGJpc2N1aXRzfGVufDB8fHx8MTc2OTMzNzIzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "marie biscuits"
+    },
+    {
+      "id": "prod-lays-chips",
+      "description": "A bag of Lay's potato chips.",
+      "imageUrl": "https://images.unsplash.com/photo-1576483473138-735f499b422a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsYXlzJTIwY2hpcHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lays chips"
+    },
+    {
+      "id": "prod-roasted-makhana",
+      "description": "A bowl of roasted makhana (foxnuts).",
+      "imageUrl": "https://images.unsplash.com/photo-1608557349141-c4524483726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyb2FzdGVkJTIwbWFraGFuYXxlbnwwfHx8fDE3NjkzMzcyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "roasted makhana"
     },
     {
       "id": "page-header-products",
