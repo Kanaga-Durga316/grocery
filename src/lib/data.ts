@@ -1187,7 +1187,7 @@ const users: User[] = [
 const reviews: Review[] = [
   { id: 'rev-1', productId: 'prod-apple', userId: 'user-1', rating: 5, comment: 'These apples are incredibly fresh and crisp!', timestamp: '2023-10-26T10:00:00Z' },
   { id: 'rev-2', productId: 'prod-apple', userId: 'user-2', rating: 4, comment: 'Good quality, but a bit pricey.', timestamp: '2023-10-25T14:30:00Z' },
-  { id: 'rev-3', productId: 'prod-dosa', userId: 'user-1', rating: 5, comment: 'Tasted just like homemade dosa. Excellent!', timestamp: '2023-10-24T18:00:00Z' },
+  { id: 'rev-3', productId: 'prod-idli-dosa-batter', userId: 'user-1', rating: 5, comment: 'Tasted just like homemade. Excellent!', timestamp: '2023-10-24T18:00:00Z' },
   { id: 'rev-4', productId: 'prod-milk-pouch', userId: 'user-1', rating: 5, comment: 'Aavin milk is always reliable.', timestamp: '2024-07-15T08:00:00Z' },
   { id: 'rev-5', productId: 'prod-chicken-curry-cut', userId: 'user-1', rating: 4, comment: 'Chicken was fresh but pieces were a bit small.', timestamp: '2024-07-14T19:30:00Z' },
 ];
@@ -1214,10 +1214,10 @@ const orders: Order[] = [
         id: 'order-2',
         userId: 'admin-1', // Assuming admin can also be a customer
         items: [
-            { productId: 'prod-dosa', quantity: 2, price: 100 },
+            { productId: 'prod-idli-dosa-batter', quantity: 2, price: 70 },
             { productId: 'prod-coke', quantity: 4, price: 40 }
         ],
-        totalAmount: 360,
+        totalAmount: 300,
         status: 'Processing',
         deliveryAddress: {
             name: 'Admin User',

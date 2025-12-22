@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -60,8 +61,7 @@ export function MenuItem({ product }: MenuItemProps) {
     };
 
     const currentPrice = useMemo(() => {
-        let price = product.price;
-        if (selectedVariant) price = selectedVariant.price;
+        let price = selectedVariant?.price ?? product.price;
         if (selectedCleaning?.priceModifier) price += selectedCleaning.priceModifier;
         return price;
     }, [selectedVariant, selectedCleaning, product.price]);
