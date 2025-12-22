@@ -753,7 +753,7 @@
     {
       "id": "prod-dishwash-liquid",
       "description": "A bottle of dishwashing liquid.",
-      "imageUrl": "https://images.unsplash.com/photo-1627894017369-1383c3116a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkaXNod2FzaCUyMGxpcXVpZHxlbnwwfHx8fDE3NjkzNDQxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627894017369-1383c3116a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkaXNod2FzaCUyMGxpcXVpZHxlbnwwfHx8fDE3NjkzNDQxNDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "dishwash liquid"
     },
     {
@@ -779,6 +779,36 @@
       "description": "A mosquito repellent vaporizer.",
       "imageUrl": "https://images.unsplash.com/photo-1631195610884-b04958f2780c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtb3NxdWl0byUyMHJlcGVsbGVudHxlbnwwfHx8fDE3NjkzNDQxNDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mosquito repellent"
+    },
+    {
+      "id": "prod-floor-cleaner",
+      "description": "A bottle of floor cleaner liquid.",
+      "imageUrl": "https://images.unsplash.com/photo-1583947454893-272a8604313b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmbG9vciUyMGNsZWFuZXIlMjBib3R0bGV8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "floor cleaner bottle"
+    },
+    {
+      "id": "prod-detergent-powder",
+      "description": "A box of laundry detergent powder.",
+      "imageUrl": "https://images.unsplash.com/photo-1604169992387-9b6d69ab83d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkZXRlcmdlbnQlMjBwb3dkZXJ8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "detergent powder"
+    },
+    {
+      "id": "prod-dishwash-bar",
+      "description": "A green dishwash bar.",
+      "imageUrl": "https://images.unsplash.com/photo-1627894017369-1383c3116a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkaXNod2FzaCUyMGJhcnxlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dishwash bar"
+    },
+    {
+      "id": "prod-aluminum-foil",
+      "description": "A roll of aluminum foil.",
+      "imageUrl": "https://images.unsplash.com/photo-1598971427892-2591637b8027?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbHVtaW51bSUyMGZvaWx8ZW58MHx8fHwxNzY5NDE4ODgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aluminum foil"
+    },
+    {
+      "id": "prod-garbage-bags",
+      "description": "A roll of black garbage bags.",
+      "imageUrl": "https://images.unsplash.com/photo-1596706037637-2513a88e6a3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxnYXJiYWdlJTIwYmFnc3xlbnwwfHx8fDE3Njk0MTg4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "garbage bags"
     },
     {
       "id": "page-header-products",
