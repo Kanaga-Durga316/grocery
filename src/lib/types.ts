@@ -15,6 +15,8 @@ export interface Product {
   imageHint: string;
   sellerId: string;
   subCategory?: string;
+  brand?: string;
+  bestBefore?: string;
 }
 
 export interface Review {

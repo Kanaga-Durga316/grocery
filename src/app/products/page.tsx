@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import { useMemo, useState } from 'react';
@@ -16,15 +15,26 @@ export default function MenuPage() {
   const allProducts = useMemo(() => getProducts(), []);
   const categories = useMemo(() => getCategories(), []);
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
+  const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
   
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
 
+  const dairyBrands = useMemo(() => {
+    const brands = new Set<string>();
+    allProducts.forEach(p => {
+      if (p.categoryId === 'dairy-bakery' && p.brand) {
+        brands.add(p.brand);
+      }
+    });
+    return Array.from(brands);
+  }, [allProducts]);
+
   const productsByCategory = useMemo(() => {
     return categories.map(category => {
-      const originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id);
+      let originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id);
       let structuredProducts: { name: string; products: Product[] }[] = [];
 
-      if (['fresh-produce', 'dairy-bakery', 'snacks'].includes(category.id)) {
+      if (['fresh-produce', 'dairy-bakery'].includes(category.id)) {
         let productsToStructure = originalCategoryProducts;
         
         if (category.id === 'fresh-produce') {
@@ -35,6 +45,13 @@ export default function MenuPage() {
             }
         }
         
+        if (category.id === 'dairy-bakery') {
+            if (dairyBrandFilter !== 'all') {
+                // This filter applies across all dairy sub-categories that have branded items (like milk)
+                productsToStructure = productsToStructure.map(p => (p.brand && p.brand === dairyBrandFilter) || !p.brand ? p : null).filter(Boolean) as Product[];
+            }
+        }
+
         const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
         
         structuredProducts = subCategories.map(subCategory => ({
@@ -42,7 +59,6 @@ export default function MenuPage() {
           products: productsToStructure.filter(p => p.subCategory === subCategory)
         })).filter(sc => sc.products.length > 0);
         
-        // Include products without a sub-category at the top level if needed, but for these categories we expect sub-categories.
         return {
           ...category,
           products: [],
@@ -58,7 +74,7 @@ export default function MenuPage() {
       };
 
     }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
-  }, [allProducts, categories, produceFilter]);
+  }, [allProducts, categories, produceFilter, dairyBrandFilter]);
 
   return (
     <>
@@ -87,6 +103,17 @@ export default function MenuPage() {
                 <Button variant={produceFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setProduceFilter('all')}>All</Button>
                 <Button variant={produceFilter === 'under30' ? 'secondary' : 'outline'} size="sm" onClick={() => setProduceFilter('under30')}>Under ₹30</Button>
                 <Button variant={produceFilter === 'combo' ? 'secondary' : 'outline'} size="sm" onClick={() => setProduceFilter('combo')}>Combos</Button>
+              </div>
+            )}
+            
+            {category.id === 'dairy-bakery' && (
+              <div className="flex justify-center items-center gap-2 mb-8">
+                <Filter className="h-5 w-5 text-muted-foreground" />
+                <span className="text-sm font-medium text-muted-foreground">Filter by Brand:</span>
+                <Button variant={dairyBrandFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setDairyBrandFilter('all')}>All Brands</Button>
+                {dairyBrands.map(brand => (
+                    <Button key={brand} variant={dairyBrandFilter === brand ? 'secondary' : 'outline'} size="sm" onClick={() => setDairyBrandFilter(brand)}>{brand}</Button>
+                ))}
               </div>
             )}
             
