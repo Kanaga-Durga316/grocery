@@ -20,31 +20,31 @@ export default function MenuPage() {
 
   const productsByCategory = useMemo(() => {
     return categories.map(category => {
-      let categoryProducts = allProducts.filter(product => product.categoryId === category.id);
-      
+      const originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id);
+
       if (category.id === 'fresh-produce') {
-        
+        let filteredProducts = originalCategoryProducts;
         if (produceFilter === 'under30') {
-            categoryProducts = categoryProducts.filter(p => p.price < 30);
+            filteredProducts = filteredProducts.filter(p => p.price < 30);
         } else if (produceFilter === 'combo') {
-            categoryProducts = categoryProducts.filter(p => p.subCategory === 'Combos');
+            filteredProducts = filteredProducts.filter(p => p.subCategory === 'Combos');
         }
 
-        const subCategories = Array.from(new Set(categoryProducts.map(p => p.subCategory).filter(Boolean)));
+        const subCategories = Array.from(new Set(filteredProducts.map(p => p.subCategory).filter(Boolean)));
         
         return {
           ...category,
           products: [],
           structuredProducts: subCategories.map(subCategory => ({
             name: subCategory,
-            products: categoryProducts.filter(p => p.subCategory === subCategory)
+            products: filteredProducts.filter(p => p.subCategory === subCategory)
           })).filter(sc => sc.products.length > 0)
         };
       }
       
       return {
         ...category,
-        products: categoryProducts,
+        products: originalCategoryProducts,
         structuredProducts: []
       };
 
