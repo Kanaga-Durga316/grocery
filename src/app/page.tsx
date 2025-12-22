@@ -3,14 +3,14 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, Carrot, CakeSlice, Wheat, Drumstick, GlassWater } from 'lucide-react';
+import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
-  'Fresh Produce': Carrot,
+  'Fresh Produce': ShoppingBasket,
   'Dairy & Bakery': CakeSlice,
   'Prepared Foods': Utensils,
   'Staples & Pantry': Wheat,
