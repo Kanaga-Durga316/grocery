@@ -3,13 +3,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { formatPrice } from '@/lib/utils';
-import type { Product, ProductVariant } from '@/lib/types';
+import type { Product, ProductVariant, CleaningOption } from '@/lib/types';
 import { AddToCartButton } from './AddToCartButton';
 import { useState, useMemo } from 'react';
 import { QuantitySelector } from './QuantitySelector';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Calendar, Repeat, ShoppingBag, TrendingUp } from 'lucide-react';
+import { Calendar, Repeat, ShoppingBag, TrendingUp, Snowflake } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -25,6 +25,7 @@ interface MenuItemProps {
 export function MenuItem({ product }: MenuItemProps) {
     const [quantity, setQuantity] = useState(1);
     const [selectedVariant, setSelectedVariant] = useState<ProductVariant | undefined>(product.variants?.[0]);
+    const [selectedCleaning, setSelectedCleaning] = useState<CleaningOption | undefined>(product.cleaningOptions?.[0]);
 
     const handleAddToCart = (product: Product, quantity: number, variant?: ProductVariant) => {
       // This is a placeholder. The actual logic is in AddToCartButton
@@ -32,9 +33,16 @@ export function MenuItem({ product }: MenuItemProps) {
     };
 
     const currentPrice = useMemo(() => {
-        if (selectedVariant) return selectedVariant.price;
-        return product.price;
-    }, [selectedVariant, product.price]);
+        let price = product.price;
+        if (selectedVariant) price = selectedVariant.price;
+        if (selectedCleaning?.priceModifier) price += selectedCleaning.priceModifier;
+        return price;
+    }, [selectedVariant, selectedCleaning, product.price]);
+
+    const currentStock = useMemo(() => {
+      if (selectedVariant) return selectedVariant.stock;
+      return product.stock;
+    }, [selectedVariant, product.stock]);
 
     const hasStockUpBadge = useMemo(() => {
       return product.variants?.some(v => v.weight.includes('kg') && parseInt(v.weight, 10) >= 5);
@@ -58,26 +66,41 @@ export function MenuItem({ product }: MenuItemProps) {
                     <Link href={`/products/${product.id}`}>
                         <h3 className="text-lg font-headline text-foreground hover:text-primary transition-colors">{product.name}</h3>
                     </Link>
-                    {hasStockUpBadge && (
-                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 border-blue-200">
-                         <TrendingUp className="mr-1.5 h-4 w-4" />
-                         Stock Up
-                       </Badge>
-                    )}
+                    <div className="flex items-center gap-2">
+                      {hasStockUpBadge && (
+                        <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 border-blue-200">
+                          <TrendingUp className="mr-1.5 h-4 w-4" />
+                          Stock Up
+                        </Badge>
+                      )}
+                      {currentStock > 0 && currentStock <= 10 && (
+                        <Badge variant="destructive" className="ml-2">
+                          Only {currentStock} left
+                        </Badge>
+                      )}
+                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground mt-1 hidden sm:block">{product.description}</p>
                 
-                {product.bestBefore && (
-                  <div className="mt-2 text-xs text-muted-foreground flex items-center gap-1.5">
-                    <Calendar className="h-3.5 w-3.5" />
-                    <span>Best Before: {product.bestBefore}</span>
-                  </div>
-                )}
+                <div className="flex items-center gap-4 mt-2 text-xs text-muted-foreground">
+                    {product.bestBefore && (
+                      <div className="flex items-center gap-1.5">
+                        <Calendar className="h-3.5 w-3.5" />
+                        <span>Best Before: {product.bestBefore}</span>
+                      </div>
+                    )}
+                    {product.categoryId === 'meat-seafood' && (
+                       <Badge variant="outline" className="border-sky-300 text-sky-700 bg-sky-50">
+                         <Snowflake className="mr-1.5 h-3.5 w-3.5" />
+                         Chilled Delivery
+                       </Badge>
+                    )}
+                </div>
 
-                 <div className="mt-4 flex items-center justify-between">
+                 <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
                     <p className="text-lg font-bold text-primary">{formatPrice(currentPrice)}</p>
                     <div className="flex items-center gap-2">
-                        {product.variants ? (
+                        {product.variants && (
                              <Select
                                 value={selectedVariant?.id}
                                 onValueChange={(variantId) => {
@@ -94,7 +117,30 @@ export function MenuItem({ product }: MenuItemProps) {
                                     ))}
                                 </SelectContent>
                             </Select>
-                        ) : (
+                        )}
+
+                        {product.cleaningOptions && (
+                             <Select
+                                value={selectedCleaning?.id}
+                                onValueChange={(cleaningId) => {
+                                    const newCleaning = product.cleaningOptions?.find(c => c.id === cleaningId);
+                                    setSelectedCleaning(newCleaning);
+                                }}
+                            >
+                                <SelectTrigger className="w-[140px]">
+                                    <SelectValue placeholder="Cleaning" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    {product.cleaningOptions.map(c => (
+                                        <SelectItem key={c.id} value={c.id}>
+                                          {c.type} {c.priceModifier ? `(+₹${c.priceModifier})` : ''}
+                                        </SelectItem>
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                        )}
+
+                        {!product.variants && !product.cleaningOptions && (
                             <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
                         )}
                         <AddToCartButton product={product} quantity={quantity} variant={selectedVariant} />

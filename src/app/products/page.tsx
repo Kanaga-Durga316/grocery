@@ -2,9 +2,10 @@
 
 
 
+
 "use client";
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -12,7 +13,7 @@ import { MenuItem } from '@/components/MenuItem';
 import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Leaf, Filter } from 'lucide-react';
+import { Leaf, Filter, Sun, Sparkles } from 'lucide-react';
 
 export default function MenuPage() {
   const allProducts = useMemo(() => getProducts(), []);
@@ -20,7 +21,14 @@ export default function MenuPage() {
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
   const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
   const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
-  
+  const [isSunday, setIsSunday] = useState(false);
+
+  useEffect(() => {
+    // This will only run on the client, preventing hydration mismatch
+    const today = new Date();
+    setIsSunday(today.getDay() === 0);
+  }, []);
+
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
 
   const dairyBrands = useMemo(() => {
@@ -61,12 +69,40 @@ export default function MenuPage() {
           }
         }
 
+        if (category.id === 'meat-seafood' && isSunday) {
+           const sundaySpecials = productsToStructure.filter(p => p.subCategory === 'Mutton & Lamb (Aattu Iraichi)' || p.name.includes('Nattu Kozhi'));
+           const otherProducts = productsToStructure.filter(p => !sundaySpecials.includes(p));
+           productsToStructure = [...sundaySpecials, ...otherProducts];
+        }
+
         const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
         
         structuredProducts = subCategories.map(subCategory => ({
           name: subCategory,
           products: productsToStructure.filter(p => p.subCategory === subCategory)
         })).filter(sc => sc.products.length > 0);
+
+        // For Sunday Special, we might not have a subcategory, let's create one virtually
+        if (category.id === 'meat-seafood' && isSunday) {
+            const sundaySpecialNames = ['Mutton & Lamb (Aattu Iraichi)', 'Chicken (Kozhi)'];
+            const specialProducts = structuredProducts.filter(sc => sundaySpecialNames.includes(sc.name));
+            const regularProducts = structuredProducts.filter(sc => !sundaySpecialNames.includes(sc.name));
+
+            // Manually re-order Country chicken to the top inside Chicken subcat
+            const chickenSubCat = specialProducts.find(sc => sc.name === 'Chicken (Kozhi)');
+            if(chickenSubCat) {
+                const nattuKozhi = chickenSubCat.products.find(p => p.name.includes('Nattu Kozhi'));
+                if(nattuKozhi) {
+                    chickenSubCat.products = [nattuKozhi, ...chickenSubCat.products.filter(p => !p.name.includes('Nattu Kozhi'))];
+                }
+            }
+            
+            structuredProducts = [
+              { name: "✨ Sunday Special", products: specialProducts.flatMap(sc => sc.products.filter(p => p.subCategory === 'Mutton & Lamb (Aattu Iraichi)' || p.name.includes('Nattu Kozhi'))) },
+              ...specialProducts.filter(sc => sc.name !== "Mutton & Lamb (Aattu Iraichi)"),
+              ...regularProducts
+            ].filter(sc => sc.products.length > 0);
+        }
         
         return {
           ...category,
@@ -83,7 +119,7 @@ export default function MenuPage() {
       };
 
     }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
-  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter]);
+  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter, isSunday]);
 
   return (
     <>
@@ -141,7 +177,10 @@ export default function MenuPage() {
                  {category.structuredProducts.length > 0 ? (
                     category.structuredProducts.map(subCat => (
                       <div key={subCat.name}>
-                        <h3 className="font-headline text-2xl text-accent font-bold mb-6 border-b border-border pb-2">{subCat.name}</h3>
+                        <h3 className="font-headline text-2xl text-accent font-bold mb-6 border-b border-border pb-2 flex items-center gap-2">
+                           {subCat.name.includes("Sunday Special") && <Sun className="text-yellow-500" />}
+                           {subCat.name}
+                        </h3>
                         <div className="grid md:grid-cols-2 gap-x-8 gap-y-10">
                           {subCat.products.map(product => (
                             <MenuItem key={product.id} product={product} />

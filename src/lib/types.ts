@@ -11,12 +11,18 @@ export interface ProductVariant {
   stock: number;
 }
 
+export interface CleaningOption {
+  id: string;
+  type: 'Whole' | 'Cleaned & Gutted' | 'Skin-off' | 'Slices';
+  priceModifier?: number; // Added to base price
+}
+
 export interface Product {
   id: string; // Base product ID, e.g., prod-ponni-rice
   name: string;
   description: string;
-  price: number; // Retain for single-variant products
-  stock: number; // Retain for single-variant products
+  price: number; // Retain for single-variant products or as a base price
+  stock: number; // Retain for single-variant products or as base stock
   categoryId: string;
   imageUrl: string;
   imageHint: string;
@@ -25,6 +31,7 @@ export interface Product {
   brand?: string;
   bestBefore?: string;
   variants?: ProductVariant[];
+  cleaningOptions?: CleaningOption[];
   tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch')[];
 }
 
