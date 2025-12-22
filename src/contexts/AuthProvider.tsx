@@ -48,6 +48,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         loggedInUser = getUserById('seller-1');
     } else if (email === 'hello@artisanbakery.com') {
         loggedInUser = getUserById('seller-2');
+    } else if (email === 'support@ammaskitchen.com') {
+        loggedInUser = getUserById('seller-3');
     }
     else {
         // Simple mock for any other user
