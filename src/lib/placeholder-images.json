@@ -33,7 +33,7 @@
     {
       "id": "prod-onion",
       "description": "A group of fresh onions.",
-      "imageUrl": "https://images.unsplash.com/photo-1628815585258-6204a1154c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9uaW9uc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628815585258-6204a1154c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9uaW9uc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh onions"
     },
     {
@@ -323,6 +323,72 @@
       "description": "A margherita pizza.",
       "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY2MzQwNjAxfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "margherita pizza"
+    },
+    {
+      "id": "prod-paneer-butter-masala-rte",
+      "description": "A bowl of creamy paneer butter masala.",
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b27e25248bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjBidXR0ZXIlMjBtYXNhbGF8ZW58MHx8fHwxNzY2ODYzMDI0fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer butter masala"
+    },
+    {
+      "id": "prod-sambar-rice-rte",
+      "description": "A bowl of hot sambar rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYW1iYXIlMjByaWNlfGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "sambar rice"
+    },
+    {
+      "id": "prod-veg-biryani-rte",
+      "description": "A plate of aromatic vegetable biryani.",
+      "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBiaXJ5YW5pfGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetable biryani"
+    },
+    {
+      "id": "prod-idli-dosa-batter",
+      "description": "A container of fresh dosa batter.",
+      "imageUrl": "https://images.unsplash.com/photo-1626081035532-a5ea699c2794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXdhJTIwZG9zYXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "dosa batter"
+    },
+    {
+      "id": "prod-gulab-jamun-mix",
+      "description": "A bowl of sweet gulab jamuns.",
+      "imageUrl": "https://images.unsplash.com/photo-1623805273671-550bc93c004a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxndWxhYiUyMGphbXVufGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "gulab jamun"
+    },
+    {
+      "id": "prod-veg-cutlet-frozen",
+      "description": "A plate of golden-brown vegetable cutlets.",
+      "imageUrl": "https://images.unsplash.com/photo-1594220368145-c4ba5458a23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBjdXRsZXR8ZW58MHx8fHwxNzY2ODYzMDI0fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetable cutlet"
+    },
+    {
+      "id": "prod-french-fries-frozen",
+      "description": "A basket of crispy french fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1598679253443-4b533552737c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVuY2glMjBmcmllc3xlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "french fries"
+    },
+    {
+      "id": "prod-gobi-manchurian-rtc",
+      "description": "A plate of spicy Gobi Manchurian.",
+      "imageUrl": "https://images.unsplash.com/photo-1628502577785-5b4a4f1e5a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxnb2JpJTIwbWFuY2h1cmlhbnxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "gobi manchurian"
+    },
+    {
+      "id": "prod-paneer-tikka-rtc",
+      "description": "Grilled paneer tikka skewers.",
+      "imageUrl": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjB0aWtrYXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer tikka"
+    },
+    {
+      "id": "prod-mini-tiffin-deli",
+      "description": "A traditional South Indian tiffin platter.",
+      "imageUrl": "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aWZmaW4lMjBjb21ib3xlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "tiffin combo"
+    },
+    {
+      "id": "prod-curd-rice-deli",
+      "description": "A comforting bowl of curd rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1678888981442-995a9474b301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJkJTIwcmljZXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "curd rice"
     },
     {
       "id": "prod-idli",
