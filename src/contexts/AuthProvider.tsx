@@ -6,7 +6,7 @@ import { getUserById } from '@/lib/data';
 
 interface AuthContextType {
   user: User | null;
-  login: (email: string, pass: string) => Promise<boolean>;
+  login: (email: string, pass: string, role?: 'Customer' | 'Seller' | 'Admin') => Promise<boolean>;
   logout: () => void;
   loading: boolean;
   signup: (name: string, email: string, pass: string) => Promise<boolean>;
@@ -31,24 +31,31 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setLoading(false);
   }, []);
 
-  const login = useCallback(async (email: string, pass: string): Promise<boolean> => {
+  const login = useCallback(async (email: string, pass: string, role?: 'Customer' | 'Seller' | 'Admin'): Promise<boolean> => {
     setLoading(true);
     // In a real app, you'd call Firebase Auth. This is a mock.
     // We're ignoring the password for this demo.
     console.log(`Attempting login for: ${email}, with password: ${pass}`);
     
     let loggedInUser: User | undefined;
+
+    // Hardcoded special users
     if (email === 'admin@example.com') {
       loggedInUser = getUserById('admin-1');
     } else if (email === 'alice@example.com') {
       loggedInUser = getUserById('user-1');
-    } else {
+    } else if (email === 'contact@farmfresh.com') {
+        loggedInUser = getUserById('seller-1');
+    } else if (email === 'hello@artisanbakery.com') {
+        loggedInUser = getUserById('seller-2');
+    }
+    else {
         // Simple mock for any other user
         const storedUser = sessionStorage.getItem('user-' + email);
         if(storedUser) loggedInUser = JSON.parse(storedUser);
     }
     
-    if (loggedInUser) {
+    if (loggedInUser && (!role || loggedInUser.role === role)) {
       setUser(loggedInUser);
       sessionStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
       setLoading(false);
@@ -67,7 +74,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         id: `user-${email}`,
         name,
         email,
-        role: 'Customer',
+        role: 'Customer', // All signups are Customers by default
     }
     sessionStorage.setItem('user-' + email, JSON.stringify(newUser));
     

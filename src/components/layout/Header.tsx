@@ -126,6 +126,14 @@ export function Header() {
                       </Link>
                     </DropdownMenuItem>
                   )}
+                  {user.role === 'Seller' && (
+                    <DropdownMenuItem asChild>
+                      <Link href="/admin">
+                        <LayoutDashboard className="mr-2 h-4 w-4" />
+                        <span>Seller Dashboard</span>
+                      </Link>
+                    </DropdownMenuItem>
+                  )}
                   <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={logout}>
                     <LogOut className="mr-2 h-4 w-4" />
@@ -134,10 +142,9 @@ export function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Button asChild variant="ghost" size="icon">
+              <Button asChild variant="ghost">
                 <Link href="/login">
-                  <UserIcon className="h-5 w-5" />
-                  <span className="sr-only">Login</span>
+                  Login
                 </Link>
               </Button>
             )}
@@ -176,6 +183,12 @@ export function Header() {
                         <LayoutDashboard className="h-5 w-5" />
                         Admin Panel
                       </MobileNavLink>
+                    )}
+                    {user.role === 'Seller' && (
+                        <MobileNavLink href="/admin">
+                            <LayoutDashboard className="h-5 w-5" />
+                            <span>Seller Dashboard</span>
+                        </MobileNavLink>
                     )}
                     <button
                       onClick={handleLogout}
