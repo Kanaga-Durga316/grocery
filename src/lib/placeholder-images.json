@@ -117,13 +117,13 @@
     {
       "id": "prod-vada",
       "description": "Savory lentil fritters.",
-      "imageUrl": "https://i.ibb.co/3kC0HhF/photo.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1747352317375-b2866b1c6499?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZWR1JTIwdmFkYXxlbnwwfHx8fDE3NjY1NDg1NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "medu vada"
     },
     {
       "id": "prod-pongal",
       "description": "A delicious bowl of Ven Pongal.",
-      "imageUrl": "https://i.ibb.co/6P0j0N6/image.png",
+      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZW4lMjBwb25nYWx8ZW58MHx8fHwxNzY2NTQ4NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ven pongal"
     },
     {
