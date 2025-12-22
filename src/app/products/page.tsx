@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { useMemo, useState } from 'react';
@@ -34,7 +35,7 @@ export default function MenuPage() {
       let originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id);
       let structuredProducts: { name: string; products: Product[] }[] = [];
 
-      if (['fresh-produce', 'dairy-bakery'].includes(category.id)) {
+      if (['fresh-produce', 'dairy-bakery', 'staples-pantry', 'meat-seafood', 'beverages'].includes(category.id)) {
         let productsToStructure = originalCategoryProducts;
         
         if (category.id === 'fresh-produce') {

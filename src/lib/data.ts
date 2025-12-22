@@ -15,10 +15,10 @@ const users: User[] = [
 const categories: Category[] = [
   { id: 'fresh-produce', name: 'Fresh Produce', description: 'The freshest fruits and vegetables, sourced locally and organically.' },
   { id: 'dairy-bakery', name: 'Dairy & Bakery', description: 'Fresh milk, cheese, bread, and other dairy and bakery products.' },
+  { id: 'staples-pantry', name: 'Staples & Pantry', description: 'Essential cooking ingredients, spices, and pantry items.' },
   { id: 'meat-seafood', name: 'Meat & Seafood', description: 'Fresh, high-quality meat and seafood products.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
-  { id: 'staples-pantry', name: 'Staples & Pantry', description: 'Essential cooking ingredients, spices, and pantry items.' },
   { id: 'beverages', name: 'Beverages', description: 'Quench your thirst with our wide selection of drinks.' },
 ];
 
@@ -58,11 +58,45 @@ const products: Product[] = [
   { id: 'prod-73', name: 'Grated Coconut', description: 'Freshly grated coconut for cooking and garnishing (1 cup).', price: 50, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-grated-coconut')!.imageUrl, imageHint: 'grated coconut', sellerId: 'seller-1', subCategory: 'Cut & Sprouted (Convenience)' },
   { id: 'prod-74', name: 'Weekly Veggie Combo', description: 'A curated combo of Onion (1kg), Potato (1kg), and Tomato (1kg).', price: 99, stock: 50, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-veggie-combo')!.imageUrl, imageHint: 'vegetable combo', sellerId: 'seller-1', subCategory: 'Combos' },
 
+  // Staples & Pantry - Seller 1
+  // Rice & Rice Products
+  { id: 'prod-82', name: 'Ponni Rice', description: 'Popular South Indian Ponni rice, perfect for daily meals (5kg).', price: 350, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-bag')!.imageUrl, imageHint: 'rice bag', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  { id: 'prod-83', name: 'Basmati Rice', description: 'Long-grain aromatic Basmati rice, ideal for biryani and pulao (5kg).', price: 600, stock: 80, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-basmati-rice')!.imageUrl, imageHint: 'basmati rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  { id: 'prod-84', name: 'Idli & Dosa Rice', description: 'Special parboiled rice for making perfect soft idlis and crispy dosas (5kg).', price: 320, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-idli-rice')!.imageUrl, imageHint: 'rice grains', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  { id: 'prod-85', name: 'Poha (Aval)', description: 'Flattened rice, great for a quick and easy breakfast (1kg).', price: 80, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-poha')!.imageUrl, imageHint: 'flattened rice', sellerId: 'seller-1', subCategory: 'Rice & Rice Products' },
+  
+  // Atta & Flours (Maavu)
+  { id: 'prod-41', name: 'Whole Wheat Atta', description: 'Premium quality whole wheat flour for soft rotis and chapatis (5kg).', price: 250, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-atta')!.imageUrl, imageHint: 'atta flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+  { id: 'prod-86', name: 'Besan (Gram Flour)', description: 'Fine gram flour, essential for bhajis, pakoras, and sweets (1kg).', price: 110, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-besan')!.imageUrl, imageHint: 'gram flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+  { id: 'prod-87', name: 'Rice Flour (Arisi Maavu)', description: 'Finely ground rice flour for murukku, seedai, and other snacks (1kg).', price: 70, stock: 130, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice-flour')!.imageUrl, imageHint: 'rice flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+  { id: 'prod-88', name: 'Ragi Flour (Finger Millet)', description: 'Nutritious ragi flour, perfect for making healthy dosas and porridge (1kg).', price: 90, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-ragi-flour')!.imageUrl, imageHint: 'ragi flour', sellerId: 'seller-1', subCategory: 'Atta & Flours (Maavu)' },
+
+  // Dals & Pulses (Paruppu)
+  { id: 'prod-89', name: 'Toor Dal (Sambar Paruppu)', description: 'Split pigeon peas, the base for delicious sambar and dal dishes (1kg).', price: 160, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toor-dal')!.imageUrl, imageHint: 'toor dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
+  { id: 'prod-90', name: 'Urad Dal (Split)', description: 'Split and skinned black gram, essential for idli/dosa batter and tempering (1kg).', price: 180, stock: 180, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-urad-dal')!.imageUrl, imageHint: 'urad dal', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
+  { id: 'prod-91', name: 'Kabuli Chana (Chickpeas)', description: 'Large, white chickpeas for making chana masala and salads (1kg).', price: 150, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chickpeas')!.imageUrl, imageHint: 'chickpeas bowl', sellerId: 'seller-1', subCategory: 'Dals & Pulses (Paruppu)' },
+
+  // Salt, Sugar & Jaggery
+  { id: 'prod-92', name: 'Crystal Salt (Kallu Uppu)', description: 'Coarse sea salt crystals, preferred for traditional cooking (1kg).', price: 25, stock: 300, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-crystal-salt')!.imageUrl, imageHint: 'crystal salt', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+  { id: 'prod-93', name: 'White Sugar', description: 'Refined white sugar for all your sweetening needs (1kg).', price: 50, stock: 400, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sugar')!.imageUrl, imageHint: 'sugar cubes', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+  { id: 'prod-94', name: 'Jaggery (Vellam)', description: 'Traditional unrefined cane sugar, rich in minerals (500g block).', price: 70, stock: 200, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-jaggery')!.imageUrl, imageHint: 'jaggery block', sellerId: 'seller-1', subCategory: 'Salt, Sugar & Jaggery' },
+
+  // Healthy Millets
+  { id: 'prod-95', name: 'Kuthiraivali (Barnyard Millet)', description: 'A healthy and gluten-free millet, cooks fast (500g).', price: 80, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-barnyard-millet')!.imageUrl, imageHint: 'millet grains', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)' },
+  { id: 'prod-96', name: 'Thinai (Foxtail Millet)', description: 'A nutritious ancient grain, perfect for upma and payasam (500g).', price: 85, stock: 85, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-foxtail-millet')!.imageUrl, imageHint: 'foxtail millet', sellerId: 'seller-1', subCategory: 'Healthy Millets (Siru Dhanyangal)' },
+  
+  // Existing from before, re-categorized
+  { id: 'prod-43', name: 'Groundnut Oil', description: 'Cold-pressed groundnut oil, ideal for all types of cooking (1L).', price: 220, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oil')!.imageUrl, imageHint: 'cooking oil', sellerId: 'seller-1', subCategory: 'Oils & Ghee' },
+  { id: 'prod-44', name: 'Assorted Masalas', description: 'A combo pack of essential Indian spices including turmeric, chili, and coriander powder (100g each).', price: 180, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-spices')!.imageUrl, imageHint: 'indian spices', sellerId: 'seller-1', subCategory: 'Masalas & Spices' },
+  { id: 'prod-45', name: 'Mixed Dry Fruits', description: 'A healthy mix of almonds, cashews, raisins, and walnuts (250g).', price: 350, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dry-fruits')!.imageUrl, imageHint: 'dry fruits', sellerId: 'seller-1', subCategory: 'Dry Fruits & Seeds' },
+
 
   // Meat & Seafood - Seller 1
-  { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1' },
-  { id: 'prod-47', name: 'Fresh Salmon Fillet', description: 'Rich and flavorful Atlantic salmon fillet, high in omega-3s (250g).', price: 500, stock: 40, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salmon')!.imageUrl, imageHint: 'salmon fillet', sellerId: 'seller-1' },
-  { id: 'prod-48', name: 'Mutton Curry Cut', description: 'Tender, bone-in mutton pieces perfect for rich curries (500g).', price: 400, stock: 50, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton')!.imageUrl, imageHint: 'mutton pieces', sellerId: 'seller-1' },
+  { id: 'prod-46', name: 'Chicken Breast', description: 'Skinless, boneless chicken breast, tender and juicy (500g).', price: 250, stock: 70, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken')!.imageUrl, imageHint: 'chicken breast', sellerId: 'seller-1', subCategory: 'Chicken & Poultry' },
+  { id: 'prod-47', name: 'Fresh Salmon Fillet', description: 'Rich and flavorful Atlantic salmon fillet, high in omega-3s (250g).', price: 500, stock: 40, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salmon')!.imageUrl, imageHint: 'salmon fillet', sellerId: 'seller-1', subCategory: 'Fish & Seafood' },
+  { id: 'prod-48', name: 'Mutton Curry Cut', description: 'Tender, bone-in mutton pieces perfect for rich curries (500g).', price: 400, stock: 50, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton')!.imageUrl, imageHint: 'mutton pieces', sellerId: 'seller-1', subCategory: 'Mutton & Red Meat' },
+  { id: 'prod-80', name: 'Country Eggs (Nattu Kozhi)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+  { id: 'prod-8', name: 'Farm-Fresh White Eggs', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'meat-seafood', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
 
   // Dairy & Bakery
   // Milk & Fresh Products - Seller 1
@@ -86,9 +120,10 @@ const products: Product[] = [
   { id: 'prod-11', name: 'Chocolate Cake Slice', description: 'Rich, decadent chocolate fudge cake slice.', price: 120, stock: 30, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake', sellerId: 'seller-2', subCategory: 'Fresh Bakery', bestBefore: '4 days' },
   { id: 'prod-12', name: 'Tea Rusk', description: 'Crispy and crunchy tea rusk, perfect for dipping (200g).', price: 50, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rusk')!.imageUrl, imageHint: 'tea rusk', sellerId: 'seller-2', subCategory: 'Fresh Bakery', bestBefore: '30 days' },
   
-  // Eggs - Seller 1
-  { id: 'prod-8', name: 'Farm-Fresh White Eggs', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
-  { id: 'prod-80', name: 'Country Eggs (Nattu Kozhi)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+  // Eggs (in Dairy & Bakery) - Seller 1
+  { id: 'prod-100', name: 'Farm-Fresh White Eggs (Dairy)', description: 'A dozen fresh, white eggs from the farm.', price: 70, stock: 100, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-white')!.imageUrl, imageHint: 'carton eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+  { id: 'prod-101', name: 'Country Eggs (Nattu Kozhi - Dairy)', description: 'A pack of 6 nutritious country chicken eggs.', price: 90, stock: 80, categoryId: 'dairy-bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs-brown')!.imageUrl, imageHint: 'brown eggs', sellerId: 'seller-1', subCategory: 'Eggs' },
+
 
   // Prepared Foods - Seller 1 & 2
   { id: 'prod-13', name: 'Beef Lasagna', description: 'Family-size beef lasagna, ready to heat and eat.', price: 500, stock: 20, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lasagna')!.imageUrl, imageHint: 'beef lasagna', sellerId: 'seller-1' },
@@ -118,20 +153,13 @@ const products: Product[] = [
   { id: 'prod-38', name: 'Mysore Pak', description: 'A rich, buttery sweet made from gram flour, ghee, and sugar (200g).', price: 130, stock: 75, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mysore-pak')!.imageUrl, imageHint: 'mysore pak', sellerId: 'seller-3', subCategory: 'Sweet Snacks' },
   
 
-  // Staples & Pantry - Seller 1
-  { id: 'prod-41', name: 'Whole Wheat Atta', description: 'Premium quality whole wheat flour for soft rotis and chapatis (5kg).', price: 250, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-atta')!.imageUrl, imageHint: 'atta flour', sellerId: 'seller-1' },
-  { id: 'prod-42', name: 'Basmati Rice', description: 'Long-grain aromatic Basmati rice, perfect for biryani and pulao (5kg).', price: 600, stock: 80, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice')!.imageUrl, imageHint: 'basmati rice', sellerId: 'seller-1' },
-  { id: 'prod-43', name: 'Groundnut Oil', description: 'Cold-pressed groundnut oil, ideal for all types of cooking (1L).', price: 220, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oil')!.imageUrl, imageHint: 'cooking oil', sellerId: 'seller-1' },
-  { id: 'prod-44', name: 'Assorted Masalas', description: 'A combo pack of essential Indian spices including turmeric, chili, and coriander powder (100g each).', price: 180, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-spices')!.imageUrl, imageHint: 'indian spices', sellerId: 'seller-1' },
-  { id: 'prod-45', name: 'Mixed Dry Fruits', description: 'A healthy mix of almonds, cashews, raisins, and walnuts (250g).', price: 350, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dry-fruits')!.imageUrl, imageHint: 'dry fruits', sellerId: 'seller-1' },
-
   // Beverages - Seller 1, Seller 2
-  { id: 'prod-49', name: 'Tata Tea Gold', description: 'A perfect blend of Assam CTC and long leaves for a rich taste (500g).', price: 250, stock: 100, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-tea')!.imageUrl, imageHint: 'tea box', sellerId: 'seller-1' },
-  { id: 'prod-50', name: 'Bru Instant Coffee', description: 'Rich aromatic instant coffee for a quick start to your day (200g).', price: 300, stock: 80, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coffee')!.imageUrl, imageHint: 'coffee jar', sellerId: 'seller-1' },
-  { id: 'prod-51', name: 'Coca-Cola Can', description: 'The classic refreshing Coca-Cola soft drink (330ml Can).', price: 40, stock: 200, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke')!.imageUrl, imageHint: 'coke can', sellerId: 'seller-2' },
-  { id: 'prod-52', name: 'Tropicana Orange Juice', description: '100% pure pressed orange juice, not from concentrate (1L).', price: 140, stock: 120, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-juice')!.imageUrl, imageHint: 'juice carton', sellerId: 'seller-2' },
-  { id: 'prod-53', name: 'Bournvita Health Drink', description: 'Chocolate health drink that provides essential nutrients (500g Jar).', price: 230, stock: 90, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bournvita')!.imageUrl, imageHint: 'bournvita jar', sellerId: 'seller-1' },
-  { id: 'prod-54', name: 'Red Bull Energy Drink', description: 'The classic energy drink to give you wings (250ml Can).', price: 125, stock: 150, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-redbull')!.imageUrl, imageHint: 'red bull', sellerId: 'seller-2' },
+  { id: 'prod-49', name: 'Tata Tea Gold', description: 'A perfect blend of Assam CTC and long leaves for a rich taste (500g).', price: 250, stock: 100, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-tea')!.imageUrl, imageHint: 'tea box', sellerId: 'seller-1', subCategory: 'Tea & Coffee' },
+  { id: 'prod-50', name: 'Bru Instant Coffee', description: 'Rich aromatic instant coffee for a quick start to your day (200g).', price: 300, stock: 80, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coffee')!.imageUrl, imageHint: 'coffee jar', sellerId: 'seller-1', subCategory: 'Tea & Coffee' },
+  { id: 'prod-51', name: 'Coca-Cola Can', description: 'The classic refreshing Coca-Cola soft drink (330ml Can).', price: 40, stock: 200, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke')!.imageUrl, imageHint: 'coke can', sellerId: 'seller-2', subCategory: 'Soft Drinks & Juices' },
+  { id: 'prod-52', name: 'Tropicana Orange Juice', description: '100% pure pressed orange juice, not from concentrate (1L).', price: 140, stock: 120, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-juice')!.imageUrl, imageHint: 'juice carton', sellerId: 'seller-2', subCategory: 'Soft Drinks & Juices' },
+  { id: 'prod-53', name: 'Bournvita Health Drink', description: 'Chocolate health drink that provides essential nutrients (500g Jar).', price: 230, stock: 90, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bournvita')!.imageUrl, imageHint: 'bournvita jar', sellerId: 'seller-1', subCategory: 'Health Drinks' },
+  { id: 'prod-54', name: 'Red Bull Energy Drink', description: 'The classic energy drink to give you wings (250ml Can).', price: 125, stock: 150, categoryId: 'beverages', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-redbull')!.imageUrl, imageHint: 'red bull', sellerId: 'seller-2', subCategory: 'Energy Drinks' },
 
 ];
 

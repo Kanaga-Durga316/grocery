@@ -39,253 +39,253 @@
     {
       "id": "prod-tomato",
       "description": "Several ripe red tomatoes.",
-      "imageUrl": "https://images.unsplash.com/photo-1587353912423-644907a016f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwdG9tYXRvZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1587353912423-644907a016f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwdG9tYXRvZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ripe tomatoes"
     },
     {
       "id": "prod-spinach",
       "description": "A bunch of fresh spinach leaves.",
-      "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzcGluYWNoJTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzcGluYWNoJTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "spinach leaves"
     },
     {
       "id": "prod-coriander",
       "description": "A fresh bunch of coriander.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb3JpYW5kZXIlMjBidW5jaHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb3JpYW5kZXIlMjBidW5jaHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "coriander bunch"
     },
     {
       "id": "prod-mint",
       "description": "A bunch of fresh mint leaves.",
-      "imageUrl": "https://images.unsplash.com/photo-1627988353685-4809f45a0b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaW50JTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627988353685-4809f45a0b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaW50JTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mint leaves"
     },
     {
       "id": "prod-curry-leaves",
       "description": "A sprig of fresh curry leaves.",
-      "imageUrl": "https://images.unsplash.com/photo-1604593675230-6a053724c96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJyeSUyMGxlYXZlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604593675230-6a053724c96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJyeSUyMGxlYXZlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "curry leaves"
     },
     {
       "id": "prod-mangoes",
       "description": "Several ripe mangoes.",
-      "imageUrl": "https://images.unsplash.com/photo-1606757389823-2747a5b3a8a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwbWFuZ29lc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606757389823-2747a5b3a8a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwbWFuZ29lc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ripe mangoes"
     },
     {
       "id": "prod-watermelon",
       "description": "A slice of juicy watermelon.",
-      "imageUrl": "https://images.unsplash.com/photo-1621051996538-3cdf1497a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlcm1lbG9uJTIwc2xpY2V8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621051996538-3cdf1497a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlcm1lbG9uJTIwc2xpY2V8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "watermelon slice"
     },
     {
       "id": "prod-grapes",
       "description": "A bunch of green grapes.",
-      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e5a606d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmVlbiUyMGdyYXBlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e5a606d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmVlbiUyMGdyYXBlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "green grapes"
     },
     {
       "id": "prod-oranges",
       "description": "A few fresh oranges.",
-      "imageUrl": "https://images.unsplash.com/photo-1580053429483-4a6f88b9015a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVzaCUyMG9yYW5nZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580053429483-4a6f88b9015a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVzaCUyMG9yYW5nZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh oranges"
     },
     {
       "id": "prod-bell-peppers",
       "description": "A variety of colorful bell peppers.",
-      "imageUrl": "https://images.unsplash.com/photo-1599292862280-5177a835a62f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiZWxsJTIwcGVwcGVyc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599292862280-5177a835a62f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiZWxsJTIwcGVwcGVyc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bell peppers"
     },
     {
       "id": "prod-zucchini",
       "description": "A pair of fresh zucchini.",
-      "imageUrl": "https://images.unsplash.com/photo-1599421639999-529457630733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVzaCUyMHp1Y2NoaW5pfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599421639999-529457630733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVzaCUyMHp1Y2NoaW5pfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh zucchini"
     },
     {
       "id": "prod-lettuce",
       "description": "A head of fresh lettuce.",
-      "imageUrl": "https://images.unsplash.com/photo-1556813408-aa7c4a1e9447?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsZXR0dWNlJTIwaGVhZHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556813408-aa7c4a1e9447?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsZXR0dWNlJTIwaGVhZHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "lettuce head"
     },
     {
       "id": "prod-avocado",
       "description": "A ripe avocado, halved.",
-      "imageUrl": "https://images.unsplash.com/photo-1601035902407-5b602051268b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwYXZvY2Fkb3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601035902407-5b602051268b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyaXBlJTIwYXZvY2Fkb3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ripe avocado"
     },
     {
       "id": "prod-peeled-garlic",
       "description": "A bowl of peeled garlic cloves.",
-      "imageUrl": "https://images.unsplash.com/photo-1595603330386-a78b54b09e0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwZWVsZWQlMjBnYXJsaWN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595603330386-a78b54b09e0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwZWVsZWQlMjBnYXJsaWN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "peeled garlic"
     },
     {
       "id": "prod-sambhar-mix",
       "description": "A mix of chopped vegetables.",
-      "imageUrl": "https://images.unsplash.com/photo-1594318721114-1f5313361a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaG9wcGVkJTIwdmVnZXRhYmxlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594318721114-1f5313361a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaG9wcGVkJTIwdmVnZXRhYmxlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "chopped vegetables"
     },
     {
       "id": "prod-sprouted-moong",
       "description": "A bowl of sprouted moong beans.",
-      "imageUrl": "https://images.unsplash.com/photo-1630601339999-a2e633d79b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzcHJvdXRlZCUyMG1vb25nfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1630601339999-a2e633d79b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzcHJvdXRlZCUyMG1vb25nfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "sprouted moong"
     },
     {
       "id": "prod-grated-coconut",
       "description": "A bowl of freshly grated coconut.",
-      "imageUrl": "https://images.unsplash.com/photo-1590425624233-a75d50697d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmF0ZWQlMjBjb2NvbnV0fGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590425624233-a75d50697d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmF0ZWQlMjBjb2NvbnV0fGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "grated coconut"
     },
     {
       "id": "prod-veggie-combo",
       "description": "A combination of onion, potato, and tomato.",
-      "imageUrl": "https://images.unsplash.com/photo-1590422220266-9c493907a272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBjb21ib3xlbnwwfHx8fDE3NjY1ODIzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590422220266-9c493907a272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBjb21ib3xlbnwwfHx8fDE3NjY1ODIzOTB8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "vegetable combo"
     },
     {
       "id": "prod-chicken",
       "description": "Raw chicken breasts on a board.",
-      "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwYnJlYXN0fGVufDB8fHx8MTc2NjU1NjQ1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwYnJlYXN0fGVufDB8fHx8MTc2NjU1NjQ1NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "chicken breast"
     },
     {
       "id": "prod-salmon",
       "description": "A fresh salmon fillet.",
-      "imageUrl": "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYWxtb24lMjBmaWxsZXR8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYWxtb24lMjBmaWxsZXR8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "salmon fillet"
     },
     {
       "id": "prod-mutton",
       "description": "Raw mutton pieces ready for cooking.",
-      "imageUrl": "https://images.unsplash.com/photo-1675239512140-529e843f542e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXR0b24lMjBwaWVjZXN8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1675239512140-529e843f542e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXR0b24lMjBwaWVjZXN8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mutton pieces"
     },
     {
       "id": "prod-milk-pouch",
       "description": "A pouch of fresh milk.",
-      "imageUrl": "https://images.unsplash.com/photo-1603578339591-93e1150824b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWxrJTIwcG91Y2h8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1603578339591-93e1150824b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWxrJTIwcG91Y2h8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "milk pouch"
     },
     {
       "id": "prod-milk-pouch-full",
       "description": "A full cream milk pouch.",
-      "imageUrl": "https://images.unsplash.com/photo-1603578339591-93e1150824b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWxrJTIwcG91Y2h8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1603578339591-93e1150824b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWxrJTIwcG91Y2h8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "milk pouch"
     },
     {
       "id": "prod-buttermilk",
       "description": "A glass of refreshing buttermilk.",
-      "imageUrl": "https://images.unsplash.com/photo-1627471220038-16b77a7f4c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXJtaWxrJTIwZ2xhc3N8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627471220038-16b77a7f4c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXJtaWxrJTIwZ2xhc3N8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "buttermilk glass"
     },
     {
       "id": "prod-curd",
       "description": "A bowl of fresh curd.",
-      "imageUrl": "https://images.unsplash.com/photo-1633933221316-24b5534c0e64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJkJTIwYm93bHxlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633933221316-24b5534c0e64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJkJTIwYm93bHxlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "curd bowl"
     },
     {
       "id": "prod-cheese",
       "description": "Slices of cheddar cheese.",
-      "imageUrl": "https://images.unsplash.com/photo-1622483863493-27c1b5b5465a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGVlc2UlMjBzbGljZXN8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622483863493-27c1b5b5465a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGVlc2UlMjBzbGljZXN8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "cheese slices"
     },
     {
       "id": "prod-butter",
       "description": "A block of butter.",
-      "imageUrl": "https://images.unsplash.com/photo-1621287114400-9833f6771966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXIlMjBibG9ja3xlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621287114400-9833f6771966?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXIlMjBibG9ja3xlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "butter block"
     },
     {
       "id": "prod-paneer",
       "description": "Cubes of fresh paneer.",
-      "imageUrl": "https://images.unsplash.com/photo-1664972589578-82559a44c4e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjBjdWJlc3xlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664972589578-82559a44c4e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjBjdWJlc3xlbnwwfHx8fDE3NjY3MzkwNzV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "paneer cubes"
     },
     {
       "id": "prod-yogurt",
       "description": "A pot of natural yogurt.",
-      "imageUrl": "https://images.unsplash.com/photo-1646325825271-0769c399e3e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx5b2d1cnQlMjBwb3R8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1646325825271-0769c399e3e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx5b2d1cnQlMjBwb3R8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "yogurt pot"
     },
     {
       "id": "prod-eggs-white",
       "description": "A carton of free-range eggs.",
-      "imageUrl": "https://images.unsplash.com/photo-1635165250545-277ed55a6349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXJ0b24lMjBlZ2dzfGVufDB8fHx8MTc2NjMyNTY3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1635165250545-277ed55a6349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXJ0b24lMjBlZ2dzfGVufDB8fHx8MTc2NjMyNTY3Nnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "carton eggs"
     },
     {
       "id": "prod-eggs-brown",
       "description": "A carton of brown eggs.",
-      "imageUrl": "https://images.unsplash.com/photo-1590558838392-00109673b53f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXJ0b24lMjBicm93biUyMGVnZ3N8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590558838392-00109673b53f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXJ0b24lMjBicm93biUyMGVnZ3N8ZW58MHx8fHwxNzY2NzM5MDc1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "brown eggs"
     },
     {
       "id": "prod-rusk",
       "description": "A stack of crispy tea rusks.",
-      "imageUrl": "https://images.unsplash.com/photo-1616650117498-dbc514f7de18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZWElMjBydXNrfGVufDB8fHx8MTc2NjczOTA3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616650117498-dbc514f7de18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZWElMjBydXNrfGVufDB8fHx8MTc2NjczOTA3NXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "tea rusk"
     },
     {
       "id": "prod-bread",
       "description": "A loaf of sliced sandwich bread.",
-      "imageUrl": "https://images.unsplash.com/photo-1598373182133-fb232fe47531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYW5kd2ljaCUyMGJyZWFkfGVufDB8fHx8MTc2NjczOTA3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598373182133-fb232fe47531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYW5kd2ljaCUyMGJyZWFkfGVufDB8fHx8MTc2NjczOTA3NXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "sandwich bread"
     },
     {
       "id": "prod-croissant",
       "description": "Flaky butter croissants.",
-      "imageUrl": "https://images.unsplash.com/photo-1727230596548-c10c96841917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXIlMjBjcm9pc3NhbnRzfGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1727230596548-c10c96841917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxidXR0ZXIlMjBjcm9pc3NhbnRzfGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "butter croissants"
     },
     {
       "id": "prod-cake",
       "description": "A slice of chocolate cake.",
-      "imageUrl": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2NjM0MDc0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2NjM0MDc0MXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "chocolate cake"
     },
     {
       "id": "prod-muffin",
       "description": "A blueberry muffin.",
-      "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxibHVlYmVycnklMjBtdWZmaW58ZW58MHx8fHwxNzY2MzQ4MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxibHVlYmVycnklMjBtdWZmaW58ZW58MHx8fHwxNzY2MzQ4MDg2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "blueberry muffin"
     },
     {
       "id": "prod-lasagna",
       "description": "A tray of beef lasagna.",
-      "imageUrl": "https://images.unsplash.com/photo-1580052380706-16fcc67ee1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiZWVmLTIwbGFzYWdubGF8ZW58MHx8fHwxNzY2MzQ1NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580052380706-16fcc67ee1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiZWVmLTIwbGFzYWdubGF8ZW58MHx8fHwxNzY2MzQ1NTQ1fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "beef lasagna"
     },
     {
       "id": "prod-sushi",
       "description": "A selection of assorted sushi.",
-      "imageUrl": "https://images.unsplash.com/photo-1736885978380-8d7d9f7d7880?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzY2MjgwNjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1736885978380-8d7d9f7d7880?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzY2MjgwNjU0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "sushi platter"
     },
     {
       "id": "prod-salad",
       "description": "A fresh chicken caesar salad.",
-      "imageUrl": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3NjYzODQxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3NjYzODQxNjB8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "caesar salad"
     },
     {
       "id": "prod-pizza",
       "description": "A margherita pizza.",
-      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY2MzQwNjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY2MzQwNjAxfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "margherita pizza"
     },
     {
       "id": "prod-idli",
       "description": "Soft steamed rice cakes.",
-      "imageUrl": "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpZGxpJTIwc2FtYmFyfGVufDB8fHx8MTc2NjI5ODQwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpZGxpJTIwc2FtYmFyfGVufDB8fHx8MTc2NjI5ODQwNnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "idli sambar"
     },
     {
       "id": "prod-dosa",
       "description": "Crispy rice and lentil crepe.",
-      "imageUrl": "https://images.unsplash.com/photo-1743517894265-c86ab035adef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXNhbGElMjBkb3NhfGVufDB8fHx8MTc2NjMyMzU2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1743517894265-c86ab035adef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXNhbGElMjBkb3NhfGVufDB8fHx8MTc2NjMyMzU2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "masala dosa"
     },
     {
@@ -297,139 +297,139 @@
     {
       "id": "prod-pongal",
       "description": "A delicious bowl of Ven Pongal.",
-      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZW4lMjBwb25nYWx8ZW58MHx8fHwxNzY2NTQ4NDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZW4lMjBwb25nYWx8ZW58MHx8fHwxNzY2NTQ4NDMyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ven pongal"
     },
     {
       "id": "prod-murukku",
       "description": "A plate of crispy murukku.",
-      "imageUrl": "https://images.unsplash.com/photo-1627309301987-1751559815b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXJ1a2t1JTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627309301987-1751559815b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXJ1a2t1JTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "murukku snack"
     },
     {
       "id": "prod-thattai",
       "description": "A close-up of thattai snacks.",
-      "imageUrl": "https://images.unsplash.com/photo-1615837197154-24195a8986c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aGF0dGFpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1615837197154-24195a8986c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aGF0dGFpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "thattai snack"
     },
     {
       "id": "prod-mixture",
       "description": "A bowl of South Indian mixture.",
-      "imageUrl": "https://images.unsplash.com/photo-1581622329862-23b34250285a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaXh0dXJlJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581622329862-23b34250285a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaXh0dXJlJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mixture snack"
     },
     {
       "id": "prod-ribbon-pakoda",
       "description": "Crispy ribbon pakoda.",
-      "imageUrl": "https://images.unsplash.com/photo-1610971032127-d3d3a7895f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHhyaWJib24lMjBwYWtvZGF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610971032127-d3d3a7895f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHhyaWJib24lMjBwYWtvZGF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ribbon pakoda"
     },
     {
       "id": "prod-thenkuzhal",
       "description": "Crunchy thenkuzhal snacks.",
-      "imageUrl": "https://images.unsplash.com/photo-1628131332884-887b2e311545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aGVua3V6aGFsJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628131332884-887b2e311545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aGVua3V6aGFsJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "thenkuzhal snack"
     },
     {
       "id": "prod-pakora",
       "description": "Hot onion pakoras.",
-      "imageUrl": "https://images.unsplash.com/photo-1600374495256-423c93e430f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvcnJpb24lMjBwYWtvcmF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600374495256-423c93e430f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvcnJpb24lMjBwYWtvcmF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "onion pakora"
     },
     {
       "id": "prod-parippu-vada",
       "description": "Crispy parippu vada.",
-      "imageUrl": "https://images.unsplash.com/photo-1631553381483-a9792a549929?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYXJpcHB1JTIwdmFkYXxlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631553381483-a9792a549929?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYXJpcHB1JTIwdmFkYXxlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "parippu vada"
     },
     {
       "id": "prod-banana-chips",
       "description": "A bowl of banana chips.",
-      "imageUrl": "https://images.unsplash.com/photo-1599903930495-23f2f84b655f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYW5hbmElMjBjaGlwc3xlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599903930495-23f2f84b655f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYW5hbmElMjBjaGlwc3xlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "banana chips"
     },
     {
       "id": "prod-omapodi",
       "description": "Crispy omapodi snack.",
-      "imageUrl": "https://images.unsplash.com/photo-1628131332986-57a53e680a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvbWFwb2RpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628131332986-57a53e680a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvbWFwb2RpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "omapodi snack"
     },
     {
       "id": "prod-kadalai-mittai",
       "description": "Bars of traditional groundnut candy.",
-      "imageUrl": "https://images.unsplash.com/photo-1512426887555-2e0f545b6422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncm91bmRudXQlMjBjYW5keXxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1512426887555-2e0f545b6422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncm91bmRudXQlMjBjYW5keXxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "groundnut candy"
     },
     {
       "id": "prod-adhirasam",
       "description": "A plate of sweet adhirasam.",
-      "imageUrl": "https://images.unsplash.com/photo-1590082855198-8424a15a31a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhZGhpcmFzYW0lMjBzd2VldHxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590082855198-8424a15a31a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhZGhpcmFzYW0lMjBzd2VldHxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "adhirasam sweet"
     },
     {
       "id": "prod-halwa",
       "description": "A bowl of rich Tirunelveli halwa.",
-      "imageUrl": "https://images.unsplash.com/photo-1579782531322-a9f592a7e7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aXJ1bmVsdmVsaSUyMGhhbHdhfGVufDB8fHx8MTc2NjU1MDQ2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579782531322-a9f592a7e7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aXJ1bmVsdmVsaSUyMGhhbHdhfGVufDB8fHx8MTc2NjU1MDQ2NHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "tirunelveli halwa"
     },
     {
       "id": "prod-palkova",
       "description": "Freshly made palkova.",
-      "imageUrl": "https://images.unsplash.com/photo-1627914389932-95f03a677e4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYWxrb3ZhJTIwbWlsa3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627914389932-95f03a677e4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYWxrb3ZhJTIwbWlsa3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "palkova milk"
     },
     {
       "id": "prod-susiyam",
       "description": "Deep-fried susiyam sweets.",
-      "imageUrl": "https://images.unsplash.com/photo-1583337130417-746b14f7b24d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdXNpeWFtJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583337130417-746b14f7b24d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdXNpeWFtJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "susiyam sweet"
     },
     {
       "id": "prod-jangiri",
       "description": "Flower-shaped jangiri sweets.",
-      "imageUrl": "https://images.unsplash.com/photo-1610444331776-2e973e6a9f4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqYW5naXJpJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610444331776-2e973e6a9f4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqYW5naXJpJTIwc3dlZXR8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "jangiri sweet"
     },
     {
       "id": "prod-rava-ladoo",
       "description": "A plate of rava ladoos.",
-      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXZhJTIwbGFkb298ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXZhJTIwbGFkb298ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "rava ladoo"
     },
     {
       "id": "prod-boondi-ladoo",
       "description": "Colorful boondi ladoos.",
-      "imageUrl": "https://images.unsplash.com/photo-1598501199343-42a1768c7841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxib29uZGklMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598501199343-42a1768c7841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxib29uZGklMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "boondi ladoo"
     },
     {
       "id": "prod-mysore-pak",
       "description": "Slices of Mysore Pak.",
-      "imageUrl": "https://images.unsplash.com/photo-1623963443153-64b65e943c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxteXNvcmUlMjBwYWt8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1623963443153-64b65e943c2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxteXNvcmUlMjBwYWt8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "mysore pak"
     },
     {
       "id": "prod-coconut-burfi",
       "description": "Cubes of coconut burfi.",
-      "imageUrl": "https://images.unsplash.com/photo-1616815340881-807a5f6e8b43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb2NvbnV0JTIwYnVyZml8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616815340881-807a5f6e8b43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb2NvbnV0JTIwYnVyZml8ZW58MHx8fHwxNzY2NTUwNDY0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "coconut burfi"
     },
     {
       "id": "prod-maa-ladoo",
       "description": "Round maa ladoo sweets.",
-      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYWElMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYWElMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "maa ladoo"
     },
     {
       "id": "prod-atta",
       "description": "A bag of whole wheat atta flour.",
-      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdHRhJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdHRhJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "atta flour"
     },
     {
       "id": "prod-rice",
       "description": "A bag of basmati rice.",
-      "imageUrl": "https://images.unsplash.com/photo-1586201375822-52c6722c375f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYXNtYXRpJTIwcmljZXxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375822-52c6722c375f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYXNtYXRpJTIwcmljZXxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "basmati rice"
     },
     {
@@ -449,6 +449,96 @@
       "description": "An assortment of dry fruits and nuts.",
       "imageUrl": "https://images.unsplash.com/photo-1601925308696-9b5d32b53b1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkcnklMjBmdXJpdHN8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "dry fruits"
+    },
+    {
+      "id": "prod-rice-bag",
+      "description": "A jute bag of rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWNlJTIwYmFnfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice bag"
+    },
+    {
+      "id": "prod-basmati-rice",
+      "description": "A bowl of uncooked basmati rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375822-52c6722c375f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYXNtYXRpJTIwcmljZXxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "basmati rice"
+    },
+    {
+      "id": "prod-idli-rice",
+      "description": "A closeup of parboiled rice grains.",
+      "imageUrl": "https://images.unsplash.com/photo-1607693533316-c958a1d74a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWNlJTIwZ3JhaW5zfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice grains"
+    },
+    {
+      "id": "prod-poha",
+      "description": "A bowl of flattened rice (poha).",
+      "imageUrl": "https://images.unsplash.com/photo-1601205741656-e9f65355a109?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmbGF0dGVuZWQlMjByaWNlfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "flattened rice"
+    },
+    {
+      "id": "prod-besan",
+      "description": "A bowl of gram flour (besan).",
+      "imageUrl": "https://images.unsplash.com/photo-1625944238237-65d1d16c5a5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncmFtJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "gram flour"
+    },
+    {
+      "id": "prod-rice-flour",
+      "description": "A mound of white rice flour.",
+      "imageUrl": "https://images.unsplash.com/photo-1647413693026-c14856f6f9c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWNlJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice flour"
+    },
+    {
+      "id": "prod-ragi-flour",
+      "description": "A bowl of ragi (finger millet) flour.",
+      "imageUrl": "https://images.unsplash.com/photo-1630737482813-9a35368417f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYWdpJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "ragi flour"
+    },
+    {
+      "id": "prod-toor-dal",
+      "description": "A bowl of uncooked toor dal.",
+      "imageUrl": "https://images.unsplash.com/photo-1609139304111-a83d4701e5b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0b29yJTIwZGFsfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "toor dal"
+    },
+    {
+      "id": "prod-urad-dal",
+      "description": "A bowl of split urad dal.",
+      "imageUrl": "https://images.unsplash.com/photo-1593023215368-a400a4b3708a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx1cmFkJTIwZGFsfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "urad dal"
+    },
+    {
+      "id": "prod-chickpeas",
+      "description": "A bowl of uncooked chickpeas.",
+      "imageUrl": "https://images.unsplash.com/photo-1629837901170-10948956911c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja3BlYXMlMjBib3dsfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chickpeas bowl"
+    },
+    {
+      "id": "prod-crystal-salt",
+      "description": "A pile of coarse crystal salt.",
+      "imageUrl": "https://images.unsplash.com/photo-1599558450122-3a17277b55f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjcnlzdGFsJTIwc2FsdHxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "crystal salt"
+    },
+    {
+      "id": "prod-sugar",
+      "description": "White sugar cubes.",
+      "imageUrl": "https://images.unsplash.com/photo-1579582297890-3949f5287a93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdWdhciUyMGN1YmVzfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "sugar cubes"
+    },
+    {
+      "id": "prod-jaggery",
+      "description": "A block of traditional jaggery.",
+      "imageUrl": "https://images.unsplash.com/photo-1616485397441-39a04a6015a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqYWdnZXJ5JTIwYmxvY2t8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "jaggery block"
+    },
+    {
+      "id": "prod-barnyard-millet",
+      "description": "A bowl of barnyard millet grains.",
+      "imageUrl": "https://images.unsplash.com/photo-1594582823054-943e11746263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaWxsZXQlMjBncmFpbnN8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "millet grains"
+    },
+    {
+      "id": "prod-foxtail-millet",
+      "description": "A closeup of foxtail millet grains.",
+      "imageUrl": "https://images.unsplash.com/photo-1630737482813-9a35368417f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb3h0YWlsJTIwbWlsbGV0fGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "foxtail millet"
     },
     {
       "id": "prod-tea",
