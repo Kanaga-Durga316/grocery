@@ -11,7 +11,7 @@ import { Footer } from '@/components/layout/Footer';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Fresh Produce': Carrot,
-  'Dairy & Eggs': Milk,
+  'Dairy': Milk,
   'Bakery': CakeSlice,
   'Prepared Foods': Utensils,
   'Staples & Pantry': Wheat,
@@ -101,3 +101,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

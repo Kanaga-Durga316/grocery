@@ -14,7 +14,7 @@ const users: User[] = [
 
 const categories: Category[] = [
   { id: 'fresh-produce', name: 'Fresh Produce', description: 'The freshest fruits and vegetables, sourced locally and organically.' },
-  { id: 'dairy-eggs', name: 'Dairy & Eggs', description: 'Farm-fresh eggs, milk, cheese, and other dairy products.' },
+  { id: 'dairy', name: 'Dairy', description: 'Fresh milk, cheese, and other dairy products.' },
   { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
@@ -29,10 +29,9 @@ const products: Product[] = [
   { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots (1kg).', price: 55, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots', sellerId: 'seller-1' },
 
   // Dairy & Eggs - Seller 1
-  { id: 'prod-5', name: 'Organic Milk', description: '1L packet of fresh, whole organic milk.', price: 60, stock: 80, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
-  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating (200g).', price: 200, stock: 60, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese', sellerId: 'seller-1' },
-  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt (400g).', price: 150, stock: 90, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1' },
-  { id: 'prod-8', name: 'Free-Range Eggs', description: 'One dozen large brown free-range eggs.', price: 95, stock: 110, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs')!.imageUrl, imageHint: 'eggs carton', sellerId: 'seller-1' },
+  { id: 'prod-5', name: 'Organic Milk', description: '1L packet of fresh, whole organic milk.', price: 60, stock: 80, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
+  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating (200g).', price: 200, stock: 60, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese', sellerId: 'seller-1' },
+  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt (400g).', price: 150, stock: 90, categoryId: 'dairy', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1' },
   
   // Bakery - Seller 2
   { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 180, stock: 50, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread', sellerId: 'seller-2' },
@@ -155,3 +154,5 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getUserById = (id: string) => users.find(u => u.id === id);
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
+
+    
