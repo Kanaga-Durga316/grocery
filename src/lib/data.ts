@@ -11,6 +11,7 @@ const categories: Category[] = [
     { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals.' },
     { id: 'snacks', name: 'Snacks', description: 'Chips, sweets, and other snacks.' },
     { id: 'beverages', name: 'Beverages', description: 'Drinks and beverages.' },
+    { id: 'household-essentials', name: 'Household Essentials', description: 'Cleaning supplies, pooja items, and more.' },
 ];
 
 const products: Product[] = [
@@ -1303,6 +1304,68 @@ const products: Product[] = [
         subCategory: 'Combo Deals',
         pairingIds: ['prod-coke', 'prod-mixture']
     },
+    
+    // Household Essentials
+    {
+        id: 'prod-dishwash-liquid',
+        name: 'Vim Dishwash Liquid Gel',
+        description: 'Tough on grease, gentle on hands.',
+        price: 100,
+        stock: 80,
+        categoryId: 'household-essentials',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dishwash-liquid')!.imageUrl,
+        imageHint: 'dishwash liquid',
+        sellerId: 'seller-1',
+        subCategory: 'Cleaning Supplies',
+    },
+    {
+        id: 'prod-toilet-cleaner',
+        name: 'Harpic Toilet Cleaner',
+        description: 'Kills 99.9% of germs and removes tough stains.',
+        price: 95,
+        stock: 70,
+        categoryId: 'household-essentials',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toilet-cleaner')!.imageUrl,
+        imageHint: 'toilet cleaner',
+        sellerId: 'seller-1',
+        subCategory: 'Cleaning Supplies',
+    },
+    {
+        id: 'prod-agarbatti',
+        name: 'Mangaldeep Agarbatti',
+        description: 'Long-lasting and fragrant incense sticks for pooja.',
+        price: 70,
+        stock: 120,
+        categoryId: 'household-essentials',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-agarbatti')!.imageUrl,
+        imageHint: 'incense sticks',
+        sellerId: 'seller-3',
+        subCategory: 'Pooja Items',
+    },
+    {
+        id: 'prod-camphor',
+        name: 'Camphor (Karpuram)',
+        description: 'Pure camphor for religious ceremonies.',
+        price: 50,
+        stock: 150,
+        categoryId: 'household-essentials',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-camphor')!.imageUrl,
+        imageHint: 'camphor pieces',
+        sellerId: 'seller-3',
+        subCategory: 'Pooja Items',
+    },
+    {
+        id: 'prod-mosquito-repellent',
+        name: 'Good Knight Refill',
+        description: 'Effective mosquito repellent for peaceful nights.',
+        price: 85,
+        stock: 100,
+        categoryId: 'household-essentials',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mosquito-repellent')!.imageUrl,
+        imageHint: 'mosquito repellent',
+        sellerId: 'seller-1',
+        subCategory: 'Pest Control',
+    },
 ];
 
 const users: User[] = [
@@ -1392,4 +1455,5 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
