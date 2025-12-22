@@ -14,6 +14,7 @@ export interface Product {
   imageUrl: string;
   imageHint: string;
   sellerId: string;
+  subCategory?: string;
 }
 
 export interface Review {

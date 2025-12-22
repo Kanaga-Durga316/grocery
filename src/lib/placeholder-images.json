@@ -25,10 +25,118 @@
       "imageHint": "fresh broccoli"
     },
     {
-      "id": "prod-carrot",
-      "description": "A bundle of organic carrots.",
-      "imageUrl": "https://images.unsplash.com/photo-1723476992266-2c4a787c7b32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwY2Fycm90c3xlbnwwfHx8fDE3NjYzMzg1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "organic carrots"
+      "id": "prod-potato",
+      "description": "A pile of fresh potatoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1590422220266-9c493907a272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHBvdGF0b2VzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh potatoes"
+    },
+    {
+      "id": "prod-onion",
+      "description": "A group of fresh onions.",
+      "imageUrl": "https://images.unsplash.com/photo-1628815585258-6204a1154c4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9uaW9uc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh onions"
+    },
+    {
+      "id": "prod-tomato",
+      "description": "Several ripe red tomatoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1587353912423-644907a016f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXBlJTIwdG9tYXRvZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ripe tomatoes"
+    },
+    {
+      "id": "prod-spinach",
+      "description": "A bunch of fresh spinach leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGluYWNoJTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spinach leaves"
+    },
+    {
+      "id": "prod-coriander",
+      "description": "A fresh bunch of coriander.",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3JpYW5kZXIlMjBidW5jaHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coriander bunch"
+    },
+    {
+      "id": "prod-mint",
+      "description": "A bunch of fresh mint leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1627988353685-4809f45a0b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaW50JTIwbGVhdmVzfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mint leaves"
+    },
+    {
+      "id": "prod-curry-leaves",
+      "description": "A sprig of fresh curry leaves.",
+      "imageUrl": "https://images.unsplash.com/photo-1604593675230-6a053724c96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXJyeSUyMGxlYXZlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "curry leaves"
+    },
+    {
+      "id": "prod-mangoes",
+      "description": "Several ripe mangoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1606757389823-2747a5b3a8a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXBlJTIwbWFuZ29lc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ripe mangoes"
+    },
+    {
+      "id": "prod-watermelon",
+      "description": "A slice of juicy watermelon.",
+      "imageUrl": "https://images.unsplash.com/photo-1621051996538-3cdf1497a7a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3YXRlcm1lbG9uJTIwc2xpY2V8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "watermelon slice"
+    },
+    {
+      "id": "prod-grapes",
+      "description": "A bunch of green grapes.",
+      "imageUrl": "https://images.unsplash.com/photo-1594212699903-ec8a6e5a606d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGdyYXBlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green grapes"
+    },
+    {
+      "id": "prod-oranges",
+      "description": "A few fresh oranges.",
+      "imageUrl": "https://images.unsplash.com/photo-1580053429483-4a6f88b9015a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMG9yYW5nZXN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh oranges"
+    },
+    {
+      "id": "prod-bell-peppers",
+      "description": "A variety of colorful bell peppers.",
+      "imageUrl": "https://images.unsplash.com/photo-1599292862280-5177a835a62f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWxsJTIwcGVwcGVyc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bell peppers"
+    },
+    {
+      "id": "prod-zucchini",
+      "description": "A pair of fresh zucchini.",
+      "imageUrl": "https://images.unsplash.com/photo-1599421639999-529457630733?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMHp1Y2NoaW5pfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh zucchini"
+    },
+    {
+      "id": "prod-lettuce",
+      "description": "A head of fresh lettuce.",
+      "imageUrl": "https://images.unsplash.com/photo-1556813408-aa7c4a1e9447?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZXR0dWNlJTIwaGVhZHxlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lettuce head"
+    },
+    {
+      "id": "prod-avocado",
+      "description": "A ripe avocado, halved.",
+      "imageUrl": "https://images.unsplash.com/photo-1601035902407-5b602051268b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXBlJTIwYXZvY2Fkb3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ripe avocado"
+    },
+    {
+      "id": "prod-peeled-garlic",
+      "description": "A bowl of peeled garlic cloves.",
+      "imageUrl": "https://images.unsplash.com/photo-1595603330386-a78b54b09e0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWVsZWQlMjBnYXJsaWN8ZW58MHx8fHwxNzY2NTgyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peeled garlic"
+    },
+    {
+      "id": "prod-sambhar-mix",
+      "description": "A mix of chopped vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1594318721114-1f5313361a94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaG9wcGVkJTIwdmVnZXRhYmxlc3xlbnwwfHx8fDE3NjY1ODIyMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chopped vegetables"
+    },
+    {
+      "id": "prod-sprouted-moong",
+      "description": "A bowl of sprouted moong beans.",
+      "imageUrl": "https://images.unsplash.com/photo-1630601339999-a2e633d79b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcHJvdXRlZCUyMG1vb25nfGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sprouted moong"
+    },
+    {
+      "id": "prod-grated-coconut",
+      "description": "A bowl of freshly grated coconut.",
+      "imageUrl": "https://images.unsplash.com/photo-1590425624233-a75d50697d26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmF0ZWQlMjBjb2NvbnV0fGVufDB8fHx8MTc2NjU4MjIwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grated coconut"
     },
     {
       "id": "prod-chicken",
