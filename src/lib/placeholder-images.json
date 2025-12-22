@@ -1,3 +1,142 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A beautiful spread of fresh vegetables and fruits on a wooden table.",
+      "imageUrl": "https://images.unsplash.com/photo-1722581248341-de9b34c116bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmVzaCUyMGdyb2Nlcmllc3xlbnwwfHx8fDE3NjYyNzIxMzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh groceries"
+    },
+    {
+      "id": "prod-apple",
+      "description": "Crisp red apples in a basket.",
+      "imageUrl": "https://images.unsplash.com/photo-1666164037865-1174c019e207?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZWQlMjBhcHBsZXN8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red apples"
+    },
+    {
+      "id": "prod-banana",
+      "description": "A bunch of ripe yellow bananas.",
+      "imageUrl": "https://images.unsplash.com/photo-1583525957858-1463306158b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmlwZSUyMGJhbmFuYXN8ZW58MHx8fHwxNzY2MzQ3MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ripe bananas"
+    },
+    {
+      "id": "prod-broccoli",
+      "description": "Fresh green broccoli head.",
+      "imageUrl": "https://images.unsplash.com/photo-1757332051100-425acb974218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMGJyb2Njb2xpfGVufDB8fHx8MTc2NjM4NDQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh broccoli"
+    },
+    {
+      "id": "prod-carrot",
+      "description": "A bundle of organic carrots.",
+      "imageUrl": "https://images.unsplash.com/photo-1723476992266-2c4a787c7b32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbmljJTIwY2Fycm90c3xlbnwwfHx8fDE3NjYzMzg1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organic carrots"
+    },
+    {
+      "id": "prod-milk",
+      "description": "A carton of fresh milk.",
+      "imageUrl": "https://images.unsplash.com/photo-1734104739790-855195038d93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaWxrJTIwY2FydG9ufGVufDB8fHx8MTc2NjM1NzU5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "milk carton"
+    },
+    {
+      "id": "prod-cheese",
+      "description": "A block of cheddar cheese.",
+      "imageUrl": "https://images.unsplash.com/photo-1519411792752-25c2468cccb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGVkZGFyJTIwY2hlZXNlfGVufDB8fHx8MTc2NjMxNDQ2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheddar cheese"
+    },
+    {
+      "id": "prod-yogurt",
+      "description": "A pot of natural yogurt.",
+      "imageUrl": "https://images.unsplash.com/photo-1646325825271-0769c399e3e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx5b2d1cnQlMjBwb3R8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yogurt pot"
+    },
+    {
+      "id": "prod-eggs",
+      "description": "A carton of free-range eggs.",
+      "imageUrl": "https://images.unsplash.com/photo-1635165250545-277ed55a6349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWdncyUyMGNhcnRvbnxlbnwwfHx8fDE3NjYzMjU2NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eggs carton"
+    },
+    {
+      "id": "prod-bread",
+      "description": "A loaf of sourdough bread.",
+      "imageUrl": "https://images.unsplash.com/photo-1597604391235-a7429b4b350c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VyZG91Z2glMjBicmVhZHxlbnwwfHx8fDE3NjYyOTE5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sourdough bread"
+    },
+    {
+      "id": "prod-croissant",
+      "description": "Flaky butter croissants.",
+      "imageUrl": "https://images.unsplash.com/photo-1727230596548-c10c96841917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnV0dGVyJTIwY3JvaXNzYW50c3xlbnwwfHx8fDE3NjYzODQ0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "butter croissants"
+    },
+    {
+      "id": "prod-cake",
+      "description": "A slice of chocolate cake.",
+      "imageUrl": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hvY29sYXRlJTIwY2FrZXxlbnwwfHx8fDE3NjYzNDA3NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "prod-muffin",
+      "description": "A blueberry muffin.",
+      "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibHVlYmVycnklMjBtdWZmaW58ZW58MHx8fHwxNzY2MzQ4MDg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blueberry muffin"
+    },
+    {
+      "id": "prod-lasagna",
+      "description": "A tray of beef lasagna.",
+      "imageUrl": "https://images.unsplash.com/photo-1580052380706-16fcc67ee1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmVlZiUyMGxhc2FnbmF8ZW58MHx8fHwxNzY2MzQ1NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef lasagna"
+    },
+    {
+      "id": "prod-sushi",
+      "description": "A selection of assorted sushi.",
+      "imageUrl": "https://images.unsplash.com/photo-1736885978380-8d7d9f7d7880?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzY2MjgwNjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sushi platter"
+    },
+    {
+      "id": "prod-salad",
+      "description": "A fresh chicken caesar salad.",
+      "imageUrl": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3NjYzODQxNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "caesar salad"
+    },
+    {
+      "id": "prod-pizza",
+      "description": "A margherita pizza.",
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY2MzQwNjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "margherita pizza"
+    },
+    {
+      "id": "page-header-products",
+      "description": "Overhead view of a variety of fresh produce on a market stall.",
+      "imageUrl": "https://images.unsplash.com/photo-1705929192183-847aef14ba29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWNlJTIwbWFya2V0fGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "produce market"
+    },
+    {
+      "id": "page-header-cart",
+      "description": "A person pushing a shopping cart in a grocery store aisle.",
+      "imageUrl": "https://images.unsplash.com/photo-1685640206182-c51b8aa9b686?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaG9wcGluZyUyMGNhcnR8ZW58MHx8fHwxNzY2MzAxNjg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shopping cart"
+    },
+    {
+      "id": "page-header-checkout",
+      "description": "A person paying at a checkout counter with a credit card.",
+      "imageUrl": "https://images.unsplash.com/photo-1658282514119-65e9920d1e29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGVja291dCUyMGNvdW50ZXJ8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "checkout counter"
+    },
+    {
+      "id": "page-header-auth",
+      "description": "A stylish cafe interior.",
+      "imageUrl": "https://images.unsplash.com/photo-1494346480775-936a9f0d0877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYWZlJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY2MzIxMDQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cafe interior"
+    },
+    {
+      "id": "page-header-admin",
+      "description": "A modern office dashboard on a screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1763038311036-6d18805537e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvZmZpY2UlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzY2Mzg0NDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office dashboard"
+    },
+    {
+      "id": "page-header-confirmation",
+      "description": "A person happily holding a bag of groceries.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMGN1c3RvbWVyfGVufDB8fHx8MTc2NjMzNTk3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy customer"
+    }
+  ]
 }
