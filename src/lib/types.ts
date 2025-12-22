@@ -25,7 +25,7 @@ export interface Product {
   brand?: string;
   bestBefore?: string;
   variants?: ProductVariant[];
-  tags?: ('High Protein' | 'Low GI')[];
+  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch')[];
 }
 
 export interface Review {

@@ -145,10 +145,46 @@
       "imageHint": "vegetable combo"
     },
     {
-      "id": "prod-chicken",
-      "description": "Raw chicken breasts on a board.",
-      "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwYnJlYXN0fGVufDB8fHx8MTc2NjU1NjQ1NHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "chicken breast"
+      "id": "prod-chicken-curry-cut",
+      "description": "Raw chicken pieces for curry.",
+      "imageUrl": "https://images.unsplash.com/photo-1618335436814-0677271e54e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwY3VycnklMjBjdXR8ZW58MHx8fHwxNzY2NTg0MjY5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken curry cut"
+    },
+    {
+      "id": "prod-chicken-boneless",
+      "description": "Raw boneless chicken breast.",
+      "imageUrl": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxib25lbGVzcyUyMGNoaWNrZW58ZW58MHx8fHwxNzY2NTg0MjY5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "boneless chicken"
+    },
+    {
+      "id": "prod-country-chicken",
+      "description": "A whole country chicken, raw.",
+      "imageUrl": "https://images.unsplash.com/photo-1587593810167-a84920ea0781?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb3VudHJ5JTIwY2hpY2tlbnxlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "country chicken"
+    },
+    {
+      "id": "prod-mutton-curry-cut",
+      "description": "Raw mutton pieces for curry.",
+      "imageUrl": "https://images.unsplash.com/photo-1675239512140-529e843f542e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXR0b24lMjBjdXJyeSUyMGN1dHxlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "mutton curry cut"
+    },
+    {
+      "id": "prod-mutton-keema",
+      "description": "Minced mutton meat.",
+      "imageUrl": "https://images.unsplash.com/photo-1629875949576-f33a9499e99a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXR0b24lMjBtaW5jZXxlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "mutton mince"
+    },
+    {
+      "id": "prod-seer-fish",
+      "description": "Slices of raw seer fish.",
+      "imageUrl": "https://images.unsplash.com/photo-1597691888351-a02d4a6a5759?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzZWVyJTIwZmlzaHxlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "seer fish"
+    },
+    {
+      "id": "prod-prawns",
+      "description": "A pile of cleaned raw prawns.",
+      "imageUrl": "https://images.unsplash.com/photo-1615141998032-9b2d39a3f954?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjZWFbmVkJTIwcHJhd25zfGVufDB8fHx8MTc2NjU4NDI2OXww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "cleaned prawns"
     },
     {
       "id": "prod-salmon",
@@ -157,10 +193,22 @@
       "imageHint": "salmon fillet"
     },
     {
-      "id": "prod-mutton",
-      "description": "Raw mutton pieces ready for cooking.",
-      "imageUrl": "https://images.unsplash.com/photo-1675239512140-529e843f542e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXR0b24lMjBwaWVjZXN8ZW58MHx8fHwxNzY2NTU2NDU0fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "mutton pieces"
+      "id": "prod-chicken-sausages",
+      "description": "A pack of chicken sausages.",
+      "imageUrl": "https://images.unsplash.com/photo-1585325701168-a311b8543789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwc2F1c2FnZXN8ZW58MHx8fHwxNzY2NTg0MjY5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken sausages"
+    },
+    {
+      "id": "prod-chicken-nuggets",
+      "description": "A plate of cooked chicken nuggets.",
+      "imageUrl": "https://images.unsplash.com/photo-1626082894179-b1bfc809f4b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwbnVnZ2V0c3xlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken nuggets"
+    },
+    {
+      "id": "prod-quail-eggs",
+      "description": "A small bowl of quail eggs.",
+      "imageUrl": "https://images.unsplash.com/photo-1590533333333-855e718c3975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxxdWFpbCUyMGVnZ3N8ZW58MHx8fHwxNzY2NTg0MjY5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "quail eggs"
     },
     {
       "id": "prod-milk-pouch",
