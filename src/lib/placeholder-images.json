@@ -117,13 +117,13 @@
     {
       "id": "prod-vada",
       "description": "Savory lentil fritters.",
-      "imageUrl": "https://images.unsplash.com/photo-1668665632338-c626e257c3d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "imageUrl": "https://i.ibb.co/3kC0HhF/photo.jpg",
       "imageHint": "medu vada"
     },
     {
       "id": "prod-pongal",
       "description": "A delicious bowl of Ven Pongal.",
-      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+      "imageUrl": "https://i.ibb.co/vYv29g5/photo.jpg",
       "imageHint": "ven pongal"
     },
     {
@@ -245,6 +245,36 @@
       "description": "Round maa ladoo sweets.",
       "imageUrl": "https://images.unsplash.com/photo-1594914101131-11a54a229a27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWElMjBsYWRvb3xlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "maa ladoo"
+    },
+    {
+      "id": "prod-atta",
+      "description": "A bag of whole wheat atta flour.",
+      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdHRhJTIwZmxvdXJ8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "atta flour"
+    },
+    {
+      "id": "prod-rice",
+      "description": "A bag of basmati rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375822-52c6722c375f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXNtYXRpJTIwcmljZXxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "basmati rice"
+    },
+    {
+      "id": "prod-oil",
+      "description": "A bottle of cooking oil.",
+      "imageUrl": "https://images.unsplash.com/photo-1626082697103-9c87d0e5f05a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb29raW5nJTIwb2lsfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cooking oil"
+    },
+    {
+      "id": "prod-spices",
+      "description": "A variety of colorful Indian spices.",
+      "imageUrl": "https://images.unsplash.com/photo-1599508704512-2f19efd1e351?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian spices"
+    },
+    {
+      "id": "prod-dry-fruits",
+      "description": "An assortment of dry fruits and nuts.",
+      "imageUrl": "https://images.unsplash.com/photo-1601925308696-9b5d32b53b1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkcnklMjBmdXJpdHN8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dry fruits"
     },
     {
       "id": "page-header-products",

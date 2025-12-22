@@ -62,8 +62,6 @@ const products: Product[] = [
   { id: 'prod-27', name: 'Parippu Vada', description: 'Spicy and crispy lentil fritters, a popular street food snack from Kerala (4 pcs).', price: 60, stock: 110, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-parippu-vada')!.imageUrl, imageHint: 'parippu vada', sellerId: 'seller-3' },
   { id: 'prod-28', name: 'Banana Chips', description: 'Thinly sliced, deep-fried bananas, a classic crunchy snack from Kerala (150g).', price: 70, stock: 150, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana-chips')!.imageUrl, imageHint: 'banana chips', sellerId: 'seller-3' },
   { id: 'prod-29', name: 'Omapodi', description: 'Fine, crispy strands of gram flour noodles seasoned with carom seeds (omam) (200g).', price: 65, stock: 95, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-omapodi')!.imageUrl, imageHint: 'omapodi snack', sellerId: 'seller-3' },
-
-  // Sweet Snacks - Seller 3
   { id: 'prod-30', name: 'Kadalai Mittai', description: 'Traditional groundnut candy bars, a sweet and crunchy delight (200g).', price: 80, stock: 120, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-kadalai-mittai')!.imageUrl, imageHint: 'groundnut candy', sellerId: 'seller-3' },
   { id: 'prod-31', name: 'Adhirasam', description: 'A traditional sweet pastry made from rice flour and jaggery (4 pcs).', price: 100, stock: 80, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-adhirasam')!.imageUrl, imageHint: 'adhirasam sweet', sellerId: 'seller-3' },
   { id: 'prod-32', name: 'Tirunelveli Halwa', description: 'A famous, gooey, and rich wheat halwa from Tirunelveli (250g).', price: 150, stock: 60, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-halwa')!.imageUrl, imageHint: 'tirunelveli halwa', sellerId: 'seller-3' },
@@ -75,6 +73,13 @@ const products: Product[] = [
   { id: 'prod-38', name: 'Mysore Pak', description: 'A rich, buttery sweet made from gram flour, ghee, and sugar (200g).', price: 130, stock: 75, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mysore-pak')!.imageUrl, imageHint: 'mysore pak', sellerId: 'seller-3' },
   { id: 'prod-39', name: 'Coconut Burfi', description: 'A classic sweet made with coconut, sugar, and milk (200g).', price: 110, stock: 95, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coconut-burfi')!.imageUrl, imageHint: 'coconut burfi', sellerId: 'seller-3' },
   { id: 'prod-40', name: 'Maa Ladoo', description: 'A quick and easy sweet made from roasted gram dal flour (pottukadalai) (4 pcs).', price: 80, stock: 100, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-maa-ladoo')!.imageUrl, imageHint: 'maa ladoo', sellerId: 'seller-3' },
+
+  // Staples & Pantry - Seller 1
+  { id: 'prod-41', name: 'Whole Wheat Atta', description: 'Premium quality whole wheat flour for soft rotis and chapatis (5kg).', price: 250, stock: 100, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-atta')!.imageUrl, imageHint: 'atta flour', sellerId: 'seller-1' },
+  { id: 'prod-42', name: 'Basmati Rice', description: 'Long-grain aromatic Basmati rice, perfect for biryani and pulao (5kg).', price: 600, stock: 80, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-rice')!.imageUrl, imageHint: 'basmati rice', sellerId: 'seller-1' },
+  { id: 'prod-43', name: 'Groundnut Oil', description: 'Cold-pressed groundnut oil, ideal for all types of cooking (1L).', price: 220, stock: 120, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-oil')!.imageUrl, imageHint: 'cooking oil', sellerId: 'seller-1' },
+  { id: 'prod-44', name: 'Assorted Masalas', description: 'A combo pack of essential Indian spices including turmeric, chili, and coriander powder (100g each).', price: 180, stock: 150, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-spices')!.imageUrl, imageHint: 'indian spices', sellerId: 'seller-1' },
+  { id: 'prod-45', name: 'Mixed Dry Fruits', description: 'A healthy mix of almonds, cashews, raisins, and walnuts (250g).', price: 350, stock: 90, categoryId: 'staples-pantry', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dry-fruits')!.imageUrl, imageHint: 'dry fruits', sellerId: 'seller-1' },
 ];
 
 
