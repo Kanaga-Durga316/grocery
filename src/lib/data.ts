@@ -47,7 +47,7 @@ const products: Product[] = [
   { id: 'prod-17', name: 'Idli with Sambar', description: '4 pieces of soft, steamed rice cakes served with flavorful lentil-based vegetable stew.', price: 60, stock: 50, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-idli')!.imageUrl, imageHint: 'idli sambar', sellerId: 'seller-3' },
   { id: 'prod-18', name: 'Masala Dosa', description: 'A crispy rice and lentil crepe filled with a savory potato masala.', price: 90, stock: 40, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dosa')!.imageUrl, imageHint: 'masala dosa', sellerId: 'seller-3' },
   { id: 'prod-19', name: 'Medu Vada (2 pcs)', description: 'Two savory, donut-shaped lentil fritters, crispy on the outside and soft on the inside.', price: 45, stock: 60, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-vada')!.imageUrl, imageHint: 'medu vada', sellerId: 'seller-3' },
-  { id: 'prod-20', name: 'Ven Pongal', description: 'A comforting dish of rice and lentils cooked with black pepper, cumin, and ghee.', price: 80, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pongal')!.imageUrl, imageHint: 'ven pongal', sellerId: 'seller-3' },
+  { id: 'prod-20', name: 'Ven Pongal', description: 'A comforting dish of rice and lentils cooked with black pepper, cumin, and ghee.', price: 75, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pongal')!.imageUrl, imageHint: 'ven pongal', sellerId: 'seller-3' },
 ];
 
 
