@@ -18,6 +18,7 @@ const categories: Category[] = [
   { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
   { id: 'snacks', name: 'Snacks', description: 'A delicious assortment of savory, crispy, and sweet traditional snacks.' },
+  { id: 'staples-pantry', name: 'Staples & Pantry', description: 'Essential cooking ingredients, spices, and pantry items.' },
 ];
 
 const products: Product[] = [
