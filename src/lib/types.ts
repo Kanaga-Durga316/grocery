@@ -1,4 +1,5 @@
 
+
 export interface Category {
   id: string;
   name: string;
@@ -33,7 +34,7 @@ export interface Product {
   bestBefore?: string;
   variants?: ProductVariant[];
   cleaningOptions?: CleaningOption[];
-  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch' | 'No Preservatives' | 'Low Sodium')[];
+  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch' | 'No Preservatives' | 'Low Sodium' | 'Chilled Delivery' | 'Diet/Zero')[];
   cookingMethods?: ('Microwave' | 'Pan Fry' | 'Air Fryer' | 'Deep Fry' | 'Grill')[];
   serves?: string;
   pairingIds?: string[];
