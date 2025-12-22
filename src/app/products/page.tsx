@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { useMemo, useState } from 'react';
@@ -21,27 +22,35 @@ export default function MenuPage() {
   const productsByCategory = useMemo(() => {
     return categories.map(category => {
       const originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id);
+      let structuredProducts: { name: string; products: Product[] }[] = [];
 
-      if (category.id === 'fresh-produce') {
-        let filteredProducts = originalCategoryProducts;
-        if (produceFilter === 'under30') {
-            filteredProducts = filteredProducts.filter(p => p.price < 30);
-        } else if (produceFilter === 'combo') {
-            filteredProducts = filteredProducts.filter(p => p.subCategory === 'Combos');
-        }
-
-        const subCategories = Array.from(new Set(filteredProducts.map(p => p.subCategory).filter(Boolean)));
+      if (['fresh-produce', 'dairy-bakery', 'snacks'].includes(category.id)) {
+        let productsToStructure = originalCategoryProducts;
         
+        if (category.id === 'fresh-produce') {
+            if (produceFilter === 'under30') {
+                productsToStructure = productsToStructure.filter(p => p.price < 30);
+            } else if (produceFilter === 'combo') {
+                productsToStructure = productsToStructure.filter(p => p.subCategory === 'Combos');
+            }
+        }
+        
+        const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
+        
+        structuredProducts = subCategories.map(subCategory => ({
+          name: subCategory,
+          products: productsToStructure.filter(p => p.subCategory === subCategory)
+        })).filter(sc => sc.products.length > 0);
+        
+        // Include products without a sub-category at the top level if needed, but for these categories we expect sub-categories.
         return {
           ...category,
           products: [],
-          structuredProducts: subCategories.map(subCategory => ({
-            name: subCategory,
-            products: filteredProducts.filter(p => p.subCategory === subCategory)
-          })).filter(sc => sc.products.length > 0)
+          structuredProducts: structuredProducts
         };
       }
       
+      // For categories without sub-category logic
       return {
         ...category,
         products: originalCategoryProducts,
@@ -50,8 +59,6 @@ export default function MenuPage() {
 
     }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
   }, [allProducts, categories, produceFilter]);
-
-  const freshProduceCategory = productsByCategory.find(c => c.id === 'fresh-produce');
 
   return (
     <>
@@ -83,7 +90,7 @@ export default function MenuPage() {
               </div>
             )}
             
-            {category.id === 'fresh-produce' && category.structuredProducts ? (
+            {category.structuredProducts && category.structuredProducts.length > 0 ? (
               <div className="space-y-12">
                  {category.structuredProducts.length > 0 ? (
                     category.structuredProducts.map(subCat => (
