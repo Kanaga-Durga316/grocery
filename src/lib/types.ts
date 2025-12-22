@@ -13,6 +13,7 @@ export interface Product {
   categoryId: string;
   imageUrl: string;
   imageHint: string;
+  sellerId: string;
 }
 
 export interface Review {
@@ -28,7 +29,7 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  role: 'Customer' | 'Admin' | 'Delivery';
+  role: 'Customer' | 'Admin' | 'Delivery' | 'Seller';
 }
 
 export interface CartItem {

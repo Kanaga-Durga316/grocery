@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { getProductById, getReviewsForProduct, getUserById } from '@/lib/data';
 import { formatPrice } from '@/lib/utils';
 import { RatingStars } from '@/components/RatingStars';
@@ -11,6 +12,9 @@ import { Separator } from '@/components/ui/separator';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { format } from 'date-fns';
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { ContactSellerDialog } from '@/components/ContactSellerDialog';
+import { Store } from 'lucide-react';
 
 type ProductDetailPageProps = {
   params: { id: string };
@@ -69,6 +73,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     notFound();
   }
 
+  const seller = getUserById(product.sellerId);
   const reviews = getReviewsForProduct(params.id);
   const averageRating = reviews.length > 0
     ? reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length
@@ -109,6 +114,24 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
           <AddToCartSection product={product} />
           
           <Separator />
+          
+          {seller && (
+             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 rounded-lg border bg-card text-card-foreground shadow-sm p-4">
+                <div className="flex items-center gap-4">
+                  <Avatar className="h-12 w-12">
+                    <AvatarImage src={`https://avatar.vercel.sh/${seller.id}.png`} alt={seller.name} />
+                    <AvatarFallback><Store /></AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Sold by</p>
+                    <Link href={`/sellers/${seller.id}`} className="font-semibold text-foreground hover:text-primary transition-colors">
+                        {seller.name}
+                    </Link>
+                  </div>
+                </div>
+                <ContactSellerDialog seller={seller} product={product} />
+              </div>
+          )}
 
           <div>
              <p className="text-sm text-muted-foreground"><span className="font-semibold text-foreground">Category:</span> {product.categoryId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>

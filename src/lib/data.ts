@@ -6,6 +6,8 @@ const users: User[] = [
   { id: 'user-2', name: 'Bob Williams', email: 'bob@example.com', role: 'Customer' },
   { id: 'user-3', name: 'Charlie Brown', email: 'charlie@example.com', role: 'Customer' },
   { id: 'admin-1', name: 'Admin User', email: 'admin@example.com', role: 'Admin' },
+  { id: 'seller-1', name: 'Farm Fresh Co.', email: 'contact@farmfresh.com', role: 'Seller' },
+  { id: 'seller-2', name: 'The Artisan Bakery', email: 'hello@artisanbakery.com', role: 'Seller' },
 ];
 
 const categories: Category[] = [
@@ -16,30 +18,31 @@ const categories: Category[] = [
 ];
 
 const products: Product[] = [
-  // Fresh Produce
-  { id: 'prod-1', name: 'Organic Apples', description: 'Crisp and juicy organic Gala apples, perfect for snacking.', price: 3.99, stock: 150, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-apple')!.imageUrl, imageHint: 'red apples' },
-  { id: 'prod-2', name: 'Ripe Bananas', description: 'A bunch of perfectly ripe organic bananas.', price: 1.99, stock: 200, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana')!.imageUrl, imageHint: 'ripe bananas' },
-  { id: 'prod-3', name: 'Fresh Broccoli', description: 'Fresh, green broccoli crowns, rich in vitamins.', price: 2.49, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-broccoli')!.imageUrl, imageHint: 'fresh broccoli' },
-  { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots.', price: 2.99, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots' },
+  // Fresh Produce - Seller 1
+  { id: 'prod-1', name: 'Organic Apples', description: 'Crisp and juicy organic Gala apples, perfect for snacking.', price: 3.99, stock: 150, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-apple')!.imageUrl, imageHint: 'red apples', sellerId: 'seller-1' },
+  { id: 'prod-2', name: 'Ripe Bananas', description: 'A bunch of perfectly ripe organic bananas.', price: 1.99, stock: 200, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana')!.imageUrl, imageHint: 'ripe bananas', sellerId: 'seller-1' },
+  { id: 'prod-3', name: 'Fresh Broccoli', description: 'Fresh, green broccoli crowns, rich in vitamins.', price: 2.49, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-broccoli')!.imageUrl, imageHint: 'fresh broccoli', sellerId: 'seller-1' },
+  { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots.', price: 2.99, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots', sellerId: 'seller-1' },
 
-  // Dairy & Eggs
-  { id: 'prod-5', name: 'Organic Milk', description: 'Gallon of fresh, whole organic milk.', price: 5.99, stock: 80, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton' },
-  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating.', price: 7.49, stock: 60, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese' },
-  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt.', price: 4.29, stock: 90, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot' },
-  { id: 'prod-8', name: 'Free-Range Eggs', description: 'One dozen large brown free-range eggs.', price: 4.99, stock: 110, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs')!.imageUrl, imageHint: 'eggs carton' },
+  // Dairy & Eggs - Seller 1
+  { id: 'prod-5', name: 'Organic Milk', description: 'Gallon of fresh, whole organic milk.', price: 5.99, stock: 80, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton', sellerId: 'seller-1' },
+  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating.', price: 7.49, stock: 60, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese', sellerId: 'seller-1' },
+  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt.', price: 4.29, stock: 90, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot', sellerId: 'seller-1' },
+  { id: 'prod-8', name: 'Free-Range Eggs', description: 'One dozen large brown free-range eggs.', price: 4.99, stock: 110, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs')!.imageUrl, imageHint: 'eggs carton', sellerId: 'seller-1' },
   
-  // Bakery
-  { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 6.99, stock: 50, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread' },
-  { id: 'prod-10', name: 'Butter Croissants', description: 'Pack of 4 flaky, all-butter croissants.', price: 8.00, stock: 40, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-croissant')!.imageUrl, imageHint: 'butter croissants' },
-  { id: 'prod-11', name: 'Chocolate Cake', description: 'Rich, decadent chocolate fudge cake slice.', price: 5.50, stock: 30, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake' },
-  { id: 'prod-12', name: 'Blueberry Muffins', description: 'Pack of 4 soft muffins bursting with blueberries.', price: 7.25, stock: 45, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-muffin')!.imageUrl, imageHint: 'blueberry muffin' },
+  // Bakery - Seller 2
+  { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 6.99, stock: 50, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread', sellerId: 'seller-2' },
+  { id: 'prod-10', name: 'Butter Croissants', description: 'Pack of 4 flaky, all-butter croissants.', price: 8.00, stock: 40, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-croissant')!.imageUrl, imageHint: 'butter croissants', sellerId: 'seller-2' },
+  { id: 'prod-11', name: 'Chocolate Cake', description: 'Rich, decadent chocolate fudge cake slice.', price: 5.50, stock: 30, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake', sellerId: 'seller-2' },
+  { id: 'prod-12', name: 'Blueberry Muffins', description: 'Pack of 4 soft muffins bursting with blueberries.', price: 7.25, stock: 45, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-muffin')!.imageUrl, imageHint: 'blueberry muffin', sellerId: 'seller-2' },
 
-  // Prepared Foods
-  { id: 'prod-13', name: 'Beef Lasagna', description: 'Family-size beef lasagna, ready to heat and eat.', price: 15.99, stock: 20, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lasagna')!.imageUrl, imageHint: 'beef lasagna' },
-  { id: 'prod-14', name: 'Sushi Platter', description: 'An assortment of fresh sushi rolls including California, Tuna, and Salmon.', price: 12.99, stock: 25, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sushi')!.imageUrl, imageHint: 'sushi platter' },
-  { id: 'prod-15', name: 'Chicken Caesar Salad', description: 'Classic Caesar salad with grilled chicken, croutons, and parmesan.', price: 9.99, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salad')!.imageUrl, imageHint: 'caesar salad' },
-  { id: 'prod-16', name: 'Margherita Pizza', description: 'A classic 12-inch Margherita pizza with fresh mozzarella and basil.', price: 14.99, stock: 28, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pizza')!.imageUrl, imageHint: 'margherita pizza' },
+  // Prepared Foods - Seller 1 & 2
+  { id: 'prod-13', name: 'Beef Lasagna', description: 'Family-size beef lasagna, ready to heat and eat.', price: 15.99, stock: 20, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lasagna')!.imageUrl, imageHint: 'beef lasagna', sellerId: 'seller-1' },
+  { id: 'prod-14', name: 'Sushi Platter', description: 'An assortment of fresh sushi rolls including California, Tuna, and Salmon.', price: 12.99, stock: 25, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sushi')!.imageUrl, imageHint: 'sushi platter', sellerId: 'seller-1' },
+  { id: 'prod-15', name: 'Chicken Caesar Salad', description: 'Classic Caesar salad with grilled chicken, croutons, and parmesan.', price: 9.99, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salad')!.imageUrl, imageHint: 'caesar salad', sellerId: 'seller-1' },
+  { id: 'prod-16', name: 'Margherita Pizza', description: 'A classic 12-inch Margherita pizza with fresh mozzarella and basil.', price: 14.99, stock: 28, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pizza')!.imageUrl, imageHint: 'margherita pizza', sellerId: 'seller-2' },
 ];
+
 
 const reviews: Review[] = [
   { id: 'rev-1', productId: 'prod-1', userId: 'user-1', rating: 5, comment: 'So fresh and delicious! Best apples I\'ve had in a while.', timestamp: '2024-05-20T10:00:00Z' },
@@ -104,6 +107,7 @@ export const getProducts = (categoryId?: string) => {
   if (!categoryId) return products;
   return products.filter(p => p.categoryId === categoryId);
 };
+export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId);
 export const getProductById = (id: string) => products.find(p => p.id === id);
 export const getFeaturedProducts = () => products.slice(0, 4);
 export const getReviewsForProduct = (productId: string) => reviews.filter(r => r.productId === productId);
