@@ -127,6 +127,60 @@
       "imageHint": "ven pongal"
     },
     {
+      "id": "prod-murukku",
+      "description": "A plate of crispy murukku.",
+      "imageUrl": "https://images.unsplash.com/photo-1627309301987-1751559815b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXJ1a2t1JTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "murukku snack"
+    },
+    {
+      "id": "prod-thattai",
+      "description": "A close-up of thattai snacks.",
+      "imageUrl": "https://images.unsplash.com/photo-1615837197154-24195a8986c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGF0dGFpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thattai snack"
+    },
+    {
+      "id": "prod-mixture",
+      "description": "A bowl of South Indian mixture.",
+      "imageUrl": "https://images.unsplash.com/photo-1581622329862-23b34250285a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaXh0dXJlJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mixture snack"
+    },
+    {
+      "id": "prod-ribbon-pakoda",
+      "description": "Crispy ribbon pakoda.",
+      "imageUrl": "https://images.unsplash.com/photo-1610971032127-d3d3a7895f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWJib24lMjBwYWtvZGF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ribbon pakoda"
+    },
+    {
+      "id": "prod-thenkuzhal",
+      "description": "Crunchy thenkuzhal snacks.",
+      "imageUrl": "https://images.unsplash.com/photo-1628131332884-887b2e311545?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGVua3V6aGFsJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thenkuzhal snack"
+    },
+    {
+      "id": "prod-pakora",
+      "description": "Hot onion pakoras.",
+      "imageUrl": "https://images.unsplash.com/photo-1600374495256-423c93e430f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcnJpb24lMjBwYWtvcmF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "onion pakora"
+    },
+    {
+      "id": "prod-parippu-vada",
+      "description": "Crispy parippu vada.",
+      "imageUrl": "https://images.unsplash.com/photo-1631553381483-a9792a549929?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJpcHB1JTIwdmFkYXxlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parippu vada"
+    },
+    {
+      "id": "prod-banana-chips",
+      "description": "A bowl of banana chips.",
+      "imageUrl": "https://images.unsplash.com/photo-1599903930495-23f2f84b655f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5hbmElMjBjaGlwc3xlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "banana chips"
+    },
+    {
+      "id": "prod-omapodi",
+      "description": "Crispy omapodi snack.",
+      "imageUrl": "https://images.unsplash.com/photo-1628131332986-57a53e680a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbWFwb2RpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "omapodi snack"
+    },
+    {
       "id": "page-header-products",
       "description": "Overhead view of a variety of fresh produce on a market stall.",
       "imageUrl": "https://images.unsplash.com/photo-1705929192183-847aef14ba29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWNlJTIwbWFya2V0fGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib=rb-4.1.0&q=80&w=1080",

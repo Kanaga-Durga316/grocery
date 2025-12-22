@@ -16,6 +16,7 @@ const categories: Category[] = [
   { id: 'dairy-eggs', name: 'Dairy & Eggs', description: 'Farm-fresh eggs, milk, cheese, and other dairy products.' },
   { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
   { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
+  { id: 'snacks', name: 'Snacks', description: 'Savory & Crispy Snacks from Tamil Nadu.' },
 ];
 
 const products: Product[] = [
@@ -48,6 +49,17 @@ const products: Product[] = [
   { id: 'prod-18', name: 'Masala Dosa', description: 'A crispy rice and lentil crepe filled with a savory potato masala.', price: 90, stock: 40, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-dosa')!.imageUrl, imageHint: 'masala dosa', sellerId: 'seller-3' },
   { id: 'prod-19', name: 'Medu Vada (2 pcs)', description: 'Two savory, donut-shaped lentil fritters, crispy on the outside and soft on the inside.', price: 45, stock: 60, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-vada')!.imageUrl, imageHint: 'medu vada', sellerId: 'seller-3' },
   { id: 'prod-20', name: 'Ven Pongal', description: 'A comforting dish of rice and lentils cooked with black pepper, cumin, and ghee.', price: 75, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pongal')!.imageUrl, imageHint: 'ven pongal', sellerId: 'seller-3' },
+
+  // Snacks - Seller 3
+  { id: 'prod-21', name: 'Murukku', description: 'Classic crispy spiral snack. Available in Manaparai, Kai, and Butter varieties (200g).', price: 80, stock: 100, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-murukku')!.imageUrl, imageHint: 'murukku snack', sellerId: 'seller-3' },
+  { id: 'prod-22', name: 'Thattai', description: 'Crispy and savory deep-fried rice flour discs, a traditional South Indian snack (200g).', price: 75, stock: 100, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-thattai')!.imageUrl, imageHint: 'thattai snack', sellerId: 'seller-3' },
+  { id: 'prod-23', name: 'Mixture', description: 'A crunchy mix of various fried snacks like sev, boondi, peanuts, and more (250g).', price: 100, stock: 80, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mixture')!.imageUrl, imageHint: 'mixture snack', sellerId: 'seller-3' },
+  { id: 'prod-24', name: 'Ribbon Pakoda', description: 'Also known as Ribbon Seeval, a crunchy and savory snack made from rice flour (200g).', price: 85, stock: 90, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-ribbon-pakoda')!.imageUrl, imageHint: 'ribbon pakoda', sellerId: 'seller-3' },
+  { id: 'prod-25', name: 'Thenkuzhal', description: 'A delicate, crunchy snack made from rice flour and urad dal flour (200g).', price: 90, stock: 70, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-thenkuzhal')!.imageUrl, imageHint: 'thenkuzhal snack', sellerId: 'seller-3' },
+  { id: 'prod-26', name: 'Onion Pakora (Bhajji)', description: 'Crispy onion fritters made with gram flour and spices. A perfect tea-time snack (4 pcs).', price: 50, stock: 120, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pakora')!.imageUrl, imageHint: 'onion pakora', sellerId: 'seller-3' },
+  { id: 'prod-27', name: 'Parippu Vada', description: 'Spicy and crispy lentil fritters, a popular street food snack from Kerala (4 pcs).', price: 60, stock: 110, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-parippu-vada')!.imageUrl, imageHint: 'parippu vada', sellerId: 'seller-3' },
+  { id: 'prod-28', name: 'Banana Chips', description: 'Thinly sliced, deep-fried bananas, a classic crunchy snack from Kerala (150g).', price: 70, stock: 150, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana-chips')!.imageUrl, imageHint: 'banana chips', sellerId: 'seller-3' },
+  { id: 'prod-29', name: 'Omapodi', description: 'Fine, crispy strands of gram flour noodles seasoned with carom seeds (omam) (200g).', price: 65, stock: 95, categoryId: 'snacks', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-omapodi')!.imageUrl, imageHint: 'omapodi snack', sellerId: 'seller-3' },
 ];
 
 
