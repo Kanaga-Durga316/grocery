@@ -76,7 +76,7 @@ export function Header() {
                 href={href}
                 className={cn(
                   "transition-colors hover:text-foreground/80",
-                  pathname === href ? "text-foreground" : "text-foreground/60"
+                  pathname.startsWith(href) && href !== '/' || pathname === href ? "text-foreground" : "text-foreground/60"
                 )}
               >
                 {label}

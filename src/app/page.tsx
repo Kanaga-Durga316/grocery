@@ -46,7 +46,7 @@ export default function Home() {
               Quality groceries and delicious meals, right to your doorstep. Experience the ease of online shopping with GrocerEase.
             </p>
             <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg">
-              <Link href="/products">Shop Now <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              <Link href="/products">View Menu <ArrowRight className="ml-2 h-5 w-5" /></Link>
             </Button>
           </div>
         </section>
@@ -61,7 +61,7 @@ export default function Home() {
               {categories.map((category) => {
                 const Icon = categoryIcons[category.name] || Utensils;
                 return (
-                  <Link href={`/products?category=${category.id}`} key={category.id}>
+                  <Link href={`/products#${category.id}`} key={category.id}>
                     <Card className="group overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-border/80">
                       <CardContent className="p-6 flex flex-col items-center justify-center">
                         <div className="p-4 bg-secondary rounded-full mb-4 group-hover:bg-accent transition-colors">
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
                <Button asChild size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                <Link href="/products">View All Products <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                <Link href="/products">View Full Menu <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
             </div>
           </div>
