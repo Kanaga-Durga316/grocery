@@ -8,13 +8,94 @@ const users: User[] = [
   { id: 'admin-1', name: 'Admin User', email: 'admin@example.com', role: 'Admin' },
 ];
 
-const categories: Category[] = [];
+const categories: Category[] = [
+  { id: 'fresh-produce', name: 'Fresh Produce', description: 'The freshest fruits and vegetables, sourced locally and organically.' },
+  { id: 'dairy-eggs', name: 'Dairy & Eggs', description: 'Farm-fresh eggs, milk, cheese, and other dairy products.' },
+  { id: 'bakery', name: 'Bakery', description: 'Warm bread, delicious pastries, and custom cakes for any occasion.' },
+  { id: 'prepared-foods', name: 'Prepared Foods', description: 'Ready-to-eat meals, handcrafted for your convenience.' },
+];
 
-const products: Product[] = [];
+const products: Product[] = [
+  // Fresh Produce
+  { id: 'prod-1', name: 'Organic Apples', description: 'Crisp and juicy organic Gala apples, perfect for snacking.', price: 3.99, stock: 150, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-apple')!.imageUrl, imageHint: 'red apples' },
+  { id: 'prod-2', name: 'Ripe Bananas', description: 'A bunch of perfectly ripe organic bananas.', price: 1.99, stock: 200, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-banana')!.imageUrl, imageHint: 'ripe bananas' },
+  { id: 'prod-3', name: 'Fresh Broccoli', description: 'Fresh, green broccoli crowns, rich in vitamins.', price: 2.49, stock: 100, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-broccoli')!.imageUrl, imageHint: 'fresh broccoli' },
+  { id: 'prod-4', name: 'Organic Carrots', description: 'Sweet and crunchy organic carrots.', price: 2.99, stock: 120, categoryId: 'fresh-produce', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-carrot')!.imageUrl, imageHint: 'organic carrots' },
 
-const reviews: Review[] = [];
+  // Dairy & Eggs
+  { id: 'prod-5', name: 'Organic Milk', description: 'Gallon of fresh, whole organic milk.', price: 5.99, stock: 80, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk')!.imageUrl, imageHint: 'milk carton' },
+  { id: 'prod-6', name: 'Cheddar Cheese Block', description: 'A block of sharp cheddar cheese, perfect for slicing or grating.', price: 7.49, stock: 60, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cheese')!.imageUrl, imageHint: 'cheddar cheese' },
+  { id: 'prod-7', name: 'Greek Yogurt', description: 'Thick and creamy plain Greek yogurt.', price: 4.29, stock: 90, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-yogurt')!.imageUrl, imageHint: 'yogurt pot' },
+  { id: 'prod-8', name: 'Free-Range Eggs', description: 'One dozen large brown free-range eggs.', price: 4.99, stock: 110, categoryId: 'dairy-eggs', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-eggs')!.imageUrl, imageHint: 'eggs carton' },
+  
+  // Bakery
+  { id: 'prod-9', name: 'Sourdough Bread', description: 'Artisan loaf of freshly baked sourdough bread.', price: 6.99, stock: 50, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-bread')!.imageUrl, imageHint: 'sourdough bread' },
+  { id: 'prod-10', name: 'Butter Croissants', description: 'Pack of 4 flaky, all-butter croissants.', price: 8.00, stock: 40, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-croissant')!.imageUrl, imageHint: 'butter croissants' },
+  { id: 'prod-11', name: 'Chocolate Cake', description: 'Rich, decadent chocolate fudge cake slice.', price: 5.50, stock: 30, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-cake')!.imageUrl, imageHint: 'chocolate cake' },
+  { id: 'prod-12', name: 'Blueberry Muffins', description: 'Pack of 4 soft muffins bursting with blueberries.', price: 7.25, stock: 45, categoryId: 'bakery', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-muffin')!.imageUrl, imageHint: 'blueberry muffin' },
 
-const orders: Order[] = [];
+  // Prepared Foods
+  { id: 'prod-13', name: 'Beef Lasagna', description: 'Family-size beef lasagna, ready to heat and eat.', price: 15.99, stock: 20, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-lasagna')!.imageUrl, imageHint: 'beef lasagna' },
+  { id: 'prod-14', name: 'Sushi Platter', description: 'An assortment of fresh sushi rolls including California, Tuna, and Salmon.', price: 12.99, stock: 25, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sushi')!.imageUrl, imageHint: 'sushi platter' },
+  { id: 'prod-15', name: 'Chicken Caesar Salad', description: 'Classic Caesar salad with grilled chicken, croutons, and parmesan.', price: 9.99, stock: 35, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-salad')!.imageUrl, imageHint: 'caesar salad' },
+  { id: 'prod-16', name: 'Margherita Pizza', description: 'A classic 12-inch Margherita pizza with fresh mozzarella and basil.', price: 14.99, stock: 28, categoryId: 'prepared-foods', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-pizza')!.imageUrl, imageHint: 'margherita pizza' },
+];
+
+const reviews: Review[] = [
+  { id: 'rev-1', productId: 'prod-1', userId: 'user-1', rating: 5, comment: 'So fresh and delicious! Best apples I\'ve had in a while.', timestamp: '2024-05-20T10:00:00Z' },
+  { id: 'rev-2', productId: 'prod-1', userId: 'user-2', rating: 4, comment: 'Very good, a little on the small side but great taste.', timestamp: '2024-05-21T14:30:00Z' },
+  { id: 'rev-3', productId: 'prod-1', userId: 'user-3', rating: 5, comment: 'Perfect for my kids\' lunches. They love them!', timestamp: '2024-05-22T09:00:00Z' },
+  { id: 'rev-4', productId: 'prod-9', userId: 'user-1', rating: 5, comment: 'This sourdough is absolutely amazing. Perfect crust and crumb.', timestamp: '2024-05-23T11:00:00Z' },
+  { id: 'rev-5', productId: 'prod-9', userId: 'user-2', rating: 5, comment: 'I buy this every week. It makes the best toast.', timestamp: '2024-05-24T18:00:00Z' },
+  { id: 'rev-6', productId: 'prod-14', userId: 'user-3', rating: 4, comment: 'Pretty good for store-bought sushi! The fish was fresh.', timestamp: '2024-05-25T19:00:00Z' },
+];
+
+const orders: Order[] = [
+  {
+    id: 'order-1',
+    userId: 'user-1',
+    items: [
+      { productId: 'prod-1', quantity: 2, price: 3.99 },
+      { productId: 'prod-5', quantity: 1, price: 5.99 },
+    ],
+    totalAmount: 13.97,
+    status: 'Delivered',
+    deliveryAddress: { name: 'Alice Johnson', address: '123 Main St', city: 'Anytown', zip: '12345' },
+    timestamp: '2024-05-20T10:05:00Z',
+  },
+  {
+    id: 'order-2',
+    userId: 'user-2',
+    items: [{ productId: 'prod-9', quantity: 1, price: 6.99 }],
+    totalAmount: 6.99,
+    status: 'Out for Delivery',
+    deliveryAddress: { name: 'Bob Williams', address: '456 Oak Ave', city: 'Someplace', zip: '67890' },
+    timestamp: '2024-05-24T18:10:00Z',
+  },
+  {
+    id: 'order-3',
+    userId: 'user-1',
+    items: [
+      { productId: 'prod-14', quantity: 2, price: 12.99 },
+      { productId: 'prod-3', quantity: 1, price: 2.49 },
+    ],
+    totalAmount: 28.47,
+    status: 'Processing',
+    deliveryAddress: { name: 'Alice Johnson', address: '123 Main St', city: 'Anytown', zip: '12345' },
+    timestamp: '2024-05-26T12:00:00Z',
+  },
+   {
+    id: 'order-4',
+    userId: 'user-3',
+    items: [
+      { productId: 'prod-11', quantity: 2, price: 5.50 },
+    ],
+    totalAmount: 11.00,
+    status: 'Pending',
+    deliveryAddress: { name: 'Charlie Brown', address: '789 Pine Ln', city: 'Elsewhere', zip: '10112' },
+    timestamp: '2024-05-27T10:00:00Z',
+  }
+];
 
 
 // Data access functions
