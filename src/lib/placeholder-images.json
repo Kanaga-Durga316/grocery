@@ -7,21 +7,27 @@
       "imageHint": "fresh groceries"
     },
     {
+      "id": "banner-diwali",
+      "description": "An arrangement of glowing diyas for Diwali.",
+      "imageUrl": "https://images.unsplash.com/photo-1667531224218-c5b7415ac85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXdhbGklMjBkaXlhc3xlbnwwfHx8fDE3NjkzMzc5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diwali diyas"
+    },
+    {
       "id": "prod-apple",
       "description": "Crisp red apples in a basket.",
-      "imageUrl": "https://images.unsplash.com/photo-1666164037865-1174c019e207?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZWQlMjBhcHBsZXN8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666164037865-1174c019e207?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZWQlMjBhcHBsZXN8ZW58MHx8fHwxNzY2Mzg0NDkyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "red apples"
     },
     {
       "id": "prod-banana",
       "description": "A bunch of ripe yellow bananas.",
-      "imageUrl": "https://images.unsplash.com/photo-1583525957858-1463306158b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmlwZSUyMGJhbmFuYXN8ZW58MHx8fHwxNzY2MzQ3MDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583525957858-1463306158b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmlwZSUyMGJhbmFuYXN8ZW58MHx8fHwxNzY2MzQ3MDIyfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "ripe bananas"
     },
     {
       "id": "prod-broccoli",
       "description": "Fresh green broccoli head.",
-      "imageUrl": "https://images.unsplash.com/photo-1757332051100-425acb974218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMGJyb2Njb2xpfGVufDB8fHx8MTc2NjM4NDQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1757332051100-425acb974218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMGJyb2Njb2xpfGVufDB8fHx8MTc2NjM4NDQ5M3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh broccoli"
     },
     {
@@ -723,25 +729,25 @@
     {
       "id": "prod-oreo",
       "description": "A pack of Oreo biscuits.",
-      "imageUrl": "https://images.unsplash.com/photo-1621216892532-6b953d3e69f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvcmVvJTIwYmlzY3VpdHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621216892532-6b953d3e69f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxvcmVvJTIwYmlzY3VpdHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "oreo biscuits"
     },
     {
       "id": "prod-marie-biscuit",
       "description": "A stack of Marie Gold biscuits.",
-      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJpZSUyMGJpc2N1aXRzfGVufDB8fHx8MTc2OTMzNzIzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJpZSUyMGJpc2N1aXRzfGVufDB8fHx8MTc2OTMzNzIzMXww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "marie biscuits"
     },
     {
       "id": "prod-lays-chips",
       "description": "A bag of Lay's potato chips.",
-      "imageUrl": "https://images.unsplash.com/photo-1576483473138-735f499b422a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsYXlzJTIwY2hpcHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576483473138-735f499b422a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsYXlzJTIwY2hpcHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "lays chips"
     },
     {
       "id": "prod-roasted-makhana",
       "description": "A bowl of roasted makhana (foxnuts).",
-      "imageUrl": "https://images.unsplash.com/photo-1608557349141-c4524483726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyb2FzdGVkJTIwbWFraGFuYXxlbnwwfHx8fDE3NjkzMzcyMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1608557349141-c4524483726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyb2FzdGVkJTIwbWFraGFuYXxlbnwwfHx8fDE3NjkzMzcyMzF8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "roasted makhana"
     },
     {

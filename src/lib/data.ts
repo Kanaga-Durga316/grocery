@@ -1032,6 +1032,10 @@ const products: Product[] = [
         imageHint: 'murukku snack',
         sellerId: 'seller-3',
         subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
+        variants: [
+            { id: 'prod-murukku-50g', weight: '50g (Trial)', price: 20, stock: 50 },
+            { id: 'prod-murukku-250g', weight: '250g', price: 80, stock: 50 },
+        ],
     },
     {
         id: 'prod-thattai',
@@ -1044,6 +1048,7 @@ const products: Product[] = [
         imageHint: 'thattai snack',
         sellerId: 'seller-3',
         subCategory: 'Traditional Savory Snacks (Tamil Karaam)',
+        pairingIds: ['prod-tea', 'prod-coffee'],
     },
     {
         id: 'prod-mixture',
@@ -1104,6 +1109,7 @@ const products: Product[] = [
         imageHint: 'marie biscuits',
         sellerId: 'seller-2',
         subCategory: 'Biscuits & Cookies',
+        pairingIds: ['prod-tea'],
     },
     {
         id: 'prod-lays-chips',
@@ -1192,6 +1198,7 @@ const products: Product[] = [
         imageHint: 'tea box',
         sellerId: 'seller-3',
         subCategory: 'Tea & Coffee',
+        pairingIds: ['prod-marie-biscuit', 'prod-rusk', 'prod-thattai'],
     },
     {
         id: 'prod-coffee',

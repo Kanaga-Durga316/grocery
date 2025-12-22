@@ -1,13 +1,17 @@
+
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater } from 'lucide-react';
+import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { useEffect, useState } from 'react';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Fresh Produce': ShoppingBasket,
@@ -23,6 +27,20 @@ export default function Home() {
   const categories = getCategories();
   const featuredProducts = getFeaturedProducts();
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
+  const diwaliBannerImage = PlaceHolderImages.find(p => p.id === 'banner-diwali');
+
+  const [isDiwali, setIsDiwali] = useState(false);
+
+  useEffect(() => {
+    // This will only run on the client, preventing hydration mismatch
+    const today = new Date();
+    const month = today.getMonth(); // 0-11 (Jan-Dec)
+    // Diwali is usually in October or November
+    if (month === 9 || month === 10) {
+      setIsDiwali(true);
+    }
+  }, []);
+
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -53,6 +71,28 @@ export default function Home() {
             </Button>
           </div>
         </section>
+
+        {/* Diwali Banner Section */}
+        {isDiwali && diwaliBannerImage && (
+          <section className="relative bg-gradient-to-r from-amber-500 to-orange-600 text-white py-12">
+             <div className="absolute inset-0">
+                <Image
+                    src={diwaliBannerImage.imageUrl}
+                    alt={diwaliBannerImage.description}
+                    fill
+                    className="object-cover opacity-20"
+                    data-ai-hint={diwaliBannerImage.imageHint}
+                />
+             </div>
+             <div className="container mx-auto px-4 relative z-10 text-center">
+                <h2 className="font-headline text-4xl font-bold flex items-center justify-center gap-3"><Sparkles /> Diwali Sweets & Snacks <Sparkles /></h2>
+                <p className="mt-2 text-lg">Celebrate the festival of lights with our special collection of traditional sweets and savory snacks.</p>
+                <Button asChild variant="secondary" size="lg" className="mt-6">
+                    <Link href="/products#snacks">Shop Diwali Specials</Link>
+                </Button>
+             </div>
+          </section>
+        )}
 
         {/* Categories Section */}
         <section className="py-16 lg:py-24 bg-background">
