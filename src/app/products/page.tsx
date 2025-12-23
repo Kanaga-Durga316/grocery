@@ -3,18 +3,32 @@
 "use client";
 
 import { useMemo, useState, useEffect } from 'react';
+import Link from 'next/link';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MenuItem } from '@/components/MenuItem';
-import type { Product } from '@/lib/types';
+import type { Product, Category } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Leaf, Filter, Sun, Sparkles } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Leaf, Filter, Sun, Sparkles, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils } from 'lucide-react';
+
+
+const categoryIcons: { [key: string]: React.ElementType } = {
+  'Fresh Produce': ShoppingBasket,
+  'Dairy & Eggs': CakeSlice,
+  'Staples & Grains': Wheat,
+  'Meat & Seafood': Drumstick,
+  'Snacks & Beverages': GlassWater,
+  'Household Essentials': Home,
+  'Personal Care & Wellness': HeartPulse,
+};
 
 export default function MenuPage() {
   const allProducts = useMemo(() => getProducts(), []);
-  const categories = useMemo(() => getCategories(), []);
+  const allCategories = useMemo(() => getCategories(), []);
+  
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
   const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
   const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
@@ -38,14 +52,15 @@ export default function MenuPage() {
     });
     return Array.from(brands);
   }, [allProducts]);
+  
+  const groceryCategoriesData = useMemo(() => allCategories.filter(c => c.productType === 'grocery' && c.id !== 'packaged-instant-foods' && c.id !== 'cooking-oils-ghee' && c.id !== 'spices-masalas'), [allCategories]);
 
   const productsByCategory = useMemo(() => {
-    return categories.map(category => {
+    return allCategories.map(category => {
       let originalCategoryProducts = allProducts.filter(product => product.categoryId === category.id && product.productType === 'grocery');
       let structuredProducts: { name: string; products: Product[] }[] = [];
 
-      // Only apply sub-category logic to grocery items
-      if (category.productType !== 'food') {
+      if (category.productType === 'grocery') {
         let productsToStructure = originalCategoryProducts;
         
         if (category.id === 'fresh-produce') {
@@ -114,17 +129,14 @@ export default function MenuPage() {
         };
       }
       
-      // For food items, we might use a different logic in the future
       return {
         ...category,
-        products: allProducts.filter(p => p.categoryId === category.id && p.productType === 'food'),
+        products: [],
         structuredProducts: []
       };
 
-    }).filter(category => category.products.length > 0 || (category.structuredProducts && category.structuredProducts.length > 0));
-  }, [allProducts, categories, produceFilter, dairyBrandFilter, pantryBenefitFilter, beverageFilter, isSunday]);
-
-  const groceryCategories = useMemo(() => productsByCategory.filter(c => c.id !== 'prepared-foods'), [productsByCategory]);
+    }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
+  }, [allProducts, allCategories, produceFilter, dairyBrandFilter, pantryBenefitFilter, beverageFilter, isSunday]);
 
   return (
     <>
@@ -134,7 +146,32 @@ export default function MenuPage() {
         image={pageHeaderImage}
       />
       <div className="container mx-auto px-4 py-12">
-        {groceryCategories.map(category => {
+        <section className="py-16 lg:py-24 bg-background">
+              <div className="container mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
+                  Browse by Category
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+                  {groceryCategoriesData.map((category) => {
+                    const Icon = categoryIcons[category.name] || Utensils;
+                    return (
+                      <Link href={`#${category.id}`} key={category.id}>
+                        <Card className="group overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-border/80">
+                          <CardContent className="p-6 flex flex-col items-center justify-center">
+                            <div className="p-4 bg-secondary rounded-full mb-4 group-hover:bg-accent transition-colors">
+                              <Icon className="h-10 w-10 text-primary group-hover:text-accent-foreground" />
+                            </div>
+                            <h3 className="font-headline text-xl font-semibold text-foreground">{category.name}</h3>
+                          </CardContent>
+                        </Card>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+        </section>
+
+        {productsByCategory.map(category => {
           
           const categoryContent = (
             <>
@@ -227,8 +264,3 @@ export default function MenuPage() {
     </>
   );
 }
-
-    
-
-    
-
