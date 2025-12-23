@@ -1490,7 +1490,7 @@ const products: Product[] = [
         price: 550,
         stock: 80,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-diapers.png',
+        imageUrl: '/PersonalCare/pampers baby diapers.png',
         imageHint: 'baby diapers',
         sellerId: 'seller-1',
         subCategory: 'Infant Hygiene',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
