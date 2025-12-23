@@ -1,5 +1,7 @@
 
 
+export type ProductType = 'food' | 'grocery' | 'ecommerce';
+
 export interface Category {
   id: string;
   name: string;
@@ -25,6 +27,7 @@ export interface Product {
   description: string;
   price: number; // Retain for single-variant products or as a base price
   stock: number; // Retain for single-variant products or as base stock
+  productType: ProductType;
   categoryId: string;
   imageUrl: string;
   imageHint: string;
@@ -72,7 +75,7 @@ export interface Order {
     variantId?: string;
   }[];
   totalAmount: number;
-  status: 'Pending' | 'Processing' | 'Out for Delivery' | 'Delivered' | 'Cancelled';
+  status: 'Placed' | 'Confirmed' | 'Packed' | 'Out for Delivery' | 'Delivered' | 'Cancelled';
   deliveryAddress: {
     name: string;
     address: string;

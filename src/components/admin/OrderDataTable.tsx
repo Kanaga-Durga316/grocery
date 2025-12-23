@@ -15,8 +15,9 @@ import type { Order } from "@/lib/types";
 import { format } from "date-fns";
 
 const statusColors: { [key: string]: "default" | "secondary" | "destructive" | "outline" } = {
-  "Pending": "outline",
-  "Processing": "secondary",
+  "Placed": "outline",
+  "Confirmed": "secondary",
+  "Packed": "default",
   "Out for Delivery": "default",
   "Delivered": "default",
   "Cancelled": "destructive"
