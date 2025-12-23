@@ -1,0 +1,13 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# To allow all web crawlers to crawl your site, use:
+# User-agent: *
+# Allow: /
+#
+# To prevent all web crawlers from crawling your site, use:
+# User-agent: *
+# Disallow: /
+#
+# To prevent a specific web crawler from crawling your site, use:
+# User-agent: Googlebot
+# Disallow: /
