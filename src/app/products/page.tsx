@@ -136,16 +136,7 @@ export default function MenuPage() {
           
           const isWellnessCategory = category.id === 'personal-care-wellness';
 
-          const Wrapper = isWellnessCategory ? ({ children }: { children: React.ReactNode }) => (
-            <div className="relative py-12 rounded-xl my-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/PersonalCare/personal-care-background.png)`}}>
-              <div className="absolute inset-0 bg-black/50 rounded-xl" />
-              <div className="relative z-10 px-4 md:px-8">
-                {children}
-              </div>
-            </div>
-          ) : React.Fragment;
-
-          const content = (
+          const categoryContent = (
             <>
               <div className="flex justify-center items-center gap-4 mb-4">
                   <h2 className={`font-headline text-4xl text-center font-bold ${isWellnessCategory ? 'text-white' : 'text-primary'}`}>{category.name}</h2>
@@ -229,7 +220,18 @@ export default function MenuPage() {
           
           return (
             <div key={category.id} id={category.id} className="scroll-mt-20">
-              {isWellnessCategory ? <Wrapper>{content}</Wrapper> : <div className="mb-16">{content}</div>}
+              {isWellnessCategory ? (
+                <div className="relative py-12 rounded-xl my-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/PersonalCare/personal-care-background.png)`}}>
+                  <div className="absolute inset-0 bg-black/50 rounded-xl" />
+                  <div className="relative z-10 px-4 md:px-8">
+                    {categoryContent}
+                  </div>
+                </div>
+              ) : (
+                <div className="mb-16">
+                  {categoryContent}
+                </div>
+              )}
             </div>
           )
         })}
