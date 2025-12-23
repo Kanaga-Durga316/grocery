@@ -939,7 +939,7 @@
     {
       "id": "prod-sneakers",
       "description": "A pair of stylish casual sneakers.",
-      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXN1YWwlMjBzbmVha2Vyc3xlbnwwfHx8fDE3Njk0MjkxNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYXN1YWwlMjBzbmVha2Vyc3xlbnwwfHx8fDE3Njk0MjkxNTV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "casual sneakers"
     },
     {
@@ -953,6 +953,24 @@
       "description": "A pair of comfortable leather sandals.",
       "imageUrl": "https://images.unsplash.com/photo-1564063819448-4f8087328905?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsZWF0aGVyJTIwc2FuZGFsc3xlbnwwfHx8fDE3Njk0MjkxNTV8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "leather sandals"
+    },
+    {
+      "id": "prod-backpack",
+      "description": "A stylish laptop backpack.",
+      "imageUrl": "https://images.unsplash.com/photo-1577733966930-d922316e8e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsYXB0b3AlMjBiYWNrcGFja3xlbnwwfHx8fDE3Njk1MDQ0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop backpack"
+    },
+    {
+      "id": "prod-watch",
+      "description": "A classic analog watch on a wrist.",
+      "imageUrl": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhbmFsb2clMjB3YXRjaHxlbnwwfHx8fDE3Njk1MDQ0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analog watch"
+    },
+    {
+      "id": "prod-sunglasses",
+      "description": "A pair of aviator sunglasses on a surface.",
+      "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhdmlhdG9yJTIwc3VuZ2xhc3Nlc3xlbnwwfHx8fDE3Njk1MDQ0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aviator sunglasses"
     },
     {
       "id": "page-header-products",
