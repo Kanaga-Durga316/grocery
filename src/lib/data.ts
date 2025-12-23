@@ -1425,7 +1425,7 @@ const products: Product[] = [
         price: 150,
         stock: 120,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-coconut-oil.png',
+        imageUrl: '/PersonalCare/parachute coconut oil.png',
         imageHint: 'coconut oil bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
