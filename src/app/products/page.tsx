@@ -221,7 +221,7 @@ export default function MenuPage() {
           return (
             <div key={category.id} id={category.id} className="scroll-mt-20">
               {isWellnessCategory ? (
-                <div className="relative py-12 rounded-xl my-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/PersonalCare/personal-care-background.png')`}}>
+                <div className="relative py-12 rounded-xl my-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/PersonalCare/personal%20care%20background.png')`}}>
                   <div className="absolute inset-0 bg-black/50 rounded-xl" />
                   <div className="relative z-10 px-4 md:px-8">
                     {categoryContent}
