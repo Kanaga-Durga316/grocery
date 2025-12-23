@@ -1407,13 +1407,13 @@ const products: Product[] = [
     // Personal Care & Wellness
     {
         id: 'prod-shampoo',
-        name: 'Clinic Plus Shampoo',
-        description: 'Strong & Long Health shampoo.',
+        name: 'Clinic Plus Shikakai Shampoo',
+        description: 'Nourishing shampoo with Shikakai for naturally long and strong hair.',
         price: 180,
         stock: 100,
         categoryId: 'personal-care-wellness',
         imageUrl: PlaceHolderImages.find(p => p.id === 'prod-shampoo')!.imageUrl,
-        imageHint: 'shampoo bottle',
+        imageHint: 'shikakai shampoo bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
         brand: 'Clinic Plus',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
