@@ -1464,7 +1464,7 @@ const products: Product[] = [
         price: 95,
         stock: 150,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-toothpaste.png',
+        imageUrl: '/PersonalCare/colgate maxfresh toothpaste.png',
         imageHint: 'toothpaste tube',
         sellerId: 'seller-1',
         subCategory: 'Oral Care',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
