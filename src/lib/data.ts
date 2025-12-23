@@ -1,5 +1,4 @@
 
-
 import type { Product, Category, User, Review, Order } from './types';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -24,6 +23,15 @@ const categories: Category[] = [
     { id: 'street-food', name: 'Street Food', description: 'Chaats, rolls, sandwiches, and more.', productType: 'food' },
     { id: 'bakery-desserts', name: 'Bakery & Desserts', description: 'Cakes, pastries, ice creams, and more.', productType: 'food' },
     { id: 'beverages', name: 'Beverages', description: 'Fresh juices, milkshakes, smoothies, and more.', productType: 'food' },
+
+    // E-Commerce
+    { id: 'electronics', name: 'Electronics', description: 'Mobiles, accessories, and smart gadgets.', productType: 'ecommerce' },
+    { id: 'fashion', name: 'Fashion', description: 'Clothing for men, women, and kids.', productType: 'ecommerce' },
+    { id: 'footwear', name: 'Footwear', description: 'Casual shoes, sports shoes, and sandals.', productType: 'ecommerce' },
+    { id: 'accessories', name: 'Accessories', description: 'Bags, watches, and sunglasses.', productType: 'ecommerce' },
+    { id: 'home-kitchen', name: 'Home & Kitchen', description: 'Cookware, storage, and home decor.', productType: 'ecommerce' },
+    { id: 'beauty-personal-care', name: 'Beauty & Personal Care', description: 'Makeup, skin care, and hair styling tools.', productType: 'ecommerce' },
+    { id: 'baby-kids', name: 'Baby & Kids', description: 'Toys and baby essentials.', productType: 'ecommerce' },
 ];
 
 const products: Product[] = [
@@ -958,7 +966,7 @@ const products: Product[] = [
         subCategory: 'North Indian',
         serves: '1-2 people',
         cookingMethods: ['Microwave', 'Pan Fry'],
-        tags: ['No Preservatives', 'High Protein'],
+        tags: ['No Preservatives', 'High Protein', 'Veg'],
         pairingIds: ['prod-chapati', 'prod-basmati-rice']
     },
     {
@@ -975,6 +983,7 @@ const products: Product[] = [
         subCategory: 'South Indian',
         serves: '1 person',
         cookingMethods: ['Microwave'],
+        tags: ['Veg'],
     },
     {
         id: 'prod-veg-biryani-rte',
@@ -990,6 +999,7 @@ const products: Product[] = [
         subCategory: 'South Indian',
         serves: '1-2 people',
         cookingMethods: ['Microwave'],
+        tags: ['Veg'],
     },
     {
         id: 'prod-idli-dosa-batter',
@@ -1076,6 +1086,7 @@ const products: Product[] = [
         subCategory: 'Chinese',
         cookingMethods: ['Pan Fry'],
         serves: '2 people',
+        tags: ['Veg'],
     },
     {
         id: 'prod-paneer-tikka-rtc',
@@ -1091,7 +1102,7 @@ const products: Product[] = [
         subCategory: 'North Indian',
         cookingMethods: ['Grill', 'Pan Fry'],
         serves: '2-3 people',
-        tags: ['High Protein'],
+        tags: ['High Protein', 'Veg'],
         pairingIds: ['prod-mint-chutney']
     },
     {
@@ -1107,7 +1118,7 @@ const products: Product[] = [
         sellerId: 'seller-3',
         subCategory: 'South Indian',
         serves: '1 person',
-        tags: ['No Preservatives']
+        tags: ['No Preservatives', 'Veg']
     },
     {
         id: 'prod-curd-rice-deli',
@@ -1122,6 +1133,7 @@ const products: Product[] = [
         sellerId: 'seller-3',
         subCategory: 'South Indian',
         serves: '1 person',
+        tags: ['Veg'],
     },
     {
         id: 'prod-mint-chutney',
@@ -1135,6 +1147,7 @@ const products: Product[] = [
         imageHint: 'mint chutney',
         sellerId: 'seller-3',
         subCategory: 'Continental',
+        tags: ['Veg'],
     },
 
     // Snacks
@@ -1531,7 +1544,7 @@ const products: Product[] = [
         stock: 100,
         productType: 'grocery',
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-shampoo.png',
+        imageUrl: '/PersonalCare/himalaya purifying neem face wash.png',
         imageHint: 'shikakai shampoo bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
@@ -1738,27 +1751,3 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === o.id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
