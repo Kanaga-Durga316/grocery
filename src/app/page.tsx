@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles, Home as HomeIcon, HeartPulse, ShoppingCart as ShoppingCartIcon, Shirt, Pizza, Salad, Soup } from 'lucide-react';
+import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles, Home as HomeIcon, HeartPulse, ShoppingCart as ShoppingCartIcon, Shirt, Pizza, Salad, Soup, Smartphone, Tv, HardDrive } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -17,6 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 
 const categoryIcons: { [key: string]: React.ElementType } = {
+  // Grocery
   'Fresh Produce': ShoppingBasket,
   'Dairy & Eggs': CakeSlice,
   'Staples & Grains': Wheat,
@@ -24,12 +25,23 @@ const categoryIcons: { [key: string]: React.ElementType } = {
   'Snacks & Beverages': GlassWater,
   'Household Essentials': HomeIcon,
   'Personal Care & Wellness': HeartPulse,
+
+  // Food
   'Fast Food': Pizza,
   'Main Course': Utensils,
   'Healthy & Diet Food': Salad,
   'Street Food': Soup,
   'Bakery & Desserts': CakeSlice,
   'Beverages': GlassWater,
+
+  // E-Commerce
+  'Electronics': Smartphone,
+  'Fashion': Shirt,
+  'Footwear': Shirt, // Using shirt icon as a placeholder
+  'Accessories': Tv, // Using TV as a placeholder
+  'Home & Kitchen': HardDrive, // Using HardDrive as placeholder
+  'Beauty & Personal Care': HeartPulse,
+  'Baby & Kids': ShoppingCartIcon,
 };
 
 export default function Home() {
@@ -87,7 +99,7 @@ export default function Home() {
               <TabsList className="grid w-full grid-cols-3 h-14">
                 <TabsTrigger value="grocery" asChild className="text-lg h-10"><Link href="/products"><ShoppingCartIcon className="mr-2" /> Grocery</Link></TabsTrigger>
                 <TabsTrigger value="food" asChild className="text-lg h-10"><Link href="/food"><Utensils className="mr-2" /> Food</Link></TabsTrigger>
-                <TabsTrigger value="ecommerce" className="text-lg h-10"><Shirt className="mr-2" /> E-Commerce</TabsTrigger>
+                <TabsTrigger value="ecommerce" asChild className="text-lg h-10"><Link href="/ecommerce"><Shirt className="mr-2" /> E-Commerce</Link></TabsTrigger>
               </TabsList>
             </div>
           </div>

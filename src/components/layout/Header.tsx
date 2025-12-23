@@ -31,12 +31,14 @@ import {
   LogOut,
   LayoutDashboard,
   Utensils,
+  Shirt,
 } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/products", label: "Grocery", icon: ShoppingBasket },
   { href: "/food", label: "Food", icon: Utensils },
+  { href: "/ecommerce", label: "E-Commerce", icon: Shirt },
 ];
 
 export function Header() {
@@ -78,7 +80,7 @@ export function Header() {
                 href={href}
                 className={cn(
                   "transition-colors hover:text-foreground/80",
-                  pathname.startsWith(href) && href !== '/' || pathname === href ? "text-foreground" : "text-foreground/60"
+                  (pathname.startsWith(href) && href !== '/') || pathname === href ? "text-foreground" : "text-foreground/60"
                 )}
               >
                 {label}
