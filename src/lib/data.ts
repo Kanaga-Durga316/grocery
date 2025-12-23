@@ -477,7 +477,7 @@ const products: Product[] = [
         variants: [
             { id: 'prod-eggs-brown-6', weight: '6 pack', price: 45, stock: 75 },
             { id: 'prod-eggs-brown-12', weight: '12 pack', price: 90, stock: 75 },
-        ]
+        ],
     },
 
     // Staples & Grains
@@ -1662,6 +1662,92 @@ const products: Product[] = [
         subCategory: 'Skin Care',
         brand: 'Neutrogena',
     },
+
+    // E-commerce products
+    {
+        id: 'prod-smartphone-x',
+        name: 'Smartphone Pro X',
+        description: 'Latest generation smartphone with a stunning OLED display and triple camera system.',
+        price: 69999,
+        stock: 50,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Mobiles',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-smartphone')!.imageUrl,
+        imageHint: 'smartphone',
+        sellerId: 'seller-1',
+        brand: 'Galaxy',
+    },
+    {
+        id: 'prod-smartwatch-8',
+        name: 'Smartwatch Series 8',
+        description: 'Track your fitness, stay connected, and monitor your health with this advanced smartwatch.',
+        price: 24999,
+        stock: 75,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Smart Gadgets',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-smartwatch')!.imageUrl,
+        imageHint: 'smartwatch',
+        sellerId: 'seller-1',
+        brand: 'iWatch',
+    },
+    {
+        id: 'prod-earbuds-pro',
+        name: 'Wireless Earbuds Pro',
+        description: 'Immersive sound with active noise cancellation and a comfortable, secure fit.',
+        price: 12999,
+        stock: 120,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Accessories',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-earbuds')!.imageUrl,
+        imageHint: 'wireless earbuds',
+        sellerId: 'seller-2',
+        brand: 'SoundCore',
+    },
+    {
+        id: 'prod-charging-cable-c',
+        name: 'USB-C to C Braided Cable',
+        description: 'Durable and fast-charging 6ft braided cable for all your USB-C devices.',
+        price: 899,
+        stock: 200,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Accessories',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-charging-cable')!.imageUrl,
+        imageHint: 'charging cable',
+        sellerId: 'seller-2',
+        brand: 'CableMax',
+    },
+    {
+        id: 'prod-power-bank-10k',
+        name: '10000mAh Slim Power Bank',
+        description: 'Charge your devices on the go with this slim and powerful power bank.',
+        price: 1999,
+        stock: 90,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Accessories',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-power-bank')!.imageUrl,
+        imageHint: 'power bank',
+        sellerId: 'seller-1',
+        brand: 'ChargeUp',
+    },
+    {
+        id: 'prod-smart-speaker-mini',
+        name: 'Smart Home Speaker Mini',
+        description: 'Your voice-controlled assistant for music, news, and smart home control.',
+        price: 3499,
+        stock: 60,
+        productType: 'ecommerce',
+        categoryId: 'electronics',
+        subCategory: 'Smart Gadgets',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-smart-speaker')!.imageUrl,
+        imageHint: 'smart speaker',
+        sellerId: 'seller-2',
+        brand: 'Echo',
+    },
 ];
 
 const users: User[] = [
@@ -1679,6 +1765,9 @@ const reviews: Review[] = [
   { id: 'rev-3', productId: 'prod-idli-dosa-batter', userId: 'user-1', rating: 5, comment: 'Tasted just like homemade. Excellent!', timestamp: '2023-10-24T18:00:00Z' },
   { id: 'rev-4', productId: 'prod-milk-pouch', userId: 'user-1', rating: 5, comment: 'Aavin milk is always reliable.', timestamp: '2024-07-15T08:00:00Z' },
   { id: 'rev-5', productId: 'prod-chicken-curry-cut', userId: 'user-1', rating: 4, comment: 'Chicken was fresh but pieces were a bit small.', timestamp: '2024-07-14T19:30:00Z' },
+  { id: 'rev-6', productId: 'prod-smartphone-x', userId: 'user-1', rating: 5, comment: 'Amazing phone! The camera is top-notch.', timestamp: '2024-07-20T12:00:00Z'},
+  { id: 'rev-7', productId: 'prod-smartwatch-8', userId: 'user-1', rating: 4, comment: 'Great watch, but battery could be better.', timestamp: '2024-07-21T15:00:00Z'},
+
 ];
 
 const orders: Order[] = [
@@ -1737,7 +1826,12 @@ const orders: Order[] = [
 
 export const getCategories = () => categories;
 export const getProducts = () => products;
-export const getFeaturedProducts = () => products.slice(0, 8);
+export const getFeaturedProducts = () => {
+    const grocery = products.find(p => p.id === 'prod-apple');
+    const food = products.find(p => p.id === 'prod-paneer-butter-masala-rte');
+    const ecommerce = products.find(p => p.id === 'prod-smartphone-x');
+    return [grocery, food, ecommerce, products[3], products[4], products[5], products[6], products[7]].filter(Boolean) as Product[];
+};
 export const getProductById = (id: string) => products.find(p => p.id === id);
 export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId);
 export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId);

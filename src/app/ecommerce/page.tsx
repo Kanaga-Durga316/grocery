@@ -3,11 +3,13 @@
 
 import { useMemo } from 'react';
 import Link from 'next/link';
-import { getCategories } from '@/lib/data';
+import { getCategories, getProducts } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Smartphone, Shirt, Tv, HardDrive, HeartPulse, ShoppingCart as ShoppingCartIcon } from 'lucide-react';
+import { ProductCard } from '@/components/ProductCard';
+import type { Product } from '@/lib/types';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Electronics': Smartphone,
@@ -20,9 +22,38 @@ const categoryIcons: { [key: string]: React.ElementType } = {
 };
 
 export default function EcommercePage() {
+  const allProducts = useMemo(() => getProducts(), []);
+  const allCategories = useMemo(() => getCategories(), []);
+  
   const ecommerceCategories = useMemo(() => {
-    return getCategories().filter(c => c.productType === 'ecommerce');
-  }, []);
+    return allCategories.filter(c => c.productType === 'ecommerce');
+  }, [allCategories]);
+
+  const productsByCategory = useMemo(() => {
+    return ecommerceCategories.map(category => {
+      let productsToStructure = allProducts.filter(product => product.categoryId === category.id);
+      
+      const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
+
+      const structuredProducts = subCategories.map(subCategory => ({
+        name: subCategory,
+        products: productsToStructure.filter(p => p.subCategory === subCategory)
+      })).filter(sc => sc.products.length > 0);
+
+      const productsWithoutSubCategory = productsToStructure.filter(p => !p.subCategory);
+      if (productsWithoutSubCategory.length > 0) {
+          structuredProducts.push({
+              name: category.name,
+              products: productsWithoutSubCategory,
+          });
+      }
+      
+      return {
+        ...category,
+        structuredProducts: structuredProducts
+      };
+    }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
+  }, [allProducts, ecommerceCategories]);
 
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
 
@@ -43,7 +74,7 @@ export default function EcommercePage() {
               {ecommerceCategories.map((category) => {
                 const Icon = categoryIcons[category.name] || ShoppingCartIcon;
                 return (
-                  <Link href={`#`} key={category.id}>
+                  <Link href={`#${category.id}`} key={category.id}>
                     <Card className="group overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-border/80">
                       <CardContent className="p-6 flex flex-col items-center justify-center">
                         <div className="p-4 bg-secondary rounded-full mb-4 group-hover:bg-accent transition-colors">
@@ -56,11 +87,41 @@ export default function EcommercePage() {
                 );
               })}
             </div>
-            <div className="text-center mt-16">
-              <p className="text-muted-foreground">More products coming soon!</p>
-            </div>
           </div>
         </section>
+
+        {productsByCategory.length > 0 ? (
+          productsByCategory.map(category => (
+            <div key={category.id} className="mb-16">
+              <div className="flex justify-center items-center gap-4 mb-8">
+                <h2 id={category.id} className="font-headline text-4xl text-center font-bold text-primary scroll-mt-24">{category.name}</h2>
+              </div>
+              
+              <div className="space-y-12">
+                {category.structuredProducts.length > 0 ? (
+                  category.structuredProducts.map(subCat => (
+                    <div key={subCat.name}>
+                      <h3 className="font-headline text-2xl font-bold mb-6 border-b pb-2 text-accent border-border">
+                        {subCat.name}
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        {subCat.products.map(product => (
+                          <ProductCard key={product.id} product={product} />
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-center text-muted-foreground">No items in this category yet.</p>
+                )}
+              </div>
+            </div>
+          ))
+        ) : (
+          <div className="text-center mt-16">
+            <p className="text-muted-foreground">More products coming soon!</p>
+          </div>
+        )}
       </div>
     </>
   );

@@ -871,6 +871,42 @@
       "imageHint": "sunscreen bottle"
     },
     {
+      "id": "prod-smartphone",
+      "description": "A modern smartphone with a sleek design.",
+      "imageUrl": "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smartphone"
+    },
+    {
+      "id": "prod-charging-cable",
+      "description": "A durable braided charging cable.",
+      "imageUrl": "https://images.unsplash.com/photo-1593928738314-a73a38043689?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "charging cable"
+    },
+    {
+      "id": "prod-earbuds",
+      "description": "Wireless earbuds in their charging case.",
+      "imageUrl": "https://images.unsplash.com/photo-1606791422838-a1a82b0b741f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wireless earbuds"
+    },
+    {
+      "id": "prod-power-bank",
+      "description": "A portable power bank for charging on the go.",
+      "imageUrl": "https://images.unsplash.com/photo-1588661642838-8a846b04b087?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "power bank"
+    },
+    {
+      "id": "prod-smartwatch",
+      "description": "A modern smartwatch displaying the time.",
+      "imageUrl": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smartwatch"
+    },
+    {
+      "id": "prod-smart-speaker",
+      "description": "A smart home speaker on a table.",
+      "imageUrl": "https://images.unsplash.com/photo-1518444065439-e933c06ce9ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smart speaker"
+    },
+    {
       "id": "page-header-products",
       "description": "Overhead view of a variety of fresh produce on a market stall.",
       "imageUrl": "https://images.unsplash.com/photo-1705929192183-847aef14ba29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9kdWNlJTIwbWFya2V0fGVufDB8fHx8MTc2NjM4NDQ5Mnww&ixlib.rb-4.1.0&q=80&w=1080",

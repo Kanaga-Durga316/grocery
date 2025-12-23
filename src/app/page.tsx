@@ -134,11 +134,24 @@ export default function Home() {
                 </div>
             </section>
           </TabsContent>
-          <TabsContent value="ecommerce">
-              <div className="container mx-auto px-4 py-16 text-center">
-                  <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-4">Coming Soon!</h2>
-                  <p className="text-muted-foreground max-w-xl mx-auto">Our E-commerce section is under construction. Soon you'll be able to shop for electronics, fashion, and more. Stay tuned!</p>
-              </div>
+           <TabsContent value="ecommerce">
+             <section className="py-16 lg:py-24 bg-secondary/50">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl md-text-4xl font-headline text-center text-foreground mb-12">
+                        Featured Electronics
+                    </h2>
+                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {featuredProducts.filter(p => p.productType === 'ecommerce').map((product) => (
+                            <ProductCard key={product.id} product={product} />
+                        ))}
+                    </div>
+                     <div className="text-center mt-12">
+                        <Button asChild size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                            <Link href="/ecommerce">View All Products <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                        </Button>
+                    </div>
+                </div>
+            </section>
           </TabsContent>
         </Tabs>
       </main>
