@@ -1451,7 +1451,7 @@ const products: Product[] = [
         price: 99,
         stock: 180,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-handwash.png',
+        imageUrl: '/PersonalCare/dettol handwash refill.png',
         imageHint: 'handwash refill',
         sellerId: 'seller-1',
         subCategory: 'Bath & Body',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
