@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -29,12 +30,13 @@ import {
   LogIn,
   LogOut,
   LayoutDashboard,
-  BookMarked,
+  Utensils,
 } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/products", label: "Menu", icon: BookMarked },
+  { href: "/products", label: "Grocery", icon: ShoppingBasket },
+  { href: "/food", label: "Food", icon: Utensils },
 ];
 
 export function Header() {

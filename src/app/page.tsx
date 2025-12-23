@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Image from 'next/image';
@@ -80,8 +81,8 @@ export default function Home() {
           <div className="sticky top-16 z-40 bg-background/80 backdrop-blur-sm">
             <div className="container mx-auto px-4">
               <TabsList className="grid w-full grid-cols-3 h-14">
-                <TabsTrigger value="grocery" className="text-lg h-10"><ShoppingCartIcon className="mr-2" /> Grocery</TabsTrigger>
-                <TabsTrigger value="food" className="text-lg h-10"><Utensils className="mr-2" /> Food</TabsTrigger>
+                <TabsTrigger value="grocery" asChild className="text-lg h-10"><Link href="/products"><ShoppingCartIcon className="mr-2" /> Grocery</Link></TabsTrigger>
+                <TabsTrigger value="food" asChild className="text-lg h-10"><Link href="/food"><Utensils className="mr-2" /> Food</Link></TabsTrigger>
                 <TabsTrigger value="ecommerce" className="text-lg h-10"><Shirt className="mr-2" /> E-Commerce</TabsTrigger>
               </TabsList>
             </div>
@@ -117,7 +118,7 @@ export default function Home() {
                   Browse by Category
                 </h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
-                  {categories.filter(c => c.id !== 'prepared-foods').map((category) => {
+                  {categories.filter(c => c.productType === 'grocery' && c.id !== 'prepared-foods').map((category) => {
                     const Icon = categoryIcons[category.name] || Utensils;
                     return (
                       <Link href={`/products#${category.id}`} key={category.id}>
@@ -168,7 +169,7 @@ export default function Home() {
                     </div>
                      <div className="text-center mt-12">
                         <Button asChild size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                            <Link href="/products#prepared-foods">View Full Menu <ArrowRight className="ml-2 h-5 w-5" /></Link>
+                            <Link href="/food">View Full Menu <ArrowRight className="ml-2 h-5 w-5" /></Link>
                         </Button>
                     </div>
                 </div>

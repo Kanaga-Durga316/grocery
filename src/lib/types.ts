@@ -6,6 +6,7 @@ export interface Category {
   id: string;
   name: string;
   description: string;
+  productType: ProductType;
 }
 
 export interface ProductVariant {
@@ -66,7 +67,7 @@ export interface CartItem {
 }
 
 export interface Order {
-  id: string;
+  id:string;
   userId: string;
   items: {
     productId: string;
