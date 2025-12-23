@@ -1412,7 +1412,7 @@ const products: Product[] = [
         price: 180,
         stock: 100,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-shampoo.png',
+        imageUrl: '/PersonalCare/clinic plus shikakai shampoo.png',
         imageHint: 'shikakai shampoo bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
