@@ -1412,7 +1412,7 @@ const products: Product[] = [
         price: 180,
         stock: 100,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-shampoo')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-shampoo.png',
         imageHint: 'shikakai shampoo bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
@@ -1425,7 +1425,7 @@ const products: Product[] = [
         price: 150,
         stock: 120,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coconut-oil')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-coconut-oil.png',
         imageHint: 'coconut oil bottle',
         sellerId: 'seller-1',
         subCategory: 'Hair Care',
@@ -1438,7 +1438,7 @@ const products: Product[] = [
         price: 60,
         stock: 200,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-soap')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-soap.png',
         imageHint: 'soap bar',
         sellerId: 'seller-1',
         subCategory: 'Bath & Body',
@@ -1451,7 +1451,7 @@ const products: Product[] = [
         price: 99,
         stock: 180,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-handwash')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-handwash.png',
         imageHint: 'handwash refill',
         sellerId: 'seller-1',
         subCategory: 'Bath & Body',
@@ -1464,7 +1464,7 @@ const products: Product[] = [
         price: 95,
         stock: 150,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-toothpaste')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-toothpaste.png',
         imageHint: 'toothpaste tube',
         sellerId: 'seller-1',
         subCategory: 'Oral Care',
@@ -1477,7 +1477,7 @@ const products: Product[] = [
         price: 180,
         stock: 100,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sanitary-pads')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-sanitary-pads.png',
         imageHint: 'sanitary pads',
         sellerId: 'seller-1',
         subCategory: 'Feminine Hygiene',
@@ -1490,7 +1490,7 @@ const products: Product[] = [
         price: 550,
         stock: 80,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-diapers')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-diapers.png',
         imageHint: 'baby diapers',
         sellerId: 'seller-1',
         subCategory: 'Infant Hygiene',
@@ -1503,7 +1503,7 @@ const products: Product[] = [
         price: 140,
         stock: 110,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-facewash')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-facewash.png',
         imageHint: 'facewash tube',
         sellerId: 'seller-1',
         subCategory: 'Skin Care',
@@ -1516,7 +1516,7 @@ const products: Product[] = [
         price: 550,
         stock: 70,
         categoryId: 'personal-care-wellness',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sunscreen')!.imageUrl,
+        imageUrl: '/PersonalCare/prod-sunscreen.png',
         imageHint: 'sunscreen bottle',
         sellerId: 'seller-1',
         subCategory: 'Skin Care',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
