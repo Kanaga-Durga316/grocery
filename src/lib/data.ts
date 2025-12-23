@@ -1503,7 +1503,7 @@ const products: Product[] = [
         price: 140,
         stock: 110,
         categoryId: 'personal-care-wellness',
-        imageUrl: '/PersonalCare/prod-facewash.png',
+        imageUrl: '/PersonalCare/himalaya purifying neem face wash.png',
         imageHint: 'facewash tube',
         sellerId: 'seller-1',
         subCategory: 'Skin Care',
@@ -1611,6 +1611,7 @@ export const getReviewsForProduct = (productId: string) => reviews.filter(r => r
 export const getOrders = () => orders;
 export const getOrderById = (id: string) => orders.find(o => o.id === id);
 export const getOrdersByUser = (userId: string) => orders.filter(o => o.userId === userId);
+
 
 
 
