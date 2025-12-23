@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from 'react';
+import Link from 'next/link';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -9,61 +10,77 @@ import { MenuItem } from '@/components/MenuItem';
 import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { UtensilsCrossed, Filter, Leaf } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { UtensilsCrossed, Filter, Leaf, Utensils, Pizza, Salad, Soup, CakeSlice, GlassWater } from 'lucide-react';
+
+const categoryIcons: { [key: string]: React.ElementType } = {
+  'Fast Food': Pizza,
+  'Main Course': Utensils,
+  'Healthy & Diet Food': Salad,
+  'Street Food': Soup,
+  'Bakery & Desserts': CakeSlice,
+  'Beverages': GlassWater,
+};
+
 
 export default function FoodPage() {
   const allProducts = useMemo(() => getProducts(), []);
-  const categories = useMemo(() => getCategories(), []);
+  const allCategories = useMemo(() => getCategories(), []);
+  
   const [fastFoodFilter, setFastFoodFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
   const [mainCourseFilter, setMainCourseFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
 
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'hero-1')!;
 
+  const foodCategoriesData = useMemo(() => allCategories.filter(c => c.productType === 'food'), [allCategories]);
+
   const productsByCategory = useMemo(() => {
-    const foodCategories = categories.filter(category => category.productType === 'food');
-    
-    return foodCategories.map(category => {
-        let productsToStructure = allProducts.filter(product => product.categoryId === category.id);
-        
-        // Apply filters
-        if (category.id === 'fast-food') {
-            if (fastFoodFilter === 'veg') {
-                productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
-            } else if (fastFoodFilter === 'non-veg') {
-                productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
-            }
-        }
+    return allCategories.map(category => {
+      if (category.productType !== 'food') {
+        return { ...category, structuredProducts: [] };
+      }
 
-        if (category.id === 'main-course') {
-             if (mainCourseFilter === 'veg') {
-                productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
-            } else if (mainCourseFilter === 'non-veg') {
-                productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
-            }
-        }
+      let productsToStructure = allProducts.filter(product => product.categoryId === category.id);
+      
+      // Apply filters
+      if (category.id === 'fast-food') {
+          if (fastFoodFilter === 'veg') {
+              productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
+          } else if (fastFoodFilter === 'non-veg') {
+              productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
+          }
+      }
 
-        const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
+      if (category.id === 'main-course') {
+           if (mainCourseFilter === 'veg') {
+              productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
+          } else if (mainCourseFilter === 'non-veg') {
+              productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
+          }
+      }
 
-        const structuredProducts = subCategories.map(subCategory => ({
-          name: subCategory,
-          products: productsToStructure.filter(p => p.subCategory === subCategory)
-        })).filter(sc => sc.products.length > 0);
+      const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
 
-        // Add products that don't have a subcategory
-        const productsWithoutSubCategory = productsToStructure.filter(p => !p.subCategory);
-        if (productsWithoutSubCategory.length > 0) {
-            structuredProducts.push({
-                name: category.name, // Use main category name if no sub-category
-                products: productsWithoutSubCategory,
-            });
-        }
-        
-        return {
-          ...category,
-          structuredProducts: structuredProducts
-        };
-      }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
-  }, [allProducts, categories, fastFoodFilter, mainCourseFilter]);
+      const structuredProducts = subCategories.map(subCategory => ({
+        name: subCategory,
+        products: productsToStructure.filter(p => p.subCategory === subCategory)
+      })).filter(sc => sc.products.length > 0);
+
+      // Add products that don't have a subcategory
+      const productsWithoutSubCategory = productsToStructure.filter(p => !p.subCategory);
+      if (productsWithoutSubCategory.length > 0) {
+          structuredProducts.push({
+              name: category.name, // Use main category name if no sub-category
+              products: productsWithoutSubCategory,
+          });
+      }
+      
+      return {
+        ...category,
+        structuredProducts: structuredProducts
+      };
+    }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
+  }, [allProducts, allCategories, fastFoodFilter, mainCourseFilter]);
 
   return (
     <>
@@ -73,6 +90,31 @@ export default function FoodPage() {
         image={pageHeaderImage}
       />
       <div className="container mx-auto px-4 py-12">
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
+              Browse by Category
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+              {foodCategoriesData.map((category) => {
+                const Icon = categoryIcons[category.name] || Utensils;
+                return (
+                  <Link href={`#${category.id}`} key={category.id}>
+                    <Card className="group overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-border/80">
+                      <CardContent className="p-6 flex flex-col items-center justify-center">
+                        <div className="p-4 bg-secondary rounded-full mb-4 group-hover:bg-accent transition-colors">
+                          <Icon className="h-10 w-10 text-primary group-hover:text-accent-foreground" />
+                        </div>
+                        <h3 className="font-headline text-xl font-semibold text-foreground">{category.name}</h3>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {productsByCategory.length > 0 ? (
           productsByCategory.map(category => (
             <div key={category.id} className="mb-16">

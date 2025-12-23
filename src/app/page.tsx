@@ -147,32 +147,6 @@ export default function Home() {
             </section>
           </TabsContent>
           <TabsContent value="food">
-             {/* Food Categories Section */}
-            <section className="py-16 lg:py-24 bg-background">
-              <div className="container mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
-                  What are you craving?
-                </h2>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
-                  {categories.filter(c => c.productType === 'food').map((category) => {
-                    const Icon = categoryIcons[category.name] || Utensils;
-                    return (
-                      <Link href={`/food#${category.id}`} key={category.id}>
-                        <Card className="group overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-border/80">
-                          <CardContent className="p-6 flex flex-col items-center justify-center">
-                            <div className="p-4 bg-secondary rounded-full mb-4 group-hover:bg-accent transition-colors">
-                              <Icon className="h-10 w-10 text-primary group-hover:text-accent-foreground" />
-                            </div>
-                            <h3 className="font-headline text-xl font-semibold text-foreground">{category.name}</h3>
-                          </CardContent>
-                        </Card>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-            
              <section className="py-16 lg:py-24 bg-secondary/50">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
