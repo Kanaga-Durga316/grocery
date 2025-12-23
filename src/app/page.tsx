@@ -5,9 +5,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { getCategories, getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Sparkles, Home as HomeIcon, HeartPulse, ShoppingCart as ShoppingCartIcon, Shirt, Pizza, Salad, Soup, Smartphone, Tv, HardDrive } from 'lucide-react';
+import { getFeaturedProducts } from '@/lib/data';
+import { ArrowRight, Utensils, ShoppingBasket, Sparkles, ShoppingCart as ShoppingCartIcon, Shirt } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -15,37 +14,7 @@ import { Footer } from '@/components/layout/Footer';
 import { useEffect, useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-
-const categoryIcons: { [key: string]: React.ElementType } = {
-  // Grocery
-  'Fresh Produce': ShoppingBasket,
-  'Dairy & Eggs': CakeSlice,
-  'Staples & Grains': Wheat,
-  'Meat & Seafood': Drumstick,
-  'Snacks & Beverages': GlassWater,
-  'Household Essentials': HomeIcon,
-  'Personal Care & Wellness': HeartPulse,
-
-  // Food
-  'Fast Food': Pizza,
-  'Main Course': Utensils,
-  'Healthy & Diet Food': Salad,
-  'Street Food': Soup,
-  'Bakery & Desserts': CakeSlice,
-  'Beverages': GlassWater,
-
-  // E-Commerce
-  'Electronics': Smartphone,
-  'Fashion': Shirt,
-  'Footwear': Shirt, // Using shirt icon as a placeholder
-  'Accessories': Tv, // Using TV as a placeholder
-  'Home & Kitchen': HardDrive, // Using HardDrive as placeholder
-  'Beauty & Personal Care': HeartPulse,
-  'Baby & Kids': ShoppingCartIcon,
-};
-
 export default function Home() {
-  const categories = getCategories();
   const featuredProducts = getFeaturedProducts();
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
   const diwaliBannerImage = PlaceHolderImages.find(p => p.id === 'banner-diwali');
