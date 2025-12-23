@@ -1,34 +1,56 @@
 
 "use client";
 
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MenuItem } from '@/components/MenuItem';
 import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
-import { UtensilsCrossed } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { UtensilsCrossed, Filter, Leaf } from 'lucide-react';
 
 export default function FoodPage() {
   const allProducts = useMemo(() => getProducts(), []);
   const categories = useMemo(() => getCategories(), []);
+  const [fastFoodFilter, setFastFoodFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
+  const [mainCourseFilter, setMainCourseFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
+
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'hero-1')!;
 
   const productsByCategory = useMemo(() => {
     const foodCategories = categories.filter(category => category.productType === 'food');
     
     return foodCategories.map(category => {
-        const productsInCategory = allProducts.filter(product => product.categoryId === category.id);
-        const subCategories = Array.from(new Set(productsInCategory.map(p => p.subCategory).filter(Boolean)));
+        let productsToStructure = allProducts.filter(product => product.categoryId === category.id);
+        
+        // Apply filters
+        if (category.id === 'fast-food') {
+            if (fastFoodFilter === 'veg') {
+                productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
+            } else if (fastFoodFilter === 'non-veg') {
+                productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
+            }
+        }
+
+        if (category.id === 'main-course') {
+             if (mainCourseFilter === 'veg') {
+                productsToStructure = productsToStructure.filter(p => !p.tags?.includes('Non-Veg'));
+            } else if (mainCourseFilter === 'non-veg') {
+                productsToStructure = productsToStructure.filter(p => p.tags?.includes('Non-Veg'));
+            }
+        }
+
+        const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
 
         const structuredProducts = subCategories.map(subCategory => ({
           name: subCategory,
-          products: productsInCategory.filter(p => p.subCategory === subCategory)
+          products: productsToStructure.filter(p => p.subCategory === subCategory)
         })).filter(sc => sc.products.length > 0);
 
         // Add products that don't have a subcategory
-        const productsWithoutSubCategory = productsInCategory.filter(p => !p.subCategory);
+        const productsWithoutSubCategory = productsToStructure.filter(p => !p.subCategory);
         if (productsWithoutSubCategory.length > 0) {
             structuredProducts.push({
                 name: category.name, // Use main category name if no sub-category
@@ -41,7 +63,7 @@ export default function FoodPage() {
           structuredProducts: structuredProducts
         };
       }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
-  }, [allProducts, categories]);
+  }, [allProducts, categories, fastFoodFilter, mainCourseFilter]);
 
   return (
     <>
@@ -54,13 +76,34 @@ export default function FoodPage() {
         {productsByCategory.length > 0 ? (
           productsByCategory.map(category => (
             <div key={category.id} className="mb-16">
-              <div className="flex justify-center items-center gap-4 mb-8">
+              <div className="flex justify-center items-center gap-4 mb-4">
                 <h2 id={category.id} className="font-headline text-4xl text-center font-bold text-primary scroll-mt-24">{category.name}</h2>
-                <Badge variant="outline" className="border-amber-600 text-amber-700 bg-amber-100 text-base">
-                  <UtensilsCrossed className="mr-2 h-5 w-5" />
-                  Hot & Fresh
-                </Badge>
+                {category.id === 'fast-food' && (
+                    <Badge variant="outline" className="border-amber-600 text-amber-700 bg-amber-100 text-base">
+                        <UtensilsCrossed className="mr-2 h-5 w-5" />
+                        Hot & Fresh
+                    </Badge>
+                )}
               </div>
+              
+              {category.id === 'fast-food' && (
+                <div className="flex justify-center items-center gap-2 mb-8">
+                  <Filter className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-sm font-medium text-muted-foreground">Quick Filters:</span>
+                  <Button variant={fastFoodFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setFastFoodFilter('all')}>All</Button>
+                  <Button variant={fastFoodFilter === 'veg' ? 'secondary' : 'outline'} size="sm" onClick={() => setFastFoodFilter('veg')}>Veg</Button>
+                  <Button variant={fastFoodFilter === 'non-veg' ? 'secondary' : 'outline'} size="sm" onClick={() => setFastFoodFilter('non-veg')}>Non-Veg</Button>
+                </div>
+              )}
+               {category.id === 'main-course' && (
+                <div className="flex justify-center items-center gap-2 mb-8">
+                  <Filter className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-sm font-medium text-muted-foreground">Quick Filters:</span>
+                  <Button variant={mainCourseFilter === 'all' ? 'secondary' : 'outline'} size="sm" onClick={() => setMainCourseFilter('all')}>All</Button>
+                  <Button variant={mainCourseFilter === 'veg' ? 'secondary' : 'outline'} size="sm" onClick={() => setMainCourseFilter('veg')}>Veg</Button>
+                  <Button variant={mainCourseFilter === 'non-veg' ? 'secondary' : 'outline'} size="sm" onClick={() => setMainCourseFilter('non-veg')}>Non-Veg</Button>
+                </div>
+              )}
               
               <div className="space-y-12">
                 {category.structuredProducts.length > 0 ? (
@@ -77,7 +120,7 @@ export default function FoodPage() {
                     </div>
                   ))
                 ) : (
-                  <p className="text-center text-muted-foreground">No items in this category yet.</p>
+                  <p className="text-center text-muted-foreground">No items match the current filter.</p>
                 )}
               </div>
             </div>

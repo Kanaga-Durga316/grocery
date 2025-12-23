@@ -38,7 +38,7 @@ export interface Product {
   bestBefore?: string;
   variants?: ProductVariant[];
   cleaningOptions?: CleaningOption[];
-  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch' | 'No Preservatives' | 'Low Sodium' | 'Chilled Delivery' | 'Diet/Zero')[];
+  tags?: ('High Protein' | 'Low GI' | 'Halaal' | 'Antibiotic-free' | 'Fresh Catch' | 'No Preservatives' | 'Low Sodium' | 'Chilled Delivery' | 'Diet/Zero' | 'Veg' | 'Non-Veg')[];
   cookingMethods?: ('Microwave' | 'Pan Fry' | 'Air Fryer' | 'Deep Fry' | 'Grill')[];
   serves?: string;
   pairingIds?: string[];
