@@ -476,7 +476,7 @@ const products: Product[] = [
         subCategory: 'Eggs',
         variants: [
             { id: 'prod-eggs-brown-6', weight: '6 pack', price: 45, stock: 75 },
-            { id: 'prod-eggs-brown-12', weight: '12 pack', price: 90, stock: 75 },
+            { id: 'prod-eggs-brown-12', weight: '12 pack', price: 90, stock: 75 }
         ],
     },
 
@@ -1748,6 +1748,76 @@ const products: Product[] = [
         sellerId: 'seller-2',
         brand: 'Echo',
     },
+    {
+        id: 'prod-men-tshirt',
+        name: 'Men\'s Graphic T-Shirt',
+        description: 'Comfortable cotton t-shirt with a stylish graphic print.',
+        price: 799,
+        stock: 150,
+        productType: 'ecommerce',
+        categoryId: 'fashion',
+        subCategory: 'Men\'s Clothing',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-men-tshirt')!.imageUrl,
+        imageHint: 'men t-shirt',
+        sellerId: 'seller-3',
+        brand: 'StyleUp',
+    },
+    {
+        id: 'prod-men-jeans',
+        name: 'Men\'s Slim Fit Jeans',
+        description: 'Classic blue slim fit jeans for a modern look.',
+        price: 2499,
+        stock: 80,
+        productType: 'ecommerce',
+        categoryId: 'fashion',
+        subCategory: 'Men\'s Clothing',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-men-jeans')!.imageUrl,
+        imageHint: 'men jeans',
+        sellerId: 'seller-3',
+        brand: 'DenimCo',
+    },
+    {
+        id: 'prod-women-dress',
+        name: 'Floral Summer Dress',
+        description: 'A light and airy floral dress, perfect for summer.',
+        price: 1999,
+        stock: 100,
+        productType: 'ecommerce',
+        categoryId: 'fashion',
+        subCategory: 'Women\'s Clothing',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-women-dress')!.imageUrl,
+        imageHint: 'summer dress',
+        sellerId: 'seller-3',
+        brand: 'Bella',
+    },
+    {
+        id: 'prod-women-saree',
+        name: 'Silk Blend Saree',
+        description: 'An elegant silk blend saree for special occasions.',
+        price: 4999,
+        stock: 60,
+        productType: 'ecommerce',
+        categoryId: 'fashion',
+        subCategory: 'Women\'s Clothing',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-women-saree')!.imageUrl,
+        imageHint: 'silk saree',
+        sellerId: 'seller-3',
+        brand: 'EthnicWeaves',
+    },
+    {
+        id: 'prod-kids-tshirt',
+        name: 'Kids Dino Graphic T-Shirt',
+        description: 'A fun and colorful dinosaur-themed t-shirt for kids.',
+        price: 499,
+        stock: 200,
+        productType: 'ecommerce',
+        categoryId: 'fashion',
+        subCategory: 'Kids Wear',
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-kids-tshirt')!.imageUrl,
+        imageHint: 'kids t-shirt',
+        sellerId: 'seller-3',
+        brand: 'TinyTots',
+    },
 ];
 
 const users: User[] = [
@@ -1767,6 +1837,7 @@ const reviews: Review[] = [
   { id: 'rev-5', productId: 'prod-chicken-curry-cut', userId: 'user-1', rating: 4, comment: 'Chicken was fresh but pieces were a bit small.', timestamp: '2024-07-14T19:30:00Z' },
   { id: 'rev-6', productId: 'prod-smartphone-x', userId: 'user-1', rating: 5, comment: 'Amazing phone! The camera is top-notch.', timestamp: '2024-07-20T12:00:00Z'},
   { id: 'rev-7', productId: 'prod-smartwatch-8', userId: 'user-1', rating: 4, comment: 'Great watch, but battery could be better.', timestamp: '2024-07-21T15:00:00Z'},
+  { id: 'rev-8', productId: 'prod-men-tshirt', userId: 'user-1', rating: 5, comment: 'Great fit and very comfortable material.', timestamp: '2024-07-22T10:00:00Z'},
 
 ];
 
@@ -1829,8 +1900,9 @@ export const getProducts = () => products;
 export const getFeaturedProducts = () => {
     const grocery = products.find(p => p.id === 'prod-apple');
     const food = products.find(p => p.id === 'prod-paneer-butter-masala-rte');
-    const ecommerce = products.find(p => p.id === 'prod-smartphone-x');
-    return [grocery, food, ecommerce, products[3], products[4], products[5], products[6], products[7]].filter(Boolean) as Product[];
+    const ecommerce = products.find(p => p.id === 'prod-men-tshirt');
+    const ecommerce2 = products.find(p => p.id === 'prod-smartphone-x');
+    return [grocery, food, ecommerce, ecommerce2, products[3], products[4], products[5], products[7]].filter(Boolean) as Product[];
 };
 export const getProductById = (id: string) => products.find(p => p.id === id);
 export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId);
