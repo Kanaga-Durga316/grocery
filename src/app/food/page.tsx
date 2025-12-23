@@ -31,7 +31,7 @@ export default function FoodPage() {
         const productsWithoutSubCategory = products.filter(p => !p.subCategory);
         if (productsWithoutSubCategory.length > 0) {
             structuredProducts.push({
-                name: 'Others',
+                name: category.name, // Use main category name if no sub-category
                 products: productsWithoutSubCategory,
             });
         }
