@@ -30,7 +30,12 @@ export default function FoodPage() {
   const [fastFoodFilter, setFastFoodFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
   const [mainCourseFilter, setMainCourseFilter] = useState<'all' | 'veg' | 'non-veg'>('all');
 
-  const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'hero-1')!;
+  const pageHeaderImage = {
+    id: 'food-header',
+    description: 'Food delivery background',
+    imageUrl: '/background/food.png',
+    imageHint: 'food delivery'
+  };
 
   const foodCategoriesData = useMemo(() => allCategories.filter(c => c.productType === 'food'), [allCategories]);
 
