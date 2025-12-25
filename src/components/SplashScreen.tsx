@@ -61,7 +61,7 @@ export function SplashScreen({ onFinished }: { onFinished: () => void }) {
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-yellow-300 via-yellow-200 to-white"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 via-blue-100 to-white"
       initial={{ opacity: 1 }}
       animate={isMounted ? { opacity: 1 } : { opacity: 0 }}
       exit={{ opacity: 0 }}
@@ -80,7 +80,7 @@ export function SplashScreen({ onFinished }: { onFinished: () => void }) {
       <div className="absolute bottom-16">
          <div className="w-16 h-1.5 bg-black/10 rounded-full overflow-hidden">
              <motion.div
-                className="h-full bg-yellow-500 rounded-full"
+                className="h-full bg-blue-500 rounded-full"
                 initial={{ x: '-100%' }}
                 animate={{ x: '100%' }}
                 transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
