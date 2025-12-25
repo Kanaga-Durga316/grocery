@@ -5,8 +5,8 @@ import { CartProvider } from '@/contexts/CartProvider';
 import { AuthProvider } from '@/contexts/AuthProvider';
 
 export const metadata: Metadata = {
-  title: 'GrocerEase',
-  description: 'Online Grocery & Food Delivery',
+  title: 'BuyBee',
+  description: 'Online Grocery, Food Delivery & E-commerce',
 };
 
 export default function RootLayout({

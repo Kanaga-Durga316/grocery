@@ -69,7 +69,7 @@ export function AuthForm({ mode, onSubmit }: AuthFormProps) {
       <CardHeader>
         <CardTitle className="font-headline text-3xl">{isLogin ? "Welcome Back" : "Create an Account"}</CardTitle>
         <CardDescription>
-          {isLogin ? "Log in to continue to GrocerEase." : "Get started with fresh groceries delivered to you."}
+          {isLogin ? "Log in to continue to BuyBee." : "Get started with fresh groceries delivered to you."}
         </CardDescription>
       </CardHeader>
       <CardContent>
