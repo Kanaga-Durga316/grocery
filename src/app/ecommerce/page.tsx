@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import { getCategories, getProducts } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
@@ -9,9 +9,6 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Smartphone, Shirt, Tv, HardDrive, HeartPulse, ShoppingCart as ShoppingCartIcon } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
-import type { Product } from '@/lib/types';
-import { CircularProductCarousel } from '@/components/CircularProductCarousel';
-import { ProductDetailView } from '@/components/ProductDetailView';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Electronics': Smartphone,
@@ -26,7 +23,6 @@ const categoryIcons: { [key: string]: React.ElementType } = {
 export default function EcommercePage() {
   const allProducts = useMemo(() => getProducts(), []);
   const allCategories = useMemo(() => getCategories(), []);
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   
   const ecommerceCategories = useMemo(() => {
     return allCategories.filter(c => c.productType === 'ecommerce');
@@ -57,10 +53,6 @@ export default function EcommercePage() {
       };
     }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
   }, [allProducts, ecommerceCategories]);
-
-  const electronicsProducts = useMemo(() => {
-    return allProducts.filter(p => p.categoryId === 'electronics');
-  }, [allProducts]);
 
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
 
@@ -104,31 +96,24 @@ export default function EcommercePage() {
                 <h2 id={category.id} className="font-headline text-4xl text-center font-bold text-primary scroll-mt-24">{category.name}</h2>
               </div>
               
-              {category.id === 'electronics' ? (
-                <div className="relative">
-                  <CircularProductCarousel products={electronicsProducts} onProductClick={setSelectedProduct} />
-                  <ProductDetailView product={selectedProduct} onOpenChange={(isOpen) => !isOpen && setSelectedProduct(null)} />
-                </div>
-              ) : (
-                <div className="space-y-12">
-                  {category.structuredProducts.length > 0 ? (
-                    category.structuredProducts.map(subCat => (
-                      <div key={subCat.name}>
-                        <h3 className="font-headline text-2xl font-bold mb-6 border-b pb-2 text-accent border-border">
-                          {subCat.name}
-                        </h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                          {subCat.products.map(product => (
-                            <ProductCard key={product.id} product={product} />
-                          ))}
-                        </div>
+              <div className="space-y-12">
+                {category.structuredProducts.length > 0 ? (
+                  category.structuredProducts.map(subCat => (
+                    <div key={subCat.name}>
+                      <h3 className="font-headline text-2xl font-bold mb-6 border-b pb-2 text-accent border-border">
+                        {subCat.name}
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        {subCat.products.map(product => (
+                          <ProductCard key={product.id} product={product} />
+                        ))}
                       </div>
-                    ))
-                  ) : (
-                    <p className="text-center text-muted-foreground">No items in this category yet.</p>
-                  )}
-                </div>
-              )}
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-center text-muted-foreground">No items in this category yet.</p>
+                )}
+              </div>
             </div>
           ))
         ) : (
