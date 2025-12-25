@@ -871,10 +871,154 @@
       "imageHint": "sunscreen bottle"
     },
     {
-      "id": "prod-smartphone",
+      "id": "prod-android-phone",
       "description": "A modern smartphone with a sleek design.",
       "imageUrl": "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
       "imageHint": "smartphone"
+    },
+    {
+      "id": "prod-android-phone-2",
+      "description": "A modern smartphone held in a hand.",
+      "imageUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "sleek smartphone"
+    },
+    {
+      "id": "prod-budget-phone",
+      "description": "An affordable smartphone on a colorful background.",
+      "imageUrl": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbf1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "budget smartphone"
+    },
+    {
+      "id": "prod-feature-phone",
+      "description": "A classic feature phone (candy bar style).",
+      "imageUrl": "https://images.unsplash.com/photo-1528990839023-e1d35508548a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "feature phone"
+    },
+    {
+      "id": "prod-wired-earphones",
+      "description": "A pair of white wired earphones.",
+      "imageUrl": "https://images.unsplash.com/photo-1585298723682-711556143f77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wired earphones"
+    },
+    {
+      "id": "prod-wireless-headphones",
+      "description": "A pair of black over-ear wireless headphones.",
+      "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wireless headphones"
+    },
+    {
+      "id": "prod-fast-charger",
+      "description": "A white fast charging adapter.",
+      "imageUrl": "https://images.unsplash.com/photo-1608226463993-8a876a43b432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "charging adapter"
+    },
+    {
+      "id": "prod-back-cover",
+      "description": "A clear protective phone case.",
+      "imageUrl": "https://images.unsplash.com/photo-1616077169002-3e28c70d4a2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "phone case"
+    },
+    {
+      "id": "prod-screen-protector",
+      "description": "A tempered glass screen protector for a smartphone.",
+      "imageUrl": "https://images.unsplash.com/photo-1601758177266-bc522b34a694?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "screen protector"
+    },
+    {
+      "id": "prod-laptop-student",
+      "description": "A person using a laptop for studying.",
+      "imageUrl": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "student laptop"
+    },
+    {
+      "id": "prod-laptop-office",
+      "description": "A professional using a laptop in an office environment.",
+      "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "office laptop"
+    },
+    {
+      "id": "prod-wireless-mouse",
+      "description": "An ergonomic wireless mouse.",
+      "imageUrl": "https://images.unsplash.com/photo-1615663245652-8de3ab7208b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wireless mouse"
+    },
+    {
+      "id": "prod-wired-keyboard",
+      "description": "A black wired keyboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wired keyboard"
+    },
+    {
+      "id": "prod-keyboard-mouse-combo",
+      "description": "A matching wireless keyboard and mouse set.",
+      "imageUrl": "https://images.unsplash.com/photo-1595166418854-1589139589d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "keyboard mouse"
+    },
+    {
+      "id": "prod-flash-drive",
+      "description": "A USB flash drive.",
+      "imageUrl": "https://images.unsplash.com/photo-1598453413348-18c73479a3f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "usb drive"
+    },
+    {
+      "id": "prod-fitness-band",
+      "description": "A person wearing a fitness band on their wrist.",
+      "imageUrl": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "fitness band"
+    },
+    {
+      "id": "prod-smart-bulb",
+      "description": "A smart bulb glowing with multiple colors.",
+      "imageUrl": "https://images.unsplash.com/photo-1608288545831-a3f061ac2faf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smart bulb"
+    },
+    {
+      "id": "prod-smart-plug",
+      "description": "A smart plug in a wall socket.",
+      "imageUrl": "https://images.unsplash.com/photo-1580216262970-8d5a7d7d743a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smart plug"
+    },
+    {
+      "id": "prod-smart-tv",
+      "description": "A large smart TV mounted on a wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1593784918231-5079a4059536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "smart tv"
+    },
+    {
+      "id": "prod-wifi-router",
+      "description": "A white Wi-Fi router on a shelf.",
+      "imageUrl": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "wifi router"
+    },
+    {
+      "id": "prod-set-top-box",
+      "description": "A black set-top box for a television.",
+      "imageUrl": "https://images.unsplash.com/photo-1601944177324-f236754247e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "set-top box"
+    },
+    {
+      "id": "prod-security-camera",
+      "description": "A home security camera mounted on a wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1588225579912-75d5069b222a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "security camera"
+    },
+    {
+      "id": "prod-extension-board",
+      "description": "An extension board with multiple sockets.",
+      "imageUrl": "https://images.unsplash.com/photo-1617469145729-9a674175961a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "extension cord"
+    },
+    {
+      "id": "prod-surge-protector",
+      "description": "A surge protector power strip.",
+      "imageUrl": "https://images.unsplash.com/photo-1617469145729-9a674175961a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "surge protector"
+    },
+    {
+      "id": "prod-multi-usb-charger",
+      "description": "A USB charger with multiple ports.",
+      "imageUrl": "https://images.unsplash.com/photo-1608226463993-8a876a43b432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageHint": "usb charger"
     },
     {
       "id": "prod-charging-cable",
@@ -915,19 +1059,19 @@
     {
       "id": "prod-men-jeans",
       "description": "A pair of blue jeans on a hanger.",
-      "imageUrl": "https://images.unsplash.com/photo-1602293589922-2f3b79f0a2e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZW4lMjBqZWFuc3xlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1602293589922-2f3b79f0a2e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZW4lMjBqZWFuc3xlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "men jeans"
     },
     {
       "id": "prod-women-dress",
       "description": "A woman in a floral summer dress.",
-      "imageUrl": "https://images.unsplash.com/photo-1594744806629-9a5a54499696?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdW1tZXIlMjBkcmVzc3xlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594744806629-9a5a54499696?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdW1tZXIlMjBkcmVzc3xlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "summer dress"
     },
     {
       "id": "prod-women-saree",
       "description": "A woman wearing a beautiful silk saree.",
-      "imageUrl": "https://images.unsplash.com/photo-1620066164963-b389658af56b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzaWxrJTIwc2FyZWV8ZW58MHx8fHwxNzY5NDI2ODQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620066164963-b389658af56b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzaWxrJTIwc2FyZWV8ZW58MHx8fHwxNzY5NDI2ODQ3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "silk saree"
     },
     {
