@@ -58,7 +58,7 @@ export default function EcommercePage() {
   const pageHeaderImage = {
     id: 'ecommerce-header',
     description: 'E-commerce background',
-    imageUrl: '/background/ecommerce_bg.jpeg',
+    imageUrl: '/background/e-commerce.png',
     imageHint: 'ecommerce background'
   };
 
