@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import { useMemo } from 'react';
@@ -54,7 +55,12 @@ export default function EcommercePage() {
     }).filter(category => category.structuredProducts && category.structuredProducts.length > 0);
   }, [allProducts, ecommerceCategories]);
 
-  const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
+  const pageHeaderImage = {
+    id: 'ecommerce-header',
+    description: 'E-commerce background',
+    imageUrl: '/background/ecommerce_bg.jpeg',
+    imageHint: 'ecommerce background'
+  };
 
   return (
     <>
