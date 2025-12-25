@@ -41,7 +41,12 @@ export default function MenuPage() {
     setIsSunday(today.getDay() === 0);
   }, []);
 
-  const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-products')!;
+  const pageHeaderImage = {
+    id: 'grocery-header',
+    description: 'Grocery background',
+    imageUrl: '/background/grocery.png',
+    imageHint: 'grocery background'
+  };
 
   const dairyBrands = useMemo(() => {
     const brands = new Set<string>();
