@@ -1,0 +1,157 @@
+/**
+ * Core Philosophy: This ruleset enforces a strict, user-centric security model for the ShopNGo e-commerce application.
+ * The primary principle is that users have complete control over their own data (profiles, orders), while publicly
+ * accessible data (products, categories, reviews) is readable by everyone. All write operations are strictly controlled,
+ * either by document ownership or by placeholder rules for future admin role implementation.
+ *
+ * Data Structure: The data is organized into top-level collections for public content (`products`, `categories`) and
+ * user-specific data. User data is nested under a `/users/{userId}` path, creating a clear and secure data boundary
+ * for each user's private information, such as their orders. This path-based ownership simplifies security logic significantly.
+ *
+ * Key Security Decisions:
+ * - User Privacy: Users can only read and write their own `/users/{userId}` document. Listing all users is explicitly disabled
+ *   to protect user privacy and prevent data scraping.
+ * - Public Data: Product catalogs and categories are publicly readable by anyone, including anonymous users, to support
+ *   the core shopping experience.
+ * - Admin-Only Writes: All write access to global collections like `/products` and `/categories` is currently denied.
+ *   This is a secure default, with placeholder comments indicating that these operations should be restricted to
+ *   'Admin' users, ideally implemented via Firebase Auth custom claims in a production environment.
+ * - Ownership for Reviews and Orders: A user can only create a review or order for themselves. The rules enforce that the
+ *   `userId` field within the document must match the authenticated user's ID. Once created, only the original author
+ *   can update or delete their review or order.
+ *
+ * Denormalization for Authorization: The rules rely on a `userId` field being present on `Review` and `Order` documents.
+ * This denormalization is critical for performing fast, secure ownership checks without requiring slow and costly `get()` calls
+ * to other documents. For example, a rule on a review document can instantly verify `resource.data.userId == request.auth.uid`.
+ *
+ * Structural Segregation: User-specific data like `/orders` is segregated into a subcollection under the `/users/{userId}`
+ * path. This is more secure and performant than a single top-level `/orders` collection, as it allows rules to leverage
+ * path-based security, making it impossible for one user to even attempt to list another user's orders.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions for reusable logic
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Checks if the requesting user is the owner of a document via path variable.
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Checks for ownership on an existing document. Used for update/delete.
+    function isExistingOwner(userId) {
+      return isOwner(userId) && resource != null;
+    }
+
+    // On user document creation, ensures the document's internal ID matches the path.
+    function canCreateOwnUserDocument(userId) {
+      return isOwner(userId) && request.resource.data.id == userId;
+    }
+
+    // On user document update, ensures the internal ID is not changed.
+    function canUpdateOwnUserDocument() {
+      return request.resource.data.id == resource.data.id;
+    }
+
+    // On order creation, ensures the order's internal userId matches the owner's path.
+    function canCreateOwnOrder(userId) {
+      return isOwner(userId) && request.resource.data.userId == userId;
+    }
+
+    // On order update, ensures the internal userId is not changed.
+    function canUpdateOwnOrder() {
+      return request.resource.data.userId == resource.data.userId;
+    }
+
+    // On review creation, validates that the author ID matches the user and the product ID matches the path.
+    function canCreateOwnReview(productId) {
+      return isSignedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.productId == productId;
+    }
+
+    // On review update, ensures the author and product IDs are not changed.
+    function canUpdateOwnReview() {
+      return request.resource.data.userId == resource.data.userId && request.resource.data.productId == resource.data.productId;
+    }
+
+    /**
+     * @description Controls access to user profile documents.
+     * @path /users/{userId}
+     * @allow (get/update) A signed-in user (auth.uid: 'user123') can read or update their own document at `/users/user123`.
+     * @deny (list/get) A user ('user123') cannot list all users or get another user's document at `/users/user456`.
+     * @principle Restricts access to a user's own data tree and enforces relational integrity.
+     */
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow list: if false;
+      allow create: if canCreateOwnUserDocument(userId);
+      allow update: if isExistingOwner(userId) && canUpdateOwnUserDocument();
+      allow delete: if isExistingOwner(userId);
+    }
+
+    /**
+     * @description Controls access to the public product catalog.
+     * @path /products/{productId}
+     * @allow (get/list) Any user, signed-in or anonymous, can read product data.
+     * @deny (create/update/delete) All write operations are disabled for clients.
+     * @principle Secures public data by making it read-only for clients, deferring writes to a trusted admin environment.
+     */
+    match /products/{productId} {
+      allow get: if true;
+      allow list: if true;
+      // TODO: Implement admin-only write access, ideally using custom claims (e.g., `request.auth.token.isAdmin == true`).
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Controls access to product categories.
+     * @path /categories/{categoryId}
+     * @allow (get/list) Any user, signed-in or anonymous, can read category data.
+     * @deny (create/update/delete) All write operations are disabled for clients.
+     * @principle Secures public data by making it read-only for clients, deferring writes to a trusted admin environment.
+     */
+    match /categories/{categoryId} {
+      allow get: if true;
+      allow list: if true;
+      // TODO: Implement admin-only write access, ideally using custom claims (e.g., `request.auth.token.isAdmin == true`).
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Secures a user's order history.
+     * @path /users/{userId}/orders/{orderId}
+     * @allow (get/create) A user ('user123') can read or create their own order at `/users/user123/orders/order456`.
+     * @deny (get/list) A user ('user123') cannot read or list orders belonging to another user at `/users/user789/orders`.
+     * @principle Enforces strict data ownership using path-based security.
+     */
+    match /users/{userId}/orders/{orderId} {
+      allow get: if isOwner(userId);
+      allow list: if isOwner(userId);
+      allow create: if canCreateOwnOrder(userId);
+      allow update: if isExistingOwner(userId) && canUpdateOwnOrder();
+      allow delete: if isExistingOwner(userId);
+    }
+
+    /**
+     * @description Controls access to product reviews. Reviews are public to read but writes are owner-only.
+     * @path /products/{productId}/reviews/{reviewId}
+     * @allow (create) A signed-in user ('user123') can create a review if the review data includes `userId: 'user123'`.
+     * @deny (update) A user ('user123') cannot update a review written by another user ('user456').
+     * @principle Enforces document ownership for writes while allowing public reads.
+     */
+    match /products/{productId}/reviews/{reviewId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if canCreateOwnReview(productId);
+      allow update: if isExistingOwner(resource.data.userId) && canUpdateOwnReview();
+      allow delete: if isExistingOwner(resource.data.userId);
+    }
+  }
+}
