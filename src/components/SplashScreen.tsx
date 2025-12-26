@@ -74,7 +74,7 @@ export function SplashScreen({ onFinished }: { onFinished: () => void }) {
         className="flex flex-col items-center justify-center"
       >
         <BeeLogo />
-        <h1 className={cn("font-headline text-6xl font-bold text-black mt-4")}>BuyBee</h1>
+        <h1 className={cn("font-headline text-6xl font-bold text-black mt-4")}>ShopNGo</h1>
         <p className="font-body text-lg text-neutral-800 mt-2">Everything You Need, Just a Buzz Away.</p>
       </motion.div>
       <div className="absolute bottom-16">

@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full dark">
       <head>
-        <title>BuyBee - Online Grocery, Food Delivery & E-commerce</title>
-        <meta name="description" content="BuyBee - Online Grocery, Food Delivery & E-commerce" />
+        <title>ShopNGo - Online Grocery, Food Delivery & E-commerce</title>
+        <meta name="description" content="ShopNGo - Online Grocery, Food Delivery & E-commerce" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Belleza&display=swap" rel="stylesheet" />

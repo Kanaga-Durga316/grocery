@@ -23,7 +23,7 @@ export function Logo({ className, inHeader = false }: { className?: string; inHe
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        aria-label="BuyBee Logo"
+        aria-label="ShopNGo Logo"
       >
         <path
           d="M7.5 19.5C8.32843 19.5 9 18.8284 9 18C9 17.1716 8.32843 16.5 7.5 16.5C6.67157 16.5 6 17.1716 6 18C6 18.8284 6.67157 19.5 7.5 19.5Z"
@@ -48,7 +48,7 @@ export function Logo({ className, inHeader = false }: { className?: string; inHe
         />
       </svg>
 
-      <span className={textClasses}>BuyBee</span>
+      <span className={textClasses}>ShopNGo</span>
     </Link>
   );
 }

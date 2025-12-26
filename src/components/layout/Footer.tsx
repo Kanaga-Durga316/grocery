@@ -24,7 +24,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} BuyBee. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} ShopNGo. All rights reserved.</p>
         </div>
       </div>
     </footer>
