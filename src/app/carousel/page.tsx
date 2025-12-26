@@ -1,10 +1,9 @@
 
 'use client';
 
-import { useState } from 'react';
-import { collection } from 'firebase/firestore';
-import { useFirestore, useCollection, useMemoFirebase } from '@/firebase';
+import { useState, useMemo } from 'react';
 import { Loader2 } from 'lucide-react';
+import { getProducts } from '@/lib/data';
 
 import type { Product } from '@/lib/types';
 import { CircularProductCarousel } from '@/components/CircularProductCarousel';
@@ -13,14 +12,15 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export default function CarouselPage() {
-  const firestore = useFirestore();
-  const productsQuery = useMemoFirebase(
-    () => (firestore ? collection(firestore, 'products') : null),
-    [firestore]
-  );
-  const { data: products, isLoading } = useCollection<Product>(productsQuery);
-
+  const allProducts = useMemo(() => getProducts(), []);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading
+  useState(() => {
+    const timer = setTimeout(() => setIsLoading(false), 500);
+    return () => clearTimeout(timer);
+  });
 
   if (isLoading) {
     return (
@@ -30,7 +30,7 @@ export default function CarouselPage() {
     );
   }
 
-  if (!products || products.length === 0) {
+  if (!allProducts || allProducts.length === 0) {
     return (
       <div className="flex h-screen items-center justify-center">
         <p className="text-muted-foreground">No products available for carousel.</p>
@@ -47,7 +47,7 @@ export default function CarouselPage() {
           <p className="text-muted-foreground mt-2">Drag to explore our featured products</p>
         </div>
         <CircularProductCarousel 
-          products={products} 
+          products={allProducts} 
           onProductClick={setSelectedProduct} 
         />
         <ProductDetailView 
