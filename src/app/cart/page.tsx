@@ -19,10 +19,20 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trash2, ArrowRight } from "lucide-react";
 import { QuantitySelector } from "@/components/QuantitySelector";
+import { useToast } from "@/hooks/use-toast";
 
 export default function CartPage() {
   const { cartItems, updateQuantity, removeFromCart, cartTotal, cartCount } = useCart();
   const pageHeaderImage = PlaceHolderImages.find(p => p.id === 'page-header-cart')!;
+  const { toast } = useToast();
+
+  const handleRemoveFromCart = (productId: string, variantId?: string) => {
+    removeFromCart(productId, variantId);
+    toast({
+      title: "Removed from Cart",
+      variant: "destructive",
+    })
+  }
 
   return (
     <>
@@ -75,7 +85,7 @@ export default function CartPage() {
                              <Button
                                 variant="ghost"
                                 size="icon"
-                                onClick={() => removeFromCart(product.id, variant?.id)}
+                                onClick={() => handleRemoveFromCart(product.id, variant?.id)}
                               >
                                 <Trash2 className="h-5 w-5 text-muted-foreground" />
                                 <span className="sr-only">Remove item</span>
