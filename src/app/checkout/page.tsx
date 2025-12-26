@@ -19,6 +19,11 @@ import { useEffect, useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
 import { PaymentMethodSelector } from '@/components/PaymentMethodSelector';
+import { useFirestore } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import { setDocumentNonBlocking } from '@/firebase';
+import type { Order } from '@/lib/types';
+import { serverTimestamp } from 'firebase/firestore';
 
 const checkoutSchema = z.object({
   name: z.string().min(2, 'Name is required'),
@@ -34,6 +39,7 @@ export default function CheckoutPage() {
   const router = useRouter();
   const { toast } = useToast();
   const [isProcessing, setIsProcessing] = useState(false);
+  const firestore = useFirestore();
 
   const form = useForm<z.infer<typeof checkoutSchema>>({
     resolver: zodResolver(checkoutSchema),
@@ -50,33 +56,54 @@ export default function CheckoutPage() {
     if (cartItems.length === 0 && !isProcessing) {
       router.replace('/products');
     }
-  }, [cartItems, router, isProcessing]);
+    if (user) {
+      form.setValue('name', user.name);
+    }
+  }, [cartItems, router, isProcessing, user, form]);
 
   const onSubmit = (values: z.infer<typeof checkoutSchema>) => {
+    if (!user) {
+      toast({
+        title: 'Authentication Error',
+        description: 'You must be logged in to place an order.',
+        variant: 'destructive',
+      });
+      return;
+    }
     setIsProcessing(true);
-    console.log('Placing order with values:', values);
 
     // Simulate payment processing
     setTimeout(() => {
-      console.log('Order placed:', {
-        user: user?.id,
+      const orderId = doc(doc(firestore, 'users', user.id), 'orders').id;
+      
+      const newOrder: Order = {
+        id: orderId,
+        userId: user.id,
         items: cartItems.map(item => ({
           productId: item.product.id,
-          variantId: item.variant?.id,
+          name: item.product.name,
+          imageUrl: item.product.imageUrl,
           quantity: item.quantity,
           price: item.variant ? item.variant.price : item.product.price,
+          variantId: item.variant?.id,
+          variantWeight: item.variant?.weight,
         })),
-        total: cartTotal,
-        shippingInfo: {
+        totalAmount: cartTotal,
+        status: 'Placed',
+        paymentStatus: 'Success',
+        paymentMethod: values.paymentMethod,
+        deliveryAddress: {
           name: values.name,
           address: values.address,
           city: values.city,
           zip: values.zip,
         },
-        paymentMethod: values.paymentMethod,
-      });
+        timestamp: serverTimestamp(),
+      };
+      
+      const orderRef = doc(firestore, 'users', user.id, 'orders', orderId);
+      setDocumentNonBlocking(orderRef, newOrder, { merge: false });
 
-      // In a real app, this would call a backend to process payment and create an order.
       clearCart();
       toast({
         title: 'Order Placed!',
@@ -227,7 +254,7 @@ export default function CheckoutPage() {
                     <p>Total</p>
                     <p>{formatPrice(cartTotal)}</p>
                   </div>
-                  <Button type="submit" size="lg" className="w-full" disabled={isProcessing}>
+                  <Button type="submit" size="lg" className="w-full" disabled={isProcessing || !user}>
                     {isProcessing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                     {isProcessing ? 'Processing Payment...' : 'Place Order'}
                   </Button>

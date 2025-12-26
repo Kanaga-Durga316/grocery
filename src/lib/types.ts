@@ -1,5 +1,3 @@
-
-
 export type ProductType = 'food' | 'grocery' | 'ecommerce';
 
 export interface Category {
@@ -66,22 +64,29 @@ export interface CartItem {
   variant?: ProductVariant;
 }
 
+export interface OrderItem {
+  productId: string;
+  name: string;
+  imageUrl: string;
+  quantity: number;
+  price: number;
+  variantId?: string;
+  variantWeight?: string;
+}
+
 export interface Order {
-  id:string;
+  id: string;
   userId: string;
-  items: {
-    productId: string;
-    quantity: number;
-    price: number;
-    variantId?: string;
-  }[];
+  items: OrderItem[];
   totalAmount: number;
   status: 'Placed' | 'Confirmed' | 'Packed' | 'Out for Delivery' | 'Delivered' | 'Cancelled';
+  paymentStatus: 'Success' | 'Failure' | 'Pending';
+  paymentMethod: string;
   deliveryAddress: {
     name: string;
     address: string;
     city: string;
     zip: string;
   };
-  timestamp: string;
+  timestamp: any; // Firestore ServerTimestamp
 }
