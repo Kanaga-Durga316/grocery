@@ -33,6 +33,7 @@ import {
   Utensils,
   Shirt,
   Sparkles,
+  Orbit
 } from "lucide-react";
 
 const navLinks = [
@@ -41,6 +42,7 @@ const navLinks = [
   { href: "/food", label: "Food", icon: Utensils },
   { href: "/ecommerce", label: "E-Commerce", icon: Shirt },
   { href: "/showcase", label: "Showcase", icon: Sparkles },
+  { href: "/carousel", label: "Carousel", icon: Orbit },
 ];
 
 export function Header() {
