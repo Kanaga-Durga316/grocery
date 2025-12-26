@@ -6,10 +6,10 @@ import { useMemo } from 'react';
 import Link from 'next/link';
 import { getCategories, getProducts } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
 import { Smartphone, Shirt, Tv, HardDrive, HeartPulse, ShoppingCart as ShoppingCartIcon } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Electronics': Smartphone,
@@ -109,11 +109,24 @@ export default function EcommercePage() {
                       <h3 className="font-headline text-2xl font-bold mb-6 border-b pb-2 text-accent border-border">
                         {subCat.name}
                       </h3>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        {subCat.products.map(product => (
-                          <ProductCard key={product.id} product={product} />
-                        ))}
-                      </div>
+                      <Carousel
+                        opts={{
+                          align: "start",
+                        }}
+                        className="w-full"
+                      >
+                        <CarouselContent>
+                          {subCat.products.map((product, index) => (
+                            <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                              <div className="p-1">
+                                <ProductCard product={product} />
+                              </div>
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="hidden lg:flex" />
+                        <CarouselNext className="hidden lg:flex" />
+                      </Carousel>
                     </div>
                   ))
                 ) : (
