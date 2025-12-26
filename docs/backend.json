@@ -4,7 +4,7 @@
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "User",
       "type": "object",
-      "description": "Represents a user within the GrocerEase application.",
+      "description": "Represents a user within the ShopNGo application.",
       "properties": {
         "id": {
           "type": "string",

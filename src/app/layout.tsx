@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import './globals.css';
@@ -7,6 +8,7 @@ import { CartProvider } from '@/contexts/CartProvider';
 import { AuthProvider } from '@/contexts/AuthProvider';
 import { useState, useEffect } from 'react';
 import { SplashScreen } from '@/components/SplashScreen';
+import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 export default function RootLayout({
   children,
@@ -33,9 +35,11 @@ export default function RootLayout({
         {loading ? (
            <SplashScreen onFinished={() => setLoading(false)} />
         ) : (
-          <AuthProvider>
-            <CartProvider>{children}</CartProvider>
-          </AuthProvider>
+          <FirebaseClientProvider>
+            <AuthProvider>
+              <CartProvider>{children}</CartProvider>
+            </AuthProvider>
+          </FirebaseClientProvider>
         )}
         <Toaster />
       </body>
