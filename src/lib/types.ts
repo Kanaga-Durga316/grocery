@@ -40,6 +40,8 @@ export interface Product {
   cookingMethods?: ('Microwave' | 'Pan Fry' | 'Air Fryer' | 'Deep Fry' | 'Grill')[];
   serves?: string;
   pairingIds?: string[];
+  features?: string[];
+  materials?: string[];
 }
 
 export interface Review {
