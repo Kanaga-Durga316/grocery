@@ -1053,7 +1053,7 @@
     {
       "id": "prod-men-tshirt",
       "description": "A man wearing a black t-shirt.",
-      "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZW4lMjB0LXNoaXJ0fGVufDB8fHx8MTc2OTQyNjg0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtZW4lMjB0LXNoaXJ0fGVufDB8fHx8MTc2OTQyNjg0N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "men t-shirt"
     },
     {
@@ -1181,6 +1181,36 @@
       "description": "A cute brown teddy bear.",
       "imageUrl": "https://images.unsplash.com/photo-1546250763-952a7c4f4b16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZWRkeSUyMGJlYXJ8ZW58MHx8fHwxNzY5NTEyNDA0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "teddy bear"
+    },
+    {
+      "id": "prod-baby-diapers-pack",
+      "description": "A pack of disposable baby diapers.",
+      "imageUrl": "https://images.unsplash.com/photo-1546022378-d856bb0007b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwZGlhcGVyc3xlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby diapers pack"
+    },
+    {
+      "id": "prod-baby-powder",
+      "description": "A bottle of baby powder.",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwcG93ZGVyfGVufDB8fHx8MTc2OTUxMzkxNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby powder"
+    },
+    {
+      "id": "prod-baby-shampoo",
+      "description": "A bottle of tear-free baby shampoo.",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwc2hhbXBvb3xlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby shampoo"
+    },
+    {
+      "id": "prod-baby-massage-oil",
+      "description": "A bottle of baby massage oil.",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwbWFzc2FnZSUyMG9pbHxlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "baby massage oil"
+    },
+    {
+      "id": "prod-baby-rash-cream",
+      "description": "A tube of diaper rash cream.",
+      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXNoJTIwY3JlYW0lMjB0dWJlfGVufDB8fHx8MTc2OTUxMzkxNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "rash cream tube"
     },
     {
       "id": "prod-baby-lotion",
