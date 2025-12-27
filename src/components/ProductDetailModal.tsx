@@ -93,3 +93,5 @@ export function ProductDetailModal({ product, isOpen, onClose }: ProductDetailMo
     </Dialog>
   );
 }
+
+    

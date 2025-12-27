@@ -11,6 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Leaf, Filter, Sun, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils } from 'lucide-react';
+import { ProductDetailModal } from '@/components/ProductDetailModal';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Fresh Produce': ShoppingBasket,
@@ -26,6 +27,7 @@ export default function MenuPage() {
   const allProducts = useMemo(() => getProducts(), []);
   const allCategories = useMemo(() => getCategories(), []);
   
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [produceFilter, setProduceFilter] = useState<'all' | 'under30' | 'combo'>('all');
   const [dairyBrandFilter, setDairyBrandFilter] = useState<string>('all');
   const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
@@ -236,7 +238,7 @@ export default function MenuPage() {
                             </h3>
                             <div className={`grid md:grid-cols-2 gap-x-8 gap-y-10`}>
                               {subCat.products.map(product => (
-                                <MenuItem key={product.id} product={product} />
+                                <MenuItem key={product.id} product={product} onViewDetailsClick={() => setSelectedProduct(product)} />
                               ))}
                             </div>
                           </div>
@@ -248,7 +250,7 @@ export default function MenuPage() {
                 ) : (
                   <div className="grid md:grid-cols-2 gap-x-8 gap-y-10">
                     {category.products.map(product => (
-                      <MenuItem key={product.id} product={product} />
+                      <MenuItem key={product.id} product={product} onViewDetailsClick={() => setSelectedProduct(product)} />
                     ))}
                   </div>
                 )}
@@ -263,6 +265,13 @@ export default function MenuPage() {
           })}
         </div>
       </div>
+      <ProductDetailModal
+        product={selectedProduct}
+        isOpen={!!selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+      />
     </>
   );
 }
+
+    

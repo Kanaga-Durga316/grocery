@@ -2,7 +2,6 @@
 
 "use client";
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { formatPrice } from '@/lib/utils';
 import type { Product, ProductVariant, CleaningOption } from '@/lib/types';
@@ -12,7 +11,7 @@ import { useState, useMemo } from 'react';
 import { QuantitySelector } from './QuantitySelector';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { Calendar, Repeat, ShoppingBag, TrendingUp, Snowflake, Users, CookingPot, Microwave, Flame, Zap, Link2, Archive } from 'lucide-react';
+import { Calendar, Repeat, ShoppingBag, TrendingUp, Snowflake, Users, CookingPot, Microwave, Flame, Zap, Link2, Archive, Eye } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -24,6 +23,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/t
 
 interface MenuItemProps {
   product: Product;
+  onViewDetailsClick?: () => void;
 }
 
 const CookingMethodIcon = ({ method }: { method: string }) => {
@@ -51,7 +51,7 @@ const CookingMethodIcon = ({ method }: { method: string }) => {
     )
 }
 
-export function MenuItem({ product }: MenuItemProps) {
+export function MenuItem({ product, onViewDetailsClick }: MenuItemProps) {
     const [quantity, setQuantity] = useState(1);
     const [selectedVariant, setSelectedVariant] = useState<ProductVariant | undefined>(product.variants?.[0]);
     const [selectedCleaning, setSelectedCleaning] = useState<CleaningOption | undefined>(product.cleaningOptions?.[0]);
@@ -86,22 +86,26 @@ export function MenuItem({ product }: MenuItemProps) {
     
     return (
         <div className="flex gap-4 items-start border-b border-dashed border-border/50 pb-4">
-            <Link href={`/products/${product.id}`}>
-              <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-md overflow-hidden flex-shrink-0">
-                  <Image
-                      src={product.imageUrl}
-                      alt={product.name}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      data-ai-hint={product.imageHint}
-                  />
-              </div>
-            </Link>
+            <div
+              className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-md overflow-hidden flex-shrink-0 cursor-pointer"
+              onClick={onViewDetailsClick}
+            >
+              <Image
+                  src={product.imageUrl}
+                  alt={product.name}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  data-ai-hint={product.imageHint}
+              />
+            </div>
             <div className="flex-grow">
                 <div className="flex justify-between items-start">
-                    <Link href={`/products/${product.id}`}>
-                        <h3 className="text-lg font-headline text-foreground hover:text-primary transition-colors">{product.name}</h3>
-                    </Link>
+                    <h3 
+                      className="text-lg font-headline text-foreground hover:text-primary transition-colors cursor-pointer"
+                      onClick={onViewDetailsClick}
+                    >
+                      {product.name}
+                    </h3>
                     <div className="flex items-center gap-2">
                       {hasStockUpBadge && (
                         <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 border-blue-200">
@@ -166,9 +170,9 @@ export function MenuItem({ product }: MenuItemProps) {
                   </div>
                 )}
 
-                 <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
+                 <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <p className="text-lg font-bold text-primary">{formatPrice(currentPrice)}</p>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 flex-wrap">
                         {product.variants && (
                              <Select
                                 value={selectedVariant?.id}
@@ -209,10 +213,15 @@ export function MenuItem({ product }: MenuItemProps) {
                             </Select>
                         )}
 
-                        {!product.variants && !product.cleaningOptions && (
-                            <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
-                        )}
-                        <AddToCartButton product={product} quantity={quantity} variant={selectedVariant} />
+                        <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
+                        <div className="flex gap-2">
+                            <AddToCartButton product={product} quantity={quantity} variant={selectedVariant} />
+                            {onViewDetailsClick && (
+                                <Button variant="outline" size="icon" onClick={onViewDetailsClick}>
+                                    <Eye className="h-5 w-5"/>
+                                </Button>
+                            )}
+                        </div>
                     </div>
                 </div>
 
@@ -226,11 +235,11 @@ export function MenuItem({ product }: MenuItemProps) {
                 {pairingProducts.length > 0 && (
                     <div className="mt-3 pt-3 border-t border-dashed">
                         <h4 className="text-xs font-semibold text-muted-foreground mb-2 flex items-center gap-1.5"><Link2 className="h-3.5 w-3.5" /> Pairs well with:</h4>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-wrap">
                             {pairingProducts.map(p => (
-                                <Link key={p.id} href={`/products/${p.id}`}>
-                                    <Badge variant="secondary" className="hover:bg-accent/80 transition-colors">{p.name}</Badge>
-                                </Link>
+                                <Button key={p.id} variant="secondary" size="sm" className="h-auto py-1 px-2" onClick={() => console.log('This should open a modal for', p.id)}>
+                                    {p.name}
+                                </Button>
                             ))}
                         </div>
                     </div>
@@ -239,3 +248,5 @@ export function MenuItem({ product }: MenuItemProps) {
         </div>
     );
 }
+
+    
