@@ -1,16 +1,16 @@
+
 "use client";
 
 import { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MenuItem } from '@/components/MenuItem';
-import type { Product, Category } from '@/lib/types';
+import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Leaf, Filter, Sun, Sparkles, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils } from 'lucide-react';
+import { Leaf, Filter, Sun, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils } from 'lucide-react';
 
 
 const categoryIcons: { [key: string]: React.ElementType } = {

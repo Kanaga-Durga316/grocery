@@ -1,16 +1,16 @@
+
 "use client";
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MenuItem } from '@/components/MenuItem';
 import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { UtensilsCrossed, Filter, Leaf, Utensils, Pizza, Salad, Soup, CakeSlice, GlassWater } from 'lucide-react';
+import { UtensilsCrossed, Filter, Pizza, Utensils, Salad, Soup, CakeSlice, GlassWater } from 'lucide-react';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Fast Food': Pizza,

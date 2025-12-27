@@ -1,3 +1,4 @@
+
 export type ProductType = 'food' | 'grocery' | 'ecommerce';
 
 export interface Category {
