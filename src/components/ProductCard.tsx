@@ -6,12 +6,14 @@ import { formatPrice } from '@/lib/utils';
 import { RatingStars } from './RatingStars';
 import { getReviewsForProduct } from '@/lib/data';
 import { AddToCartButton } from './AddToCartButton';
+import { Button } from './ui/button';
 
 interface ProductCardProps {
   product: Product;
+  onViewDetailsClick?: () => void;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, onViewDetailsClick }: ProductCardProps) {
   const reviews = getReviewsForProduct(product.id);
   const averageRating = reviews.length > 0
     ? reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length
@@ -20,7 +22,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-lg">
       <CardHeader className="p-0">
-        <Link href={`/products/${product.id}`} className="block aspect-square relative">
+        <div className="block aspect-square relative">
           <Image
             src={product.imageUrl}
             alt={product.name}
@@ -28,21 +30,22 @@ export function ProductCard({ product }: ProductCardProps) {
             className="object-cover"
             data-ai-hint={product.imageHint}
           />
-        </Link>
+        </div>
       </CardHeader>
       <CardContent className="p-4 flex-grow">
         <CardTitle className="text-lg font-headline mb-2 leading-tight">
-          <Link href={`/products/${product.id}`} className="hover:text-primary transition-colors">
             {product.name}
-          </Link>
         </CardTitle>
         <div className="flex items-center justify-between">
           <p className="text-lg font-semibold text-primary">{formatPrice(product.price)}</p>
           <RatingStars rating={averageRating} />
         </div>
       </CardContent>
-      <CardFooter className="p-4 pt-0">
+      <CardFooter className="p-4 pt-0 grid grid-cols-2 gap-2">
         <AddToCartButton product={product} quantity={1} className="w-full" />
+        <Button variant="outline" className="w-full" onClick={onViewDetailsClick}>
+            View Details
+        </Button>
       </CardFooter>
     </Card>
   );
