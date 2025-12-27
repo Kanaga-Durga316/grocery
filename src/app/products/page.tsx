@@ -3,7 +3,7 @@
 
 import { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
-import { getProducts, getCategories, getFeaturedProducts } from '@/lib/data';
+import { getProducts, getCategories } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { MenuItem } from '@/components/MenuItem';
 import type { Product } from '@/lib/types';
@@ -11,8 +11,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Leaf, Filter, Sun, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils } from 'lucide-react';
-import { CircularProductCarousel } from '@/components/CircularProductCarousel';
-import { ProductDetailView } from '@/components/ProductDetailView';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Fresh Produce': ShoppingBasket,
@@ -33,11 +31,6 @@ export default function MenuPage() {
   const [pantryBenefitFilter, setPantryBenefitFilter] = useState<'all' | 'High Protein' | 'Low GI'>('all');
   const [beverageFilter, setBeverageFilter] = useState<'all' | 'diet-zero'>('all');
   const [isSunday, setIsSunday] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-
-  const featuredGroceries = useMemo(() => {
-    return allProducts.filter(p => p.productType === 'grocery').slice(0, 10);
-  }, [allProducts]);
 
   useEffect(() => {
     const today = new Date();
@@ -153,16 +146,6 @@ export default function MenuPage() {
       />
       
       <div className="relative">
-        <section className="py-16 lg:py-24 bg-background overflow-hidden">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-4">
-              Featured Groceries Showcase
-            </h2>
-            <p className="text-center text-muted-foreground mb-12">Drag or swipe to explore our top picks!</p>
-            <CircularProductCarousel items={featuredGroceries} onSelectProduct={setSelectedProduct} />
-          </div>
-        </section>
-
         <section className="py-16 lg:py-24 bg-secondary/30">
               <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
@@ -279,8 +262,6 @@ export default function MenuPage() {
             )
           })}
         </div>
-
-        <ProductDetailView product={selectedProduct} open={!!selectedProduct} onOpenChange={() => setSelectedProduct(null)} />
       </div>
     </>
   );
