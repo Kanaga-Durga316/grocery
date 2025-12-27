@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -29,7 +30,7 @@ export default function CartPage() {
   const handleRemoveFromCart = (productId: string, variantId?: string) => {
     removeFromCart(productId, variantId);
     toast({
-      title: "Removed from Cart",
+      title: "Item Removed from Cart 💔",
       variant: "destructive",
     })
   }
