@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useToast } from "@/hooks/use-toast"
@@ -17,11 +18,16 @@ export function Toaster() {
   return (
     <ToastProvider>
       {toasts.map(function ({ id, title, description, action, variant, ...props }) {
+        const icon = variant === 'success' 
+          ? <PartyPopper className="h-6 w-6 text-white" /> 
+          : variant === 'destructive' 
+          ? <Frown className="h-6 w-6 text-white" />
+          : null;
+
         return (
           <Toast key={id} variant={variant} {...props}>
-            <div className="flex items-center gap-3">
-              {variant === 'success' && <PartyPopper className="h-6 w-6 text-white" />}
-              {variant === 'destructive' && <Frown className="h-6 w-6 text-white" />}
+            <div className="flex items-start gap-3">
+              {icon}
               <div className="grid gap-1">
                 {title && <ToastTitle>{title}</ToastTitle>}
                 {description && (

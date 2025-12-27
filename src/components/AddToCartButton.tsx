@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useCart } from "@/hooks/use-cart";
@@ -32,7 +33,8 @@ export function AddToCartButton({
     addToCart(product, quantity, variant);
     setIsAdded(true);
     toast({
-      title: "Added to Cart!",
+      title: "Added to Cart Successfully! 😊❤️",
+      description: `${product.name} has been added to your cart. ⭐`,
       variant: "success",
     });
   };
