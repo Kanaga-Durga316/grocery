@@ -106,7 +106,7 @@ export default function CheckoutPage() {
 
       clearCart();
       toast({
-        title: 'Order Placed!',
+        title: 'Order Placed! ✅💳🎉❤️',
         description: 'Thank you for your purchase.',
         variant: 'success',
       });
