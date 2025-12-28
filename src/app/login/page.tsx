@@ -13,7 +13,7 @@ export default function LoginPage() {
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center p-4">
       <Image
-        src="/background/bs.png"
+        src="/background/login.png"
         alt="Login background image"
         fill
         className="object-cover dark:brightness-[0.5] z-0"
