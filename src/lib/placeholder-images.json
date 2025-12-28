@@ -9,7 +9,7 @@
     {
       "id": "banner-diwali",
       "description": "An arrangement of glowing diyas for Diwali.",
-      "imageUrl": "https://images.unsplash.com/photo-1667531224218-c5b7415ac85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXdhbGklMjBkaXlhc3xlbnwwfHx8fDE3NjkzMzc5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667531224218-c5b7415ac85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXdhbGklMjBkaXlhc3xlbnwwfHx8fDE3NjkzMzc5NTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "diwali diyas"
     },
     {
@@ -885,7 +885,7 @@
     {
       "id": "prod-budget-phone",
       "description": "An affordable smartphone on a colorful background.",
-      "imageUrl": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbf1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageUrl": "/electronics/budget.png",
       "imageHint": "budget smartphone"
     },
     {
@@ -1142,13 +1142,13 @@
     },
     {
       "id": "prod-decorative-vase",
-      "description": "A minimalist ceramic vase with a single branch.",
+      "description": "An elegant ceramic vase to brighten up your living space.",
       "imageUrl": "https://images.unsplash.com/photo-1542327534-59a1fe8daf73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkZWNvcmF0aXZlJTIwdmFzZXxlbnwwfHx8fDE3Njk1MDcxNTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "decorative vase"
     },
     {
       "id": "prod-wall-art",
-      "description": "A piece of framed abstract wall art on a wall.",
+      "description": "A modern abstract painting to add a touch of sophistication to your walls.",
       "imageUrl": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YWxsJTIwYXJ0fGVufDB8fHx8MTc2OTUwNzE1N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "wall art"
     },
