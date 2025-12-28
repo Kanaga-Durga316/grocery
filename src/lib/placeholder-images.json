@@ -939,7 +939,7 @@
     {
       "id": "prod-wireless-mouse",
       "description": "An ergonomic wireless mouse.",
-      "imageUrl": "https://images.unsplash.com/photo-1615663245652-8de3ab7208b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageUrl": "/electronics/mouse.png",
       "imageHint": "wireless mouse"
     },
     {
