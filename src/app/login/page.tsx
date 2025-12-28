@@ -1,15 +1,14 @@
+
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { User, Store } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
 export default function LoginPage() {
-  const authImage = PlaceHolderImages.find(p => p.id === 'page-header-auth')!;
 
   return (
     <div className="w-full lg:grid lg:min-h-screen lg:grid-cols-2">
@@ -46,9 +45,8 @@ export default function LoginPage() {
       </div>
       <div className="hidden bg-muted lg:block relative">
         <Image
-          src={authImage.imageUrl}
-          alt={authImage.description}
-          data-ai-hint={authImage.imageHint}
+          src="/background/login.png"
+          alt="Login background image"
           fill
           className="object-cover dark:brightness-[0.7]"
         />
