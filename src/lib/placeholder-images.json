@@ -1029,7 +1029,7 @@
     {
       "id": "prod-earbuds",
       "description": "Wireless earbuds in their charging case.",
-      "imageUrl": "https://images.unsplash.com/photo-1606791422838-a1a82b0b741f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
+      "imageUrl": "/electronics/bluetooth.png",
       "imageHint": "wireless earbuds"
     },
     {
