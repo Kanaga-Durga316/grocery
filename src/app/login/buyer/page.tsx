@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -11,7 +12,6 @@ import { Logo } from "@/components/Logo";
 export default function BuyerLoginPage() {
   const router = useRouter();
   const { login } = useAuth();
-  const authImage = PlaceHolderImages.find(p => p.id === 'page-header-auth')!;
 
   const handleLogin = async (data: any) => {
     const success = await login(data.email, data.password);
@@ -43,9 +43,8 @@ export default function BuyerLoginPage() {
       </div>
       <div className="hidden bg-muted lg:block relative">
         <Image
-          src={authImage.imageUrl}
-          alt={authImage.description}
-          data-ai-hint={authImage.imageHint}
+          src="/background/buyer.png"
+          alt="Buyer login background"
           fill
           className="object-cover"
         />
