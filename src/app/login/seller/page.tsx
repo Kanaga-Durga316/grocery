@@ -11,7 +11,6 @@ import { Logo } from "@/components/Logo";
 export default function SellerLoginPage() {
   const router = useRouter();
   const { login } = useAuth();
-  const authImage = PlaceHolderImages.find(p => p.id === 'page-header-auth')!;
 
   const handleLogin = async (data: any) => {
     // For this mock, we'll log in any seller account.
@@ -45,9 +44,8 @@ export default function SellerLoginPage() {
       </div>
       <div className="hidden bg-muted lg:block relative">
         <Image
-          src={authImage.imageUrl}
-          alt={authImage.description}
-          data-ai-hint={authImage.imageHint}
+          src="/background/seller.png"
+          alt="Seller login background"
           fill
           className="object-cover"
         />
