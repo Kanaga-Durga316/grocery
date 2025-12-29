@@ -439,6 +439,36 @@
       "imageHint": "ven pongal"
     },
     {
+      "id": "prod-chicken-burger",
+      "description": "A delicious chicken burger with fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwYnVyZ2VyfGVufDB8fHx8MTc2OTU4NTE2MHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken burger"
+    },
+    {
+      "id": "prod-veg-burger",
+      "description": "A hearty veggie burger on a wooden board.",
+      "imageUrl": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzY5NTg1MTYwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "veggie burger"
+    },
+    {
+      "id": "prod-margherita-pizza",
+      "description": "A classic margherita pizza with fresh basil.",
+      "imageUrl": "https://images.unsplash.com/photo-1598021680946-eb3c18c39444?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY5NTg1MTYwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "margherita pizza"
+    },
+    {
+      "id": "prod-chicken-popcorn",
+      "description": "A bucket of crispy chicken popcorn.",
+      "imageUrl": "https://images.unsplash.com/photo-1626082894334-13c5a4548454?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwcG9wY29ybnxlbnwwfHx8fDE3Njk1ODUxNjB8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken popcorn"
+    },
+    {
+      "id": "prod-paneer-wrap",
+      "description": "A tasty paneer tikka wrap cut in half.",
+      "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjB3cmFwfGVufDB8fHx8MTc2OTU4NTE2MHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer wrap"
+    },
+    {
       "id": "prod-murukku",
       "description": "A plate of crispy murukku.",
       "imageUrl": "https://images.unsplash.com/photo-1627309301987-1751559815b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXJ1a2t1JTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
