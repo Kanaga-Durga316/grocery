@@ -1077,7 +1077,7 @@
     {
       "id": "prod-kids-tshirt",
       "description": "A child wearing a colorful t-shirt.",
-      "imageUrl": "https://images.unsplash.com/photo-1599662863112-1c6dba38435d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxraWRzJTIwdC1zaGlydHxlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fashion/kids.png",
       "imageHint": "kids t-shirt"
     },
     {
