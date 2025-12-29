@@ -10,7 +10,7 @@ import type { Product } from '@/lib/types';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Leaf, Filter, Sun, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils, Flame } from 'lucide-react';
+import { Leaf, Filter, Sun, ShoppingBasket, CakeSlice, Wheat, Drumstick, GlassWater, Home, HeartPulse, Utensils, Flame, Package } from 'lucide-react';
 import { ProductDetailModal } from '@/components/ProductDetailModal';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
@@ -22,6 +22,7 @@ const categoryIcons: { [key: string]: React.ElementType } = {
   'Household Essentials': Home,
   'Personal Care & Wellness': HeartPulse,
   'Spices & Masalas': Flame,
+  'Packaged & Instant Foods': Package,
 };
 
 export default function MenuPage() {
@@ -57,7 +58,7 @@ export default function MenuPage() {
     return Array.from(brands);
   }, [allProducts]);
   
-  const groceryCategoriesData = useMemo(() => allCategories.filter(c => c.productType === 'grocery' && c.id !== 'packaged-instant-foods' && c.id !== 'cooking-oils-ghee' && c.id !== 'bakery-breakfast'), [allCategories]);
+  const groceryCategoriesData = useMemo(() => allCategories.filter(c => c.productType === 'grocery' && c.id !== 'cooking-oils-ghee' && c.id !== 'bakery-breakfast'), [allCategories]);
 
   const productsByCategory = useMemo(() => {
     return allCategories.map(category => {
