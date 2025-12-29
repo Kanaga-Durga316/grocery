@@ -1095,7 +1095,7 @@
     {
       "id": "prod-sandals",
       "description": "A pair of comfortable leather sandals.",
-      "imageUrl": "https://images.unsplash.com/photo-1564063819448-4f8087328905?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsZWF0aGVyJTIwc2FuZGFsc3xlbnwwfHx8fDE3Njk0MjkxNTV8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/footwear/sandals.png",
       "imageHint": "leather sandals"
     },
     {
