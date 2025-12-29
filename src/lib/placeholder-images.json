@@ -1065,7 +1065,7 @@
     {
       "id": "prod-women-dress",
       "description": "A woman in a floral summer dress.",
-      "imageUrl": "https://images.unsplash.com/photo-1594744806629-9a5a54499696?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdW1tZXIlMjBkcmVzc3xlbnwwfHx8fDE3Njk0MjY4NDd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/fashion/floral.png",
       "imageHint": "summer dress"
     },
     {
@@ -1124,19 +1124,19 @@
     },
     {
       "id": "prod-pressure-cooker",
-      "description": "A stainless steel pressure cooker.",
+      "description": "A high-quality stainless steel pressure cooker for fast and efficient cooking.",
       "imageUrl": "https://images.unsplash.com/photo-1631584988713-79a0b83f3605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwcmVzc3VyZSUyMGNvb2tlcnxlbnwwfHx8fDE3Njk1MDcxNTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "pressure cooker"
     },
     {
       "id": "prod-food-containers",
-      "description": "A set of glass food storage containers.",
+      "description": "A set of 3 microwave-safe glass containers for storing food.",
       "imageUrl": "https://images.unsplash.com/photo-1606859328219-5a52d3c88365?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmb29kJTIwY29udGFpbmVyc3xlbnwwfHx8fDE3Njk1MDcxNTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "food containers"
     },
     {
       "id": "prod-spice-rack",
-      "description": "A wooden spice rack holding various spices.",
+      "description": "A stylish 16-jar revolving spice rack for your kitchen counter.",
       "imageUrl": "https://images.unsplash.com/photo-1558788353-87431c94d262?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzcGljZSUyMHJhY2t8ZW58MHx8fHwxNzY5NTA3MTU3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "spice rack"
     },
