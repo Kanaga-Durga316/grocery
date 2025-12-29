@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { getCategories, getProducts } from '@/lib/data';
 import { PageHeader } from '@/components/PageHeader';
 import { Card, CardContent } from '@/components/ui/card';
-import { Smartphone, Shirt, Tv, HardDrive, HeartPulse, ShoppingCart as ShoppingCartIcon } from 'lucide-react';
+import { Smartphone, Shirt, Tv, HardDrive, HeartPulse, ShoppingCart as ShoppingCartIcon, Footprints } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const categoryIcons: { [key: string]: React.ElementType } = {
   'Electronics': Smartphone,
   'Fashion': Shirt,
-  'Footwear': Shirt,
+  'Footwear': Footprints,
   'Accessories': Tv,
   'Home & Kitchen': HardDrive,
   'Beauty & Personal Care': HeartPulse,
