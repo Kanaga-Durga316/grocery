@@ -201,7 +201,7 @@
     {
       "id": "prod-chicken-sausages",
       "description": "A pack of chicken sausages.",
-      "imageUrl": "/packaged&instantfoods/sausages.png",
+      "imageUrl": "/Packaged&Instant Foods/sausages.png",
       "imageHint": "chicken sausages"
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "prod-chapati",
       "description": "A stack of soft chapatis.",
-      "imageUrl": "/packaged&instantfoods/chapati.png",
+      "imageUrl": "/Packaged&Instant Foods/chapati.png",
       "imageHint": "chapati stack"
     },
     {
@@ -357,25 +357,25 @@
     {
       "id": "prod-idli-dosa-batter",
       "description": "A container of fresh dosa batter.",
-      "imageUrl": "/packaged&instantfoods/batter.png",
+      "imageUrl": "/Packaged&Instant Foods/batter.png",
       "imageHint": "dosa batter"
     },
     {
       "id": "prod-gulab-jamun-mix",
       "description": "A bowl of sweet gulab jamuns.",
-      "imageUrl": "/packaged&instantfoods/gulab.png",
+      "imageUrl": "/Packaged&Instant Foods/gulab.png",
       "imageHint": "gulab jamun"
     },
     {
       "id": "prod-veg-cutlet-frozen",
       "description": "A plate of golden-brown vegetable cutlets.",
-      "imageUrl": "/packaged&instantfoods/cutlet.png",
+      "imageUrl": "/Packaged&Instant Foods/cutlet.png",
       "imageHint": "vegetable cutlet"
     },
     {
       "id": "prod-fish-fingers",
       "description": "A plate of crispy fish fingers.",
-      "imageUrl": "/packaged&instantfoods/fingers.png",
+      "imageUrl": "/Packaged&Instant Foods/fingers.png",
       "imageHint": "fish fingers"
     },
     {
@@ -387,7 +387,7 @@
     {
       "id": "prod-french-fries-frozen",
       "description": "A basket of crispy french fries.",
-      "imageUrl": "/packaged&instantfoods/fries.png",
+      "imageUrl": "/Packaged&Instant Foods/fries.png",
       "imageHint": "french fries"
     },
     {
@@ -1046,7 +1046,7 @@
     },
     {
       "id": "prod-multi-usb-charger",
-      "description": "A USB charger with multiple ports.",
+      "description": "A 4-port USB charger to power multiple devices simultaneously.",
       "imageUrl": "https://images.unsplash.com/photo-1608226463993-8a876a43b432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
       "imageHint": "usb charger"
     },
