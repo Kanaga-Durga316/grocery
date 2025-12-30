@@ -201,13 +201,13 @@
     {
       "id": "prod-chicken-sausages",
       "description": "A pack of chicken sausages.",
-      "imageUrl": "https://images.unsplash.com/photo-1585325701168-a311b8543789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwc2F1c2FnZXN8ZW58MHx8fHwxNzY2NTg0MjY5fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/sausages.png",
       "imageHint": "chicken sausages"
     },
     {
       "id": "prod-chicken-nuggets",
       "description": "A plate of cooked chicken nuggets.",
-      "imageUrl": "https://images.unsplash.com/photo-1626082894179-b1bfc809f4b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwbnVnZ2V0c3xlbnwwfHx8fDE3NjY1ODQyNjl8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/nuggets.png",
       "imageHint": "chicken nuggets"
     },
     {
@@ -291,7 +291,7 @@
     {
       "id": "prod-chapati",
       "description": "A stack of soft chapatis.",
-      "imageUrl": "https://images.unsplash.com/photo-1626081035532-a5ea699c2794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGFwYXRpJTIwc3RhY2t8ZW58MHx8fHwxNzY4NTAyMTcxfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/chapati.png",
       "imageHint": "chapati stack"
     },
     {
@@ -357,25 +357,25 @@
     {
       "id": "prod-idli-dosa-batter",
       "description": "A container of fresh dosa batter.",
-      "imageUrl": "https://images.unsplash.com/photo-1626081035532-a5ea699c2794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXdhJTIwZG9zYXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/batter.png",
       "imageHint": "dosa batter"
     },
     {
       "id": "prod-gulab-jamun-mix",
       "description": "A bowl of sweet gulab jamuns.",
-      "imageUrl": "https://images.unsplash.com/photo-1623805273671-550bc93c004a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxndWxhYiUyMGphbXVufGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/gulab.png",
       "imageHint": "gulab jamun"
     },
     {
       "id": "prod-veg-cutlet-frozen",
       "description": "A plate of golden-brown vegetable cutlets.",
-      "imageUrl": "https://images.unsplash.com/photo-1594220368145-c4ba5458a23d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBjdXRsZXR8ZW58MHx8fHwxNzY2ODYzMDI0fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/cutlet.png",
       "imageHint": "vegetable cutlet"
     },
     {
       "id": "prod-fish-fingers",
       "description": "A plate of crispy fish fingers.",
-      "imageUrl": "https://images.unsplash.com/photo-1625944026337-3a104085c8f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmaXNoJTIwZmluZ2Vyc3xlbnwwfHx8fDE3NjkwNzY4ODV8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/fingers.png",
       "imageHint": "fish fingers"
     },
     {
@@ -387,7 +387,7 @@
     {
       "id": "prod-french-fries-frozen",
       "description": "A basket of crispy french fries.",
-      "imageUrl": "https://images.unsplash.com/photo-1598679253443-4b533552737c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxmcmVuY2glMjBmcmllc3xlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/packaged&instantfoods/fries.png",
       "imageHint": "french fries"
     },
     {
