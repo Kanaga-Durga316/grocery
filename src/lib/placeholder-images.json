@@ -27,7 +27,7 @@
     {
       "id": "prod-broccoli",
       "description": "Fresh green broccoli head.",
-      "imageUrl": "https://images.unsplash.com/photo-1757332051100-425acb974218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w7NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMGJyb2Njb2xpfGVufDB8fHx8MTc2NjM4NDQ5M3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1757332051100-425acb974218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMGJyb2Njb2xpfGVufDB8fHx8MTc2NjM4NDQ5M3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "fresh broccoli"
     },
     {
@@ -681,19 +681,19 @@
     {
       "id": "prod-crystal-salt",
       "description": "A pile of coarse crystal salt.",
-      "imageUrl": "https://images.unsplash.com/photo-1599558450122-3a17277b55f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjcnlzdGFsJTIwc2FsdHxlbnwwfHx8fDE3NjY1NTU3Mzd8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/spices&masala/salt.png",
       "imageHint": "crystal salt"
     },
     {
       "id": "prod-sugar",
       "description": "White sugar cubes.",
-      "imageUrl": "https://images.unsplash.com/photo-1579582297890-3949f5287a93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdWdhciUyMGN1YmVzfGVufDB8fHx8MTc2NjU1NTczN3ww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/spices&masala/sugar.png",
       "imageHint": "sugar cubes"
     },
     {
       "id": "prod-jaggery",
       "description": "A block of traditional jaggery.",
-      "imageUrl": "https://images.unsplash.com/photo-1616485397441-39a04a6015a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqYWdnZXJ5JTIwYmxvY2t8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/spices&masala/jaggery.png",
       "imageHint": "jaggery block"
     },
     {
