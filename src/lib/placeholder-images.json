@@ -207,7 +207,7 @@
     {
       "id": "prod-chicken-nuggets",
       "description": "A plate of cooked chicken nuggets.",
-      "imageUrl": "/packaged&instantfoods/nuggets.png",
+      "imageUrl": "/Packaged&Instant Foods/nuggets.png",
       "imageHint": "chicken nuggets"
     },
     {
@@ -1202,56 +1202,56 @@
     },
     {
       "id": "prod-building-blocks",
-      "description": "A set of colorful wooden building blocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiuildingJTIwYmxvY2tzfGVufDB8fHx8MTc2OTUxMjQwNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "description": "A 100-piece set of wooden building blocks to inspire creativity.",
+      "imageUrl": "/baby&kids/blocks.png",
       "imageHint": "building blocks"
     },
     {
       "id": "prod-teddy-bear",
-      "description": "A cute brown teddy bear.",
-      "imageUrl": "https://images.unsplash.com/photo-1546250763-952a7c4f4b16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZWRkeSUyMGJlYXJ8ZW58MHx8fHwxNzY5NTEyNDA0fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "description": "A soft and cuddly 12-inch teddy bear, perfect for all ages.",
+      "imageUrl": "/baby&kids/teddy.png",
       "imageHint": "teddy bear"
     },
     {
       "id": "prod-baby-diapers-pack",
       "description": "A pack of disposable baby diapers.",
-      "imageUrl": "https://images.unsplash.com/photo-1546022378-d856bb0007b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwZGlhcGVyc3xlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/pack.png",
       "imageHint": "baby diapers pack"
     },
     {
       "id": "prod-baby-powder",
       "description": "A bottle of baby powder.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwcG93ZGVyfGVufDB8fHx8MTc2OTUxMzkxNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/powder.png",
       "imageHint": "baby powder"
     },
     {
       "id": "prod-baby-shampoo",
       "description": "A bottle of tear-free baby shampoo.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwc2hhbXBvb3xlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/shampoo.png",
       "imageHint": "baby shampoo"
     },
     {
       "id": "prod-baby-massage-oil",
       "description": "A bottle of baby massage oil.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwbWFzc2FnZSUyMG9pbHxlbnwwfHx8fDE3Njk1MTM5MTR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/oil.png",
       "imageHint": "baby massage oil"
     },
     {
       "id": "prod-baby-rash-cream",
       "description": "A tube of diaper rash cream.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyYXNoJTIwY3JlYW0lMjB0dWJlfGVufDB8fHx8MTc2OTUxMzkxNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/cream.png",
       "imageHint": "rash cream tube"
     },
     {
       "id": "prod-baby-lotion",
       "description": "A bottle of gentle baby lotion.",
-      "imageUrl": "https://images.unsplash.com/photo-1629198380367-a0f5a7092e07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwbG90aW9ufGVufDB8fHx8MTc2OTUxMjQwNHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/lotion.png",
       "imageHint": "baby lotion"
     },
     {
       "id": "prod-baby-wipes",
       "description": "A pack of gentle baby wipes.",
-      "imageUrl": "https://images.unsplash.com/photo-1601676611394-4f0f7a0b3e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYWJ5JTIwd2lwZXN8ZW58MHx8fHwxNzY5NTEyNDA0fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/baby&kids/wipes.png",
       "imageHint": "baby wipes"
     },
     {
