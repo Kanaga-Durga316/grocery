@@ -301,60 +301,6 @@
       "imageHint": "butter croissants"
     },
     {
-      "id": "prod-cake",
-      "description": "A slice of chocolate cake.",
-      "imageUrl": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2NjM0MDc0MXww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "chocolate cake"
-    },
-    {
-      "id": "prod-muffin",
-      "description": "A blueberry muffin.",
-      "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxibHVlYmVycnklMjBtdWZmaW58ZW58MHx8fHwxNzY2MzQ4MDg2fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "blueberry muffin"
-    },
-    {
-      "id": "prod-lasagna",
-      "description": "A tray of beef lasagna.",
-      "imageUrl": "https://images.unsplash.com/photo-1580052380706-16fcc67ee1da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiZWVmLTIwbGFzYWdubGF8ZW58MHx8fHwxNzY2MzQ1NTQ1fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "beef lasagna"
-    },
-    {
-      "id": "prod-sushi",
-      "description": "A selection of assorted sushi.",
-      "imageUrl": "https://images.unsplash.com/photo-1736885978380-8d7d9f7d7880?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzY2MjgwNjU0fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "sushi platter"
-    },
-    {
-      "id": "prod-salad",
-      "description": "A fresh chicken caesar salad.",
-      "imageUrl": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3NjYzODQxNjB8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "caesar salad"
-    },
-    {
-      "id": "prod-pizza",
-      "description": "A margherita pizza.",
-      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY2MzQwNjAxfDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "margherita pizza"
-    },
-    {
-      "id": "prod-paneer-butter-masala-rte",
-      "description": "A bowl of creamy paneer butter masala.",
-      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b27e25248bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjBidXR0ZXIlMjBtYXNhbGF8ZW58MHx8fHwxNzY2ODYzMDI0fDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "paneer butter masala"
-    },
-    {
-      "id": "prod-sambar-rice-rte",
-      "description": "A bowl of hot sambar rice.",
-      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxzYW1iYXIlMjByaWNlfGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "sambar rice"
-    },
-    {
-      "id": "prod-veg-biryani-rte",
-      "description": "A plate of aromatic vegetable biryani.",
-      "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f3979119?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdldGFibGUlMjBiaXJ5YW5pfGVufDB8fHx8MTc2Njg2MzAyNHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "vegetable biryani"
-    },
-    {
       "id": "prod-idli-dosa-batter",
       "description": "A container of fresh dosa batter.",
       "imageUrl": "/Packaged&Instant Foods/batter.png",
@@ -379,94 +325,10 @@
       "imageHint": "fish fingers"
     },
     {
-      "id": "prod-mint-chutney",
-      "description": "A bowl of fresh mint chutney.",
-      "imageUrl": "https://images.unsplash.com/photo-1629547123985-6453504a761e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaW50JTIwY2h1dG5leXxlbnwwfHx8fDE3NjkwODIxNTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "mint chutney"
-    },
-    {
       "id": "prod-french-fries-frozen",
       "description": "A basket of crispy french fries.",
       "imageUrl": "/Packaged&Instant Foods/fries.png",
       "imageHint": "french fries"
-    },
-    {
-      "id": "prod-gobi-manchurian-rtc",
-      "description": "A plate of spicy Gobi Manchurian.",
-      "imageUrl": "https://images.unsplash.com/photo-1628502577785-5b4a4f1e5a5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxnb2JpJTIwbWFuY2h1cmlhbnxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "gobi manchurian"
-    },
-    {
-      "id": "prod-paneer-tikka-rtc",
-      "description": "Grilled paneer tikka skewers.",
-      "imageUrl": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjB0aWtrYXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "paneer tikka"
-    },
-    {
-      "id": "prod-mini-tiffin-deli",
-      "description": "A traditional South Indian tiffin platter.",
-      "imageUrl": "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aWZmaW4lMjBjb21ib3xlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "tiffin combo"
-    },
-    {
-      "id": "prod-curd-rice-deli",
-      "description": "A comforting bowl of curd rice.",
-      "imageUrl": "https://images.unsplash.com/photo-1678888981442-995a9474b301?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjdXJkJTIwcmljZXxlbnwwfHx8fDE3NjY4NjMwMjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "curd rice"
-    },
-    {
-      "id": "prod-idli",
-      "description": "Soft steamed rice cakes.",
-      "imageUrl": "https://images.unsplash.com/photo-1632104667384-06f58cb7ad44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxpZGxpJTIwc2FtYmFyfGVufDB8fHx8MTc2NjI5ODQwNnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "idli sambar"
-    },
-    {
-      "id": "prod-dosa",
-      "description": "Crispy rice and lentil crepe.",
-      "imageUrl": "https://images.unsplash.com/photo-1743517894265-c86ab035adef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXNhbGElMjBkb3NhfGVufDB8fHx8MTc2NjMyMzU2Mnww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "masala dosa"
-    },
-    {
-      "id": "prod-vada",
-      "description": "Savory lentil fritters.",
-      "imageUrl": "/vada.jpg",
-      "imageHint": "medu vada"
-    },
-    {
-      "id": "prod-pongal",
-      "description": "A delicious bowl of Ven Pongal.",
-      "imageUrl": "https://images.unsplash.com/photo-1695570272215-2a2599144883?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZW4lMjBwb25nYWx8ZW58MHx8fHwxNzY2NTQ4NDMyfDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "ven pongal"
-    },
-    {
-      "id": "prod-chicken-burger",
-      "description": "A delicious chicken burger with fries.",
-      "imageUrl": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwYnVyZ2VyfGVufDB8fHx8MTc2OTU4NTE2MHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "chicken burger"
-    },
-    {
-      "id": "prod-veg-burger",
-      "description": "A hearty veggie burger on a wooden board.",
-      "imageUrl": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzY5NTg1MTYwfDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "veggie burger"
-    },
-    {
-      "id": "prod-margherita-pizza",
-      "description": "A classic margherita pizza with fresh basil.",
-      "imageUrl": "https://images.unsplash.com/photo-1598021680946-eb3c18c39444?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtYXJnaGVyaXRhJTIwcGl6emF8ZW58MHx8fHwxNzY5NTg1MTYwfDA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "margherita pizza"
-    },
-    {
-      "id": "prod-chicken-popcorn",
-      "description": "A bucket of crispy chicken popcorn.",
-      "imageUrl": "https://images.unsplash.com/photo-1626082894334-13c5a4548454?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjaGlja2VuJTIwcG9wY29ybnxlbnwwfHx8fDE3Njk1ODUxNjB8MA&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "chicken popcorn"
-    },
-    {
-      "id": "prod-paneer-wrap",
-      "description": "A tasty paneer tikka wrap cut in half.",
-      "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYW5lZXIlMjB3cmFwfGVufDB8fHx8MTc2OTU4NTE2MHww&ixlib.rb-4.1.0&q=80&w=1080",
-      "imageHint": "paneer wrap"
     },
     {
       "id": "prod-murukku",

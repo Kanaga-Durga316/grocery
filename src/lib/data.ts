@@ -17,14 +17,6 @@ const categories: Category[] = [
     { id: 'household-essentials', name: 'Household Essentials', description: 'Cleaning supplies and other home needs.', productType: 'grocery' },
     { id: 'meat-seafood', name: 'Meat & Seafood', description: 'Fresh meat and seafood items.', productType: 'grocery' },
     
-    // Food Delivery
-    { id: 'fast-food', name: 'Fast Food', description: 'Burgers, Pizza, Fries and more.', productType: 'food' },
-    { id: 'main-course', name: 'Main Course', description: 'South Indian, North Indian, Chinese, and more.', productType: 'food' },
-    { id: 'healthy-diet-food', name: 'Healthy & Diet Food', description: 'Salads, low-calorie meals, and more.', productType: 'food' },
-    { id: 'street-food', name: 'Street Food', description: 'Chaats, rolls, sandwiches, and more.', productType: 'food' },
-    { id: 'bakery-desserts', name: 'Bakery & Desserts', description: 'Cakes, pastries, ice creams, and more.', productType: 'food' },
-    { id: 'beverages', name: 'Beverages', description: 'Fresh juices, milkshakes, smoothies, and more.', productType: 'food' },
-
     // E-Commerce
     { id: 'electronics', name: 'Electronics', description: 'Mobiles, accessories, and smart gadgets.', productType: 'ecommerce' },
     { id: 'fashion', name: 'Fashion', description: 'Clothing for men, women, and kids.', productType: 'ecommerce' },
@@ -952,56 +944,6 @@ const products: Product[] = [
         tags: ['Chilled Delivery']
     },
     
-    // Prepared Foods (Food Delivery)
-    {
-        id: 'prod-paneer-butter-masala-rte',
-        name: 'Paneer Butter Masala (Heat & Eat)',
-        description: 'A classic creamy tomato and paneer curry, ready in minutes.',
-        price: 180,
-        stock: 40,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-paneer-butter-masala-rte')!.imageUrl,
-        imageHint: 'paneer butter masala',
-        sellerId: 'seller-3',
-        subCategory: 'North Indian',
-        serves: '1-2 people',
-        cookingMethods: ['Microwave', 'Pan Fry'],
-        tags: ['No Preservatives', 'High Protein', 'Veg'],
-        pairingIds: ['prod-chapati', 'prod-basmati-rice']
-    },
-    {
-        id: 'prod-sambar-rice-rte',
-        name: 'Sambar Sadam (Heat & Eat)',
-        description: 'Homestyle sambar rice, just heat and serve.',
-        price: 120,
-        stock: 50,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-sambar-rice-rte')!.imageUrl,
-        imageHint: 'sambar rice',
-        sellerId: 'seller-3',
-        subCategory: 'South Indian',
-        serves: '1 person',
-        cookingMethods: ['Microwave'],
-        tags: ['Veg'],
-    },
-    {
-        id: 'prod-veg-biryani-rte',
-        name: 'Vegetable Biryani Tray',
-        description: 'Aromatic vegetable biryani, perfect for a quick meal.',
-        price: 150,
-        stock: 30,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-veg-biryani-rte')!.imageUrl,
-        imageHint: 'vegetable biryani',
-        sellerId: 'seller-3',
-        subCategory: 'South Indian',
-        serves: '1-2 people',
-        cookingMethods: ['Microwave'],
-        tags: ['Veg'],
-    },
     {
         id: 'prod-idli-dosa-batter',
         name: 'Idli & Dosa Batter',
@@ -1073,156 +1015,6 @@ const products: Product[] = [
         subCategory: 'Frozen Foods',
         cookingMethods: ['Deep Fry', 'Air Fryer'],
     },
-    {
-        id: 'prod-gobi-manchurian-rtc',
-        name: 'Gobi Manchurian Mix (Ready-to-Cook)',
-        description: 'Marinated cauliflower florets for perfect Gobi Manchurian.',
-        price: 130,
-        stock: 45,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-gobi-manchurian-rtc')!.imageUrl,
-        imageHint: 'gobi manchurian',
-        sellerId: 'seller-3',
-        subCategory: 'Chinese',
-        cookingMethods: ['Pan Fry'],
-        serves: '2 people',
-        tags: ['Veg'],
-    },
-    {
-        id: 'prod-paneer-tikka-rtc',
-        name: 'Paneer Tikka Skewers (Ready-to-Cook)',
-        description: 'Marinated paneer and vegetable skewers, ready for the grill.',
-        price: 220,
-        stock: 35,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-paneer-tikka-rtc')!.imageUrl,
-        imageHint: 'paneer tikka',
-        sellerId: 'seller-3',
-        subCategory: 'North Indian',
-        cookingMethods: ['Grill', 'Pan Fry'],
-        serves: '2-3 people',
-        tags: ['High Protein', 'Veg'],
-        pairingIds: ['prod-mint-chutney']
-    },
-    {
-        id: 'prod-mini-tiffin-deli',
-        name: 'Mini Tiffin Combo',
-        description: 'A perfect breakfast combo with Idli, Vada, and Pongal.',
-        price: 100,
-        stock: 50,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mini-tiffin-deli')!.imageUrl,
-        imageHint: 'tiffin combo',
-        sellerId: 'seller-3',
-        subCategory: 'South Indian',
-        serves: '1 person',
-        tags: ['No Preservatives', 'Veg']
-    },
-    {
-        id: 'prod-curd-rice-deli',
-        name: 'Curd Rice with Pickle',
-        description: 'Comforting curd rice served with a side of traditional pickle.',
-        price: 80,
-        stock: 60,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-curd-rice-deli')!.imageUrl,
-        imageHint: 'curd rice',
-        sellerId: 'seller-3',
-        subCategory: 'South Indian',
-        serves: '1 person',
-        tags: ['Veg'],
-    },
-    {
-        id: 'prod-mint-chutney',
-        name: 'Mint Chutney',
-        description: 'Fresh and tangy mint chutney, perfect with snacks.',
-        price: 40,
-        stock: 80,
-        productType: 'food',
-        categoryId: 'main-course',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mint-chutney')!.imageUrl,
-        imageHint: 'mint chutney',
-        sellerId: 'seller-3',
-        subCategory: 'Continental',
-        tags: ['Veg'],
-    },
-    // Fast Food
-    {
-        id: 'prod-chicken-burger',
-        name: 'Classic Chicken Burger',
-        description: 'A juicy chicken patty in a soft bun with lettuce and mayo.',
-        price: 180,
-        stock: 50,
-        productType: 'food',
-        categoryId: 'fast-food',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken-burger')!.imageUrl,
-        imageHint: 'chicken burger',
-        sellerId: 'seller-3',
-        subCategory: 'Burgers & Wraps',
-        tags: ['Non-Veg'],
-    },
-    {
-        id: 'prod-veg-burger',
-        name: 'Spicy Veggie Burger',
-        description: 'A crispy vegetable patty with spicy sauce and fresh veggies.',
-        price: 150,
-        stock: 60,
-        productType: 'food',
-        categoryId: 'fast-food',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-veg-burger')!.imageUrl,
-        imageHint: 'veggie burger',
-        sellerId: 'seller-3',
-        subCategory: 'Burgers & Wraps',
-        tags: ['Veg'],
-    },
-    {
-        id: 'prod-margherita-pizza',
-        name: 'Margherita Pizza (Medium)',
-        description: 'Classic pizza with fresh mozzarella, tomatoes, and basil.',
-        price: 350,
-        stock: 30,
-        productType: 'food',
-        categoryId: 'fast-food',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-margherita-pizza')!.imageUrl,
-        imageHint: 'margherita pizza',
-        sellerId: 'seller-3',
-        subCategory: 'Pizza',
-        tags: ['Veg'],
-        serves: '2-3 people',
-    },
-    {
-        id: 'prod-chicken-popcorn',
-        name: 'Chicken Popcorn',
-        description: 'Bite-sized pieces of crispy fried chicken.',
-        price: 160,
-        stock: 70,
-        productType: 'food',
-        categoryId: 'fast-food',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-chicken-popcorn')!.imageUrl,
-        imageHint: 'chicken popcorn',
-        sellerId: 'seller-3',
-        subCategory: 'Fried Chicken',
-        tags: ['Non-Veg'],
-    },
-    {
-        id: 'prod-paneer-wrap',
-        name: 'Paneer Tikka Wrap',
-        description: 'Grilled paneer tikka wrapped in a soft tortilla with mint chutney.',
-        price: 190,
-        stock: 45,
-        productType: 'food',
-        categoryId: 'fast-food',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-paneer-wrap')!.imageUrl,
-        imageHint: 'paneer wrap',
-        sellerId: 'seller-3',
-        subCategory: 'Burgers & Wraps',
-        tags: ['Veg'],
-    },
-
     // Snacks
     {
         id: 'prod-murukku',
@@ -2676,17 +2468,16 @@ const orders: Order[] = [
 ];
 
 export const getCategories = () => categories;
-export const getProducts = () => products;
+export const getProducts = () => products.filter(p => p.productType !== 'food');
 export const getFeaturedProducts = () => {
     const grocery = products.find(p => p.id === 'prod-apple');
-    const food = products.find(p => p.id === 'prod-paneer-butter-masala-rte');
     const ecommerce = products.find(p => p.id === 'prod-men-tshirt');
     const ecommerce2 = products.find(p => p.id === 'prod-laptop-student');
-    return [grocery, food, ecommerce, ecommerce2, products[3], products[4], products[5], products[7]].filter(Boolean) as Product[];
+    return [grocery, ecommerce, ecommerce2, products[3], products[4], products[5], products[7]].filter(p => p && p.productType !== 'food').filter(Boolean) as Product[];
 };
-export const getProductById = (id: string) => products.find(p => p.id === id);
-export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId);
-export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId);
+export const getProductById = (id: string) => products.find(p => p.id === id && p.productType !== 'food');
+export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId && p.productType !== 'food');
+export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId && p.productType !== 'food');
 
 export const getUsers = () => users;
 export const getUserById = (id: string) => users.find(u => u.id === id);

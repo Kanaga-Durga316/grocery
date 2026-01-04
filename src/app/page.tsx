@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { getFeaturedProducts } from '@/lib/data';
-import { ArrowRight, Utensils, ShoppingBasket, Sparkles, ShoppingCart as ShoppingCartIcon, Shirt } from 'lucide-react';
+import { ArrowRight, Sparkles, ShoppingCart as ShoppingCartIcon, Shirt } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Header } from '@/components/layout/Header';
@@ -53,7 +53,7 @@ export default function Home() {
               Everything You Need, On the Go
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-2xl font-body">
-              Groceries, food, and your favorite products, right to your doorstep.
+              Groceries, and your favorite products, right to your doorstep.
             </p>
             <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg">
               <Link href="/products">Shop Now <ArrowRight className="ml-2 h-5 w-5" /></Link>
@@ -64,9 +64,8 @@ export default function Home() {
         <Tabs defaultValue="grocery" className="w-full">
           <div className="sticky top-16 z-40 bg-background/80 backdrop-blur-sm">
             <div className="container mx-auto px-4">
-              <TabsList className="grid w-full grid-cols-3 h-14">
+              <TabsList className="grid w-full grid-cols-2 h-14">
                 <TabsTrigger value="grocery" asChild className="text-lg h-10"><Link href="/products"><ShoppingCartIcon className="mr-2" /> Grocery</Link></TabsTrigger>
-                <TabsTrigger value="food" asChild className="text-lg h-10"><Link href="/food"><Utensils className="mr-2" /> Food</Link></TabsTrigger>
                 <TabsTrigger value="ecommerce" asChild className="text-lg h-10"><Link href="/ecommerce"><Shirt className="mr-2" /> E-Commerce</Link></TabsTrigger>
               </TabsList>
             </div>
@@ -112,25 +111,6 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-            </section>
-          </TabsContent>
-          <TabsContent value="food">
-             <section className="py-16 lg:py-24 bg-secondary/50">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-headline text-center text-foreground mb-12">
-                        Featured Food Items
-                    </h2>
-                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {featuredProducts.filter(p => p.productType === 'food').map((product) => (
-                            <ProductCard key={product.id} product={product} />
-                        ))}
-                    </div>
-                     <div className="text-center mt-12">
-                        <Button asChild size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                            <Link href="/food">View Full Menu <ArrowRight className="ml-2 h-5 w-5" /></Link>
-                        </Button>
-                    </div>
-                </div>
             </section>
           </TabsContent>
            <TabsContent value="ecommerce">
