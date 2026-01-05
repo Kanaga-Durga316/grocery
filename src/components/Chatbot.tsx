@@ -146,16 +146,12 @@ export function Chatbot() {
         )}
       </AnimatePresence>
 
-      <motion.div
-        whileTap={{ scale: 0.9 }}
+      <Button
+        onClick={() => setIsOpen(!isOpen)}
+        className="fixed bottom-4 right-4 rounded-full w-16 h-16 shadow-lg z-50 flex items-center justify-center"
       >
-        <Button
-          onClick={() => setIsOpen(!isOpen)}
-          className="fixed bottom-4 right-4 rounded-full w-16 h-16 shadow-lg z-50 flex items-center justify-center"
-        >
-          {isOpen ? <X className="h-8 w-8" /> : <MessageSquare className="h-8 w-8" />}
-        </Button>
-      </motion.div>
+        {isOpen ? <X className="h-8 w-8" /> : <MessageSquare className="h-8 w-8" />}
+      </Button>
     </>
   );
 }
