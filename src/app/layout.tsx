@@ -9,6 +9,7 @@ import { AuthProvider } from '@/contexts/AuthProvider';
 import { useState, useEffect } from 'react';
 import { SplashScreen } from '@/components/SplashScreen';
 import { FirebaseClientProvider } from '@/firebase/client-provider';
+import { Chatbot } from '@/components/Chatbot';
 
 export default function RootLayout({
   children,
@@ -37,7 +38,10 @@ export default function RootLayout({
         ) : (
           <FirebaseClientProvider>
             <AuthProvider>
-              <CartProvider>{children}</CartProvider>
+              <CartProvider>
+                {children}
+                <Chatbot />
+              </CartProvider>
             </AuthProvider>
           </FirebaseClientProvider>
         )}
