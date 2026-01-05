@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useForm } from 'react-hook-form';
@@ -54,7 +55,7 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     if (cartItems.length === 0 && !isProcessing) {
-      router.replace('/products');
+      router.replace('/ecommerce');
     }
     if (user) {
       form.setValue('name', user.name);

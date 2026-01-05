@@ -30,14 +30,12 @@ import {
   LogIn,
   LogOut,
   LayoutDashboard,
-  Shirt,
   Presentation
 } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/products", label: "Grocery", icon: ShoppingBasket },
-  { href: "/ecommerce", label: "E-Commerce", icon: Shirt },
+  { href: "/ecommerce", label: "E-Commerce", icon: ShoppingBasket },
   { href: "/showcase", label: "Showcase", icon: Presentation },
 ];
 

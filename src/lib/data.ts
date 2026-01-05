@@ -2468,16 +2468,22 @@ const orders: Order[] = [
 ];
 
 export const getCategories = () => categories;
-export const getProducts = () => products.filter(p => p.productType !== 'food');
+export const getProducts = () => products;
 export const getFeaturedProducts = () => {
-    const grocery = products.find(p => p.id === 'prod-apple');
-    const ecommerce = products.find(p => p.id === 'prod-men-tshirt');
-    const ecommerce2 = products.find(p => p.id === 'prod-laptop-student');
-    return [grocery, ecommerce, ecommerce2, products[3], products[4], products[5], products[7]].filter(p => p && p.productType !== 'food').filter(Boolean) as Product[];
+    const productsToFeature = [
+        products.find(p => p.id === 'prod-apple'),
+        products.find(p => p.id === 'prod-men-tshirt'),
+        products.find(p => p.id === 'prod-laptop-student'),
+        products.find(p => p.id === 'prod-idli-dosa-batter'),
+        products.find(p => p.id === 'prod-chicken-curry-cut'),
+        products.find(p => p.id === 'prod-smart-watch'),
+        products.find(p => p.id === 'prod-sneakers'),
+    ].filter(Boolean) as Product[];
+    return productsToFeature;
 };
-export const getProductById = (id: string) => products.find(p => p.id === id && p.productType !== 'food');
-export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId && p.productType !== 'food');
-export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId && p.productType !== 'food');
+export const getProductById = (id: string) => products.find(p => p.id === id);
+export const getProductsByCategory = (categoryId: string) => products.filter(p => p.categoryId === categoryId);
+export const getProductsBySeller = (sellerId: string) => products.filter(p => p.sellerId === sellerId);
 
 export const getUsers = () => users;
 export const getUserById = (id: string) => users.find(u => u.id === id);

@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -28,7 +29,7 @@ export default function OrderConfirmationPage() {
               </p>
               <div className="flex justify-center gap-4 pt-4">
                 <Button asChild>
-                  <Link href="/products">Continue Shopping</Link>
+                  <Link href="/ecommerce">Continue Shopping</Link>
                 </Button>
                 <Button asChild variant="outline">
                   <Link href="/account">View My Orders</Link>

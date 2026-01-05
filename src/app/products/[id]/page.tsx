@@ -1,3 +1,4 @@
+
 "use client";
 
 import { notFound } from 'next/navigation';
@@ -17,6 +18,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ContactSellerDialog } from '@/components/ContactSellerDialog';
 import { Store } from 'lucide-react';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 
 type ProductDetailPageProps = {
   params: { id: string };
@@ -81,80 +84,84 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
     : 0;
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-        {/* Product Image */}
-        <div className="aspect-square relative rounded-lg overflow-hidden shadow-lg">
-          <Image
-            src={product.imageUrl}
-            alt={product.name}
-            fill
-            className="object-cover"
-            data-ai-hint={product.imageHint}
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-        </div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+          {/* Product Image */}
+          <div className="aspect-square relative rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src={product.imageUrl}
+              alt={product.name}
+              fill
+              className="object-cover"
+              data-ai-hint={product.imageHint}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
 
-        {/* Product Details */}
-        <div className="flex flex-col gap-6">
-          <div>
-            <h1 className="font-headline text-4xl md:text-5xl font-bold text-foreground">
-              {product.name}
-            </h1>
-            <div className="mt-4 flex items-center gap-4">
-              <p className="text-3xl font-bold text-primary">{formatPrice(product.price)}</p>
-              <div className="flex items-center gap-2">
-                <RatingStars rating={averageRating} />
-                <span className="text-muted-foreground text-sm">({reviews.length} reviews)</span>
+          {/* Product Details */}
+          <div className="flex flex-col gap-6">
+            <div>
+              <h1 className="font-headline text-4xl md:text-5xl font-bold text-foreground">
+                {product.name}
+              </h1>
+              <div className="mt-4 flex items-center gap-4">
+                <p className="text-3xl font-bold text-primary">{formatPrice(product.price)}</p>
+                <div className="flex items-center gap-2">
+                  <RatingStars rating={averageRating} />
+                  <span className="text-muted-foreground text-sm">({reviews.length} reviews)</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <p className="text-muted-foreground leading-relaxed">{product.description}</p>
-          
-          <AddToCartSection product={product} />
-          
-          <Separator />
-          
-          {seller && (
-             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 rounded-lg border bg-card text-card-foreground shadow-sm p-4">
-                <div className="flex items-center gap-4">
-                  <Avatar className="h-12 w-12">
-                    <AvatarImage src={`https://avatar.vercel.sh/${seller.id}.png`} alt={seller.name} />
-                    <AvatarFallback><Store /></AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Sold by</p>
-                    <Link href={`/sellers/${seller.id}`} className="font-semibold text-foreground hover:text-primary transition-colors">
-                        {seller.name}
-                    </Link>
+            <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+            
+            <AddToCartSection product={product} />
+            
+            <Separator />
+            
+            {seller && (
+               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 rounded-lg border bg-card text-card-foreground shadow-sm p-4">
+                  <div className="flex items-center gap-4">
+                    <Avatar className="h-12 w-12">
+                      <AvatarImage src={`https://avatar.vercel.sh/${seller.id}.png`} alt={seller.name} />
+                      <AvatarFallback><Store /></AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Sold by</p>
+                      <Link href={`/sellers/${seller.id}`} className="font-semibold text-foreground hover:text-primary transition-colors">
+                          {seller.name}
+                      </Link>
+                    </div>
                   </div>
+                  <ContactSellerDialog seller={seller} product={product} />
                 </div>
-                <ContactSellerDialog seller={seller} product={product} />
-              </div>
-          )}
+            )}
 
-          <div>
-             <p className="text-sm text-muted-foreground"><span className="font-semibold text-foreground">Category:</span> {product.categoryId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
-             <p className="text-sm text-muted-foreground"><span className="font-semibold text-foreground">Stock:</span> {product.stock > 0 ? `${product.stock} available` : 'Out of stock'}</p>
+            <div>
+               <p className="text-sm text-muted-foreground"><span className="font-semibold text-foreground">Category:</span> {product.categoryId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
+               <p className="text-sm text-muted-foreground"><span className="font-semibold text-foreground">Stock:</span> {product.stock > 0 ? `${product.stock} available` : 'Out of stock'}</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="mt-16 lg:mt-24 space-y-12">
-        {/* AI Review Summary */}
-        <ReviewSummary productId={product.id} reviews={reviews} />
+        <div className="mt-16 lg:mt-24 space-y-12">
+          {/* AI Review Summary */}
+          <ReviewSummary productId={product.id} reviews={reviews} />
 
-        {/* Customer Reviews */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="font-headline text-3xl">Customer Reviews</CardTitle>
-          </CardHeader>
-          <CardContent>
-            {reviews.length > 0 ? <ProductReviews reviews={reviews} /> : <p>No reviews yet.</p>}
-          </CardContent>
-        </Card>
-      </div>
+          {/* Customer Reviews */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-headline text-3xl">Customer Reviews</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {reviews.length > 0 ? <ProductReviews reviews={reviews} /> : <p>No reviews yet.</p>}
+            </CardContent>
+          </Card>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Link from "next/link";
@@ -132,7 +133,7 @@ export default function CartPage() {
             <h2 className="font-headline text-3xl">Your cart is empty</h2>
             <p className="text-muted-foreground mt-2">Looks like you haven't added anything to your cart yet.</p>
             <Button asChild size="lg" className="mt-8">
-              <Link href="/products">Start Shopping</Link>
+              <Link href="/ecommerce">Start Shopping</Link>
             </Button>
           </div>
         )}
