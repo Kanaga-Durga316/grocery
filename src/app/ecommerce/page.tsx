@@ -98,7 +98,7 @@ export default function EcommercePage() {
 
       const subCategories = Array.from(new Set(productsToStructure.map(p => p.subCategory).filter(Boolean)));
 
-      const structuredProducts = subCategories.map(subCategory => ({
+      let structuredProducts = subCategories.map(subCategory => ({
         name: subCategory,
         products: productsToStructure.filter(p => p.subCategory === subCategory)
       })).filter(sc => sc.products.length > 0);
