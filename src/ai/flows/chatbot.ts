@@ -111,7 +111,6 @@ export const chatbotFlow = ai.defineFlow(
     name: 'chatbotFlow',
     inputSchema: z.string(),
     outputSchema: z.string(),
-    tools: [searchProducts, getProductDetails],
   },
   async (prompt) => {
     const llmResponse = await ai.generate({

@@ -2418,11 +2418,13 @@ const orders: Order[] = [
         id: 'order-1',
         userId: 'user-1',
         items: [
-            { productId: 'prod-apple', quantity: 2, price: 150 },
-            { productId: 'prod-milk-pouch', quantity: 1, price: 22 }
+            { productId: 'prod-apple', name: 'Apple', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-apple')!.imageUrl, quantity: 2, price: 150 },
+            { productId: 'prod-milk-pouch', name: 'Aavin Toned Milk', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-milk-pouch')!.imageUrl, quantity: 1, price: 22 }
         ],
         totalAmount: 322,
         status: 'Delivered',
+        paymentStatus: 'Success',
+        paymentMethod: 'Card',
         deliveryAddress: {
             name: 'Alice',
             address: '123 Green St',
@@ -2431,15 +2433,17 @@ const orders: Order[] = [
         },
         timestamp: '2024-07-15T10:00:00Z'
     },
-    {
+     {
         id: 'order-2',
         userId: 'admin-1', // Assuming admin can also be a customer
         items: [
-            { productId: 'prod-idli-dosa-batter', quantity: 2, price: 70 },
-            { productId: 'prod-coke', quantity: 4, price: 40 }
+            { productId: 'prod-idli-dosa-batter', name: 'Idli & Dosa Batter', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-idli-dosa-batter')!.imageUrl, quantity: 2, price: 70 },
+            { productId: 'prod-coke', name: 'Coca-Cola Can', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke')!.imageUrl, quantity: 4, price: 40 }
         ],
         totalAmount: 300,
         status: 'Confirmed',
+        paymentStatus: 'Success',
+        paymentMethod: 'UPI',
         deliveryAddress: {
             name: 'Admin User',
             address: '456 Park Ave',
@@ -2452,11 +2456,13 @@ const orders: Order[] = [
         id: 'order-3',
         userId: 'user-1',
         items: [
-            { productId: 'prod-mutton-curry-cut', quantity: 1, price: 800 },
-            { productId: 'prod-basmati-rice', quantity: 1, price: 180, variantId: 'prod-basmati-rice-1kg' },
+            { productId: 'prod-mutton-curry-cut', name: 'Mutton Curry Cut', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-mutton-curry-cut')!.imageUrl, quantity: 1, price: 800 },
+            { productId: 'prod-basmati-rice', name: 'Basmati Rice', imageUrl: PlaceHolderImages.find(p => p.id === 'prod-basmati-rice')!.imageUrl, quantity: 1, price: 180, variantId: 'prod-basmati-rice-1kg' },
         ],
         totalAmount: 980,
         status: 'Out for Delivery',
+        paymentStatus: 'Success',
+        paymentMethod: 'COD',
         deliveryAddress: {
             name: 'Alice',
             address: '123 Green St',

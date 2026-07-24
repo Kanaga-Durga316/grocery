@@ -78,7 +78,7 @@ export function AuthForm({ mode, onSubmit }: AuthFormProps) {
             {!isLogin && (
               <FormField
                 control={form.control}
-                name="name"
+                name={"name" as any}
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Name</FormLabel>
