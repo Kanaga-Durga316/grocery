@@ -333,25 +333,25 @@
     {
       "id": "prod-murukku",
       "description": "A plate of crispy murukku.",
-      "imageUrl": "https://images.unsplash.com/photo-1627309301987-1751559815b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtdXJ1a2t1JTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/murukku.png",
       "imageHint": "murukku snack"
     },
     {
       "id": "prod-thattai",
       "description": "A close-up of thattai snacks.",
-      "imageUrl": "https://images.unsplash.com/photo-1615837197154-24195a8986c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aGF0dGFpJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/thattai.png",
       "imageHint": "thattai snack"
     },
     {
       "id": "prod-mixture",
       "description": "A bowl of South Indian mixture.",
-      "imageUrl": "https://images.unsplash.com/photo-1581622329862-23b34250285a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxtaXh0dXJlJTIwc25hY2t8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/mixture.png",
       "imageHint": "mixture snack"
     },
     {
       "id": "prod-ribbon-pakoda",
       "description": "Crispy ribbon pakoda.",
-      "imageUrl": "https://images.unsplash.com/photo-1610971032127-d3d3a7895f8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHhyaWJib24lMjBwYWtvZGF8ZW58MHx8fHwxNzY2NTQ5NDEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/ribbon.png",
       "imageHint": "ribbon pakoda"
     },
     {
@@ -375,7 +375,7 @@
     {
       "id": "prod-banana-chips",
       "description": "A bowl of banana chips.",
-      "imageUrl": "https://images.unsplash.com/photo-1599903930495-23f2f84b655f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxiYW5hbmElMjBjaGlwc3xlbnwwfHx8fDE3NjY1NDk0MTN8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/banana.png",
       "imageHint": "banana chips"
     },
     {
@@ -387,19 +387,19 @@
     {
       "id": "prod-kadalai-mittai",
       "description": "Bars of traditional groundnut candy.",
-      "imageUrl": "https://images.unsplash.com/photo-1512426887555-2e0f545b6422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxncm91bmRudXQlMjBjYW5keXxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/mittai.png",
       "imageHint": "groundnut candy"
     },
     {
       "id": "prod-adhirasam",
       "description": "A plate of sweet adhirasam.",
-      "imageUrl": "https://images.unsplash.com/photo-1590082855198-8424a15a31a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxhZGhpcmFzYW0lMjBzd2VldHxlbnwwfHx8fDE3NjY1NTA0NjR8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/adhirasam.png",
       "imageHint": "adhirasam sweet"
     },
     {
       "id": "prod-halwa",
       "description": "A bowl of rich Tirunelveli halwa.",
-      "imageUrl": "https://images.unsplash.com/photo-1579782531322-a9f592a7e7a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0aXJ1bmVsdmVsaSUyMGhhbHdhfGVufDB8fHx8MTc2NjU1MDQ2NHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/halwa.png",
       "imageHint": "tirunelveli halwa"
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": "prod-dry-fruits",
       "description": "An assortment of dry fruits and nuts.",
-      "imageUrl": "https://images.unsplash.com/photo-1601925308696-9b5d32b53b1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxkcnklMjBmdXJpdHN8ZW58MHx8fHwxNzY2NTU1NzM3fDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/drymix.png",
       "imageHint": "dry fruits"
     },
     {
@@ -579,49 +579,55 @@
     {
       "id": "prod-tea",
       "description": "A box of black tea.",
-      "imageUrl": "https://images.unsplash.com/photo-1594901248332-99a12a8a8138?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx0ZWElMjBib3h8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/tea.png",
       "imageHint": "tea box"
     },
     {
       "id": "prod-coffee",
       "description": "A jar of instant coffee.",
-      "imageUrl": "https://images.unsplash.com/photo-1589923412933-2a07c3315a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqYXIlMjBjb2ZmZWV8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/coffee.png",
       "imageHint": "coffee jar"
     },
     {
       "id": "prod-coke",
       "description": "A can of Coca-Cola.",
-      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxjb2tlJTIwY2FufGVufDB8fHx8MTc2NjU4MTA1MHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/cola.png",
       "imageHint": "coke can"
+    },
+    {
+      "id": "prod-coke-zero",
+      "description": "A can of Coca-Cola Zero Sugar.",
+      "imageUrl": "/snacks&beverages/zerosugar.png",
+      "imageHint": "coke zero can"
     },
     {
       "id": "prod-juice",
       "description": "A carton of orange juice.",
-      "imageUrl": "https://images.unsplash.com/photo-1618843444212-706a997a0c1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxqdWljZSUyMGNhcnRvbnxlbnwwfHx8fDE3NjY1ODEwNTB8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/orange.png",
       "imageHint": "juice carton"
     },
     {
       "id": "prod-bournvita",
       "description": "A jar of Bournvita health drink.",
-      "imageUrl": "https://images.unsplash.com/photo-1627483262287-a0a4c281e6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxib3VybnZpdGElMjBqYXJ8ZW58MHx8fHwxNzY2NTgxMDUwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/bournvita.png",
       "imageHint": "bournvita jar"
     },
     {
       "id": "prod-redbull",
       "description": "A can of Red Bull energy drink.",
-      "imageUrl": "https://images.unsplash.com/photo-1617052251325-72a3937100b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyZWQlMjBidWxsfGVufDB8fHx8MTc2NjU4MTA1MHww&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/redbull.png",
       "imageHint": "red bull"
     },
     {
       "id": "prod-water-can",
       "description": "A large 20L can of drinking water.",
-      "imageUrl": "https://images.unsplash.com/photo-1559861615-99d82e2195f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHx3YXRlciUyMGNhbnxlbnwwfHx8fDE3NjkyMzkxNDJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/water.png",
       "imageHint": "water can"
     },
     {
       "id": "prod-party-pack",
       "description": "A collection of party snacks and drinks.",
-      "imageUrl": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxwYXJ0eSUyMHNuYWNrcyUyMGRyaW5rc3xlbnwwfHx8fDE3NjkyMzk0MjJ8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/party.png",
       "imageHint": "party snacks drinks"
     },
     {
@@ -639,13 +645,13 @@
     {
       "id": "prod-lays-chips",
       "description": "A bag of Lay's potato chips.",
-      "imageUrl": "https://images.unsplash.com/photo-1576483473138-735f499b422a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxsYXlzJTIwY2hpcHN8ZW58MHx8fHwxNzY5MzM3MjMxfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/lays.png",
       "imageHint": "lays chips"
     },
     {
       "id": "prod-roasted-makhana",
       "description": "A bowl of roasted makhana (foxnuts).",
-      "imageUrl": "https://images.unsplash.com/photo-1608557349141-c4524483726c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHxyb2FzdGVkJTIwbWFraGFuYXxlbnwwfHx8fDE3NjkzMzcyMzF8MA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/snacks&beverages/makhana.png",
       "imageHint": "roasted makhana"
     },
     {

@@ -1230,7 +1230,7 @@ const products: Product[] = [
         stock: 150,
         productType: 'grocery',
         categoryId: 'snacks-beverages',
-        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke')!.imageUrl,
+        imageUrl: PlaceHolderImages.find(p => p.id === 'prod-coke-zero')!.imageUrl,
         imageHint: 'coke zero can',
         sellerId: 'seller-2',
         subCategory: 'Soft Drinks',
